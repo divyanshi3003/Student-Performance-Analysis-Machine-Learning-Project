@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Upload, Download, FileText } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const INITIAL_STATE = {
   study_hours_per_week: '',
@@ -64,8 +65,10 @@ export default function Predict() {
       
       const data = await res.json();
       setPrediction(data);
+      toast.success('Prediction generated and saved to history!');
     } catch (err) {
       setError(err.message);
+      toast.error(err.message);
     } finally {
       setLoading(false);
     }
@@ -100,8 +103,10 @@ export default function Predict() {
       if (!res.ok || data.error) throw new Error(data.error || "Failed to process batch");
       
       setBatchResults(data);
+      toast.success(`Successfully processed ${data.length} records!`);
     } catch (err) {
       setError(err.message);
+      toast.error(err.message);
     } finally {
       setLoading(false);
     }

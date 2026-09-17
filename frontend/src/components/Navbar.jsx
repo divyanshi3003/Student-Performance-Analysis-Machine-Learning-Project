@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, BarChart2, LayoutDashboard } from 'lucide-react';
+import { BookOpen, BarChart2, LayoutDashboard, Clock } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab }) {
   return (
@@ -24,6 +24,17 @@ export default function Navbar({ activeTab, setActiveTab }) {
               >
                 <LayoutDashboard className="h-4 w-4 mr-2" />
                 Prediction Form
+              </button>
+              <button
+                onClick={() => setActiveTab('history')}
+                className={`inline-flex items-center px-3 py-2 border-b-2 text-sm font-medium ${
+                  activeTab === 'history'
+                    ? 'border-indigo-500 text-gray-900'
+                    : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                }`}
+              >
+                <Clock className="h-4 w-4 mr-2" />
+                History
               </button>
               <button
                 onClick={() => setActiveTab('insights')}
