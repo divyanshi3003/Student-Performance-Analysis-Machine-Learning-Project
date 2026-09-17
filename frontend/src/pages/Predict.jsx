@@ -16,18 +16,49 @@ const INITIAL_STATE = {
 export default function Predict() {
   const [formData, setFormData] = useState(INITIAL_STATE);
   const [prediction, setPrediction] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // For now, just log the data. We'll add the API call in Phase 4.
-    console.log("Submitting form data:", formData);
-    // Placeholder prediction
-    setPrediction({ final_score: 75.4, productivity_index: 52.1 });
+    setLoading(true);
+    setError(null);
+    setPrediction(null);
+    
+    try {
+      const payload = {
+        study_hours_per_week: parseFloat(formData.study_hours_per_week),
+        attendance_percentage: parseFloat(formData.attendance_percentage),
+        material_prep_hours: parseFloat(formData.material_prep_hours),
+        extracurricular_hours: parseFloat(formData.extracurricular_hours),
+        skill_dev_hours: parseFloat(formData.skill_dev_hours),
+        projects_completed: parseInt(formData.projects_completed),
+        hackathons_participated: parseInt(formData.hackathons_participated),
+        internship_experience: parseInt(formData.internship_experience),
+        coding_platform_rating: parseFloat(formData.coding_platform_rating),
+        previous_gpa: parseFloat(formData.previous_gpa)
+      };
+
+      const res = await fetch('http://localhost:8000/predict', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      
+      if (!res.ok) throw new Error("Failed to fetch prediction");
+      
+      const data = await res.json();
+      setPrediction(data);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -93,8 +124,8 @@ export default function Predict() {
           </div>
           
           <div>
-            <button type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              Generate Prediction
+            <button disabled={loading} type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50">
+              {loading ? 'Predicting...' : 'Generate Prediction'}
             </button>
           </div>
         </form>
@@ -102,6 +133,13 @@ export default function Predict() {
 
       <div className="bg-white shadow sm:rounded-lg p-6 h-fit">
         <h2 className="text-xl font-bold text-gray-900 mb-4">Results</h2>
+        
+        {error && (
+          <div className="bg-red-50 text-red-700 p-4 rounded-md mb-4 text-sm">
+            {error}
+          </div>
+        )}
+
         {prediction ? (
           <div className="space-y-6">
             <div className="bg-indigo-50 border border-indigo-100 rounded-lg p-4 text-center">
@@ -114,9 +152,11 @@ export default function Predict() {
             </div>
           </div>
         ) : (
-          <div className="text-center py-10 text-gray-500">
-            <p>Fill out the form and submit to see predictions.</p>
-          </div>
+          !error && (
+            <div className="text-center py-10 text-gray-500">
+              <p>Fill out the form and submit to see predictions.</p>
+            </div>
+          )
         )}
       </div>
     </div>
