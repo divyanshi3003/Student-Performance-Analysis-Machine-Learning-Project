@@ -6,7 +6,7 @@
 | **Phase 2: ML Model Rebuild** | **Done** | Built Pipelines separating numeric (StandardScaler, Median Imputer) and categorical (OneHotEncoder, Frequent Imputer). Trained LinearRegression, RandomForestRegressor, GradientBoostingRegressor (Regression) and LogisticRegression, RandomForestClassifier, GradientBoostingClassifier (Classification). Saved best models (`LinearRegression` for score, `LogisticRegression` for category) to `/ml/artifacts/v1`. Created `/docs/MODEL_REPORT.md`. |
 | **Phase 3: PRD** | **Done** | Authored `/docs/PRD.md` containing the problem statement, user personas, MoSCoW prioritization, functional/non-functional requirements, and the release plan. |
 | **Phase 4: TRD** | **Done** | Authored `/docs/TRD.md` containing system architecture (Mermaid), tech stack, ML serving design, data flow, API overview, and the final folder structure. |
-| Phase 5: UI/UX Document | Pending | - |
+| **Phase 5: UI/UX Document** | **Done** | Authored `/docs/UIUX.md` detailing user flows, sitemap, wireframes, the design system, accessibility, and strict rules for Hours/Minutes inputs. |
 | Phase 6: Backend Schema | Pending | - |
 | Phase 7: Backend Project Setup | Pending | - |
 | Phase 8: Authentication and Roles | Pending | - |
