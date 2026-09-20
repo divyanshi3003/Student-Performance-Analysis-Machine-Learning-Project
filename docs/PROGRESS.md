@@ -3,7 +3,7 @@
 | Phase | Status | Details |
 |---|---|---|
 | **Phase 1: Dataset Redesign and Generation** | **Done** | Designed new schema with time features mapping to hours/minutes, categorical behavioral features, computed targets with noise. `generate_dataset.py` and `validate_dataset.py` written. Dataset `student_performance_v2.csv` validated successfully. Data dictionary stored in `DATA_DICTIONARY.md`. |
-| Phase 2: ML Model Rebuild | Pending | - |
+| **Phase 2: ML Model Rebuild** | **Done** | Built Pipelines separating numeric (StandardScaler, Median Imputer) and categorical (OneHotEncoder, Frequent Imputer). Trained LinearRegression, RandomForestRegressor, GradientBoostingRegressor (Regression) and LogisticRegression, RandomForestClassifier, GradientBoostingClassifier (Classification). Saved best models (`LinearRegression` for score, `LogisticRegression` for category) to `/ml/artifacts/v1`. Created `/docs/MODEL_REPORT.md`. |
 | Phase 3: PRD | Pending | - |
 | Phase 4: TRD | Pending | - |
 | Phase 5: UI/UX Document | Pending | - |
