@@ -8,7 +8,7 @@
 | **Phase 4: TRD** | **Done** | Authored `/docs/TRD.md` containing system architecture (Mermaid), tech stack, ML serving design, data flow, API overview, and the final folder structure. |
 | **Phase 5: UI/UX Document** | **Done** | Authored `/docs/UIUX.md` detailing user flows, sitemap, wireframes, the design system, accessibility, and strict rules for Hours/Minutes inputs. |
 | **Phase 6: Backend Schema** | **Done** | Authored `/docs/BACKEND_SCHEMA.md` with ER diagram (Mermaid) and REST API contracts. Created Python SQLAlchemy ORM definitions in `/backend/app/models.py`. |
-| Phase 7: Backend Project Setup | Pending | - |
+| **Phase 7: Backend Project Setup** | **Done** | Built FastAPI modular structure (`/app/api`, `/app/core`). Initialized `pydantic-settings` for config, configured SQLAlchemy SQLite connection, established Alembic migrations (first schema migration applied), added global error middleware, and verified `/health` endpoint. |
 | Phase 8: Authentication and Roles | Pending | - |
 | Phase 9: Student Data APIs | Pending | - |
 | Phase 10: ML Inference API | Pending | - |
