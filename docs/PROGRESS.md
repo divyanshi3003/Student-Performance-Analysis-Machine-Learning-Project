@@ -7,7 +7,7 @@
 | **Phase 3: PRD** | **Done** | Authored `/docs/PRD.md` containing the problem statement, user personas, MoSCoW prioritization, functional/non-functional requirements, and the release plan. |
 | **Phase 4: TRD** | **Done** | Authored `/docs/TRD.md` containing system architecture (Mermaid), tech stack, ML serving design, data flow, API overview, and the final folder structure. |
 | **Phase 5: UI/UX Document** | **Done** | Authored `/docs/UIUX.md` detailing user flows, sitemap, wireframes, the design system, accessibility, and strict rules for Hours/Minutes inputs. |
-| Phase 6: Backend Schema | Pending | - |
+| **Phase 6: Backend Schema** | **Done** | Authored `/docs/BACKEND_SCHEMA.md` with ER diagram (Mermaid) and REST API contracts. Created Python SQLAlchemy ORM definitions in `/backend/app/models.py`. |
 | Phase 7: Backend Project Setup | Pending | - |
 | Phase 8: Authentication and Roles | Pending | - |
 | Phase 9: Student Data APIs | Pending | - |
