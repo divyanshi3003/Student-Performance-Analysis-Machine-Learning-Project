@@ -14,6 +14,13 @@ logger = logging.getLogger(__name__)
 app = FastAPI(
     title=settings.PROJECT_NAME,
     version=settings.VERSION,
+    description="Backend API for EduMetrics ML - Student Performance Analysis System.",
+    contact={
+        "name": "Divyanshi Sharma",
+        "email": "iamdivya3003@gmail.com",
+    },
+    docs_url="/docs",
+    redoc_url="/redoc",
 )
 
 app.include_router(auth.router, prefix=f"{settings.API_V1_STR}/auth", tags=["auth"])

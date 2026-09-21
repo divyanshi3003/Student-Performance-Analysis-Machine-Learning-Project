@@ -46,11 +46,31 @@ EduMetrics ML is an end-to-end data science and full-stack web application desig
    uvicorn app.main:app --reload
    ```
 
+## Deployment & Docker
+To run both the Frontend and Backend simultaneously using Docker Compose:
+```bash
+docker-compose up --build
+```
+This will expose:
+- **Frontend App:** `http://localhost:3000`
+- **Backend API:** `http://localhost:8000`
+
+## API Documentation (Swagger)
+FastAPI automatically generates interactive OpenAPI documentation.
+Once the backend is running, navigate to:
+- **Swagger UI:** `http://localhost:8000/docs`
+- **ReDoc:** `http://localhost:8000/redoc`
+
 ## Running Tests
 To execute the backend testing suite via Pytest:
 ```bash
 cd backend
 pytest tests/ -v
+```
+To execute the frontend testing suite via Vitest:
+```bash
+cd frontend
+npm run test
 ```
 
 ## Authors
