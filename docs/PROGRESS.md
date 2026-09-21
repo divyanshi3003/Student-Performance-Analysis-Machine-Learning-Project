@@ -13,7 +13,7 @@
 | **Phase 9: Student Data APIs** | **Done** | Implemented Pydantic schemas parsing Hours + Minutes into flat minute totals. Added strict `@model_validator` logic limiting active daily time to 14 hours. Built `/students/me` (GET/PUT) CRUD endpoints using SQLAlchemy. Verified success with 100% passing Pytest suite. |
 | **Phase 10: ML Inference API** | **Done** | Built `/app/services/ml_service.py` to seamlessly load the pre-trained `scikit-learn` `.joblib` pipelines. Created `POST /predict/single` and `GET /predict/history` APIs. Wrapped API in DB transactions to save `Prediction` metadata tracking the active `ModelVersion`. Verified completely via end-to-end Pytest suite. |
 | **Phase 11: Frontend Setup and Design System** | **Done** | Initialized React + Vite workspace, installed React Router and Axios. Configured global Axios instance with JWT interceptors. Created global `AuthContext` for state management and authored reusable Tailwind UI components (`Button`, `Input`, `Select`, `Card`). |
-| Phase 12: Student Input Form | Pending | - |
+| **Phase 12: Student Input Form** | **Done** | Built `StudentForm.jsx` multi-step UI using the new Tailwind components. Implemented the dynamic `hours+minutes` inputs and bound them to a strict client-side validation that mirrors the backend's 14-hour daily limit. Integrated API fetching to auto-populate existing data. Also set up `react-router-dom` in `App.jsx`. |
 | Phase 13: Prediction Result Page | Pending | - |
 | Phase 14: Student Dashboard and Analytics | Pending | - |
 | Phase 15: Recommendation Engine and What-If Simulator | Pending | - |
