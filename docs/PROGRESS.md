@@ -16,7 +16,7 @@
 | **Phase 12: Student Input Form** | **Done** | Built `StudentForm.jsx` multi-step UI using the new Tailwind components. Implemented the dynamic `hours+minutes` inputs and bound them to a strict client-side validation that mirrors the backend's 14-hour daily limit. Integrated API fetching to auto-populate existing data. Also set up `react-router-dom` in `App.jsx`. |
 | **Phase 13: Prediction Result Page** | **Done** | Built `Result.jsx` which automatically chains `GET /students/me` with `POST /predict/single` on mount. Designed a hero banner displaying the score percentage, color-coded badges for the performance category, and a mock feature driver list (since SHAP was bypassed). Wired the routing in `App.jsx`. |
 | **Phase 14: Student Dashboard and Analytics** | **Done** | Built `Dashboard.jsx`. Implemented `GET /predict/history` API integration to fetch all historical assessments. Leveraged `recharts` to render a responsive time-series Line Chart tracking score progression. Added aggregate KPI cards (Latest Score, Average Score, Total Assessments) and conditional empty states. |
-| Phase 15: Recommendation Engine and What-If Simulator | Pending | - |
+| **Phase 15: Recommendation Engine and What-If Simulator** | **Done** | Created `/student/simulate`. Fetches baseline profile and overrides it with user-manipulable HTML range sliders (e.g. Study Time, Attendance). Fires `POST /predict/single` on demand to calculate score differences, highlighting score improvements (green) and drops (red). |
 | Phase 16: Teacher/Admin Dashboard | Pending | - |
 | Phase 17: Explainability and Fairness | Pending | - |
 | Phase 18: Testing | Pending | - |

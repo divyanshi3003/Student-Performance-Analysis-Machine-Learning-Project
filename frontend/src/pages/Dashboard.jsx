@@ -48,7 +48,10 @@ export default function Dashboard() {
           <h1 className="text-2xl font-bold text-gray-900">Welcome, {user?.email.split('@')[0]}!</h1>
           <p className="text-gray-500">Track your academic progress and predictions.</p>
         </div>
-        <Button onClick={() => navigate('/student/predict')}>Take New Assessment</Button>
+        <div className="flex gap-2">
+          <Button variant="secondary" onClick={() => navigate('/student/simulate')}>What-If Simulator</Button>
+          <Button onClick={() => navigate('/student/predict')}>Take New Assessment</Button>
+        </div>
       </div>
 
       {history.length === 0 ? (
