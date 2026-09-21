@@ -17,7 +17,7 @@
 | **Phase 13: Prediction Result Page** | **Done** | Built `Result.jsx` which automatically chains `GET /students/me` with `POST /predict/single` on mount. Designed a hero banner displaying the score percentage, color-coded badges for the performance category, and a mock feature driver list (since SHAP was bypassed). Wired the routing in `App.jsx`. |
 | **Phase 14: Student Dashboard and Analytics** | **Done** | Built `Dashboard.jsx`. Implemented `GET /predict/history` API integration to fetch all historical assessments. Leveraged `recharts` to render a responsive time-series Line Chart tracking score progression. Added aggregate KPI cards (Latest Score, Average Score, Total Assessments) and conditional empty states. |
 | **Phase 15: Recommendation Engine and What-If Simulator** | **Done** | Created `/student/simulate`. Fetches baseline profile and overrides it with user-manipulable HTML range sliders (e.g. Study Time, Attendance). Fires `POST /predict/single` on demand to calculate score differences, highlighting score improvements (green) and drops (red). |
-| Phase 16: Teacher/Admin Dashboard | Pending | - |
+| **Phase 16: Teacher/Admin Dashboard** | **Done** | Built `GET /api/v1/students/all` endpoint in the backend protected by `get_current_teacher` dependency to fetch all students and their latest prediction. Built `TeacherDashboard.jsx` in the frontend featuring a data grid, real-time client-side search by Student ID, and dropdown filtering by Performance Category to easily isolate 'At Risk' students. |
 | Phase 17: Explainability and Fairness | Pending | - |
 | Phase 18: Testing | Pending | - |
 | Phase 19: Deployment and CI/CD | Pending | - |

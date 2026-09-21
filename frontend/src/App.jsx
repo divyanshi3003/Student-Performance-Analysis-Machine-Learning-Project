@@ -6,6 +6,7 @@ import StudentForm from './pages/StudentForm';
 import Result from './pages/Result';
 import Dashboard from './pages/Dashboard';
 import Simulator from './pages/Simulator';
+import TeacherDashboard from './pages/TeacherDashboard';
 
 // We'll create Login later, stubbing it for now
 const Login = () => <div className="p-10">Login Page (To be implemented)</div>;
@@ -42,6 +43,11 @@ function App() {
           <Route path="/student/simulate" element={
             <PrivateRoute>
               <Simulator />
+            </PrivateRoute>
+          } />
+          <Route path="/teacher/dashboard" element={
+            <PrivateRoute>
+              <TeacherDashboard />
             </PrivateRoute>
           } />
           <Route path="/" element={<Navigate to="/student/predict" />} />
