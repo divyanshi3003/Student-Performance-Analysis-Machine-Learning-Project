@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import StudentForm from './pages/StudentForm';
+import Result from './pages/Result';
 
 // We'll create Login and other pages later, stubbing them for now
 const Login = () => <div className="p-10">Login Page (To be implemented)</div>;
-const Result = () => <div className="p-10">Result Page (To be implemented)</div>;
 const Dashboard = () => <div className="p-10">Dashboard Page (To be implemented)</div>;
 
 const PrivateRoute = ({ children }) => {
