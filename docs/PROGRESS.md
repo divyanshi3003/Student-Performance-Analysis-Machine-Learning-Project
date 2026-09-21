@@ -9,8 +9,8 @@
 | **Phase 5: UI/UX Document** | **Done** | Authored `/docs/UIUX.md` detailing user flows, sitemap, wireframes, the design system, accessibility, and strict rules for Hours/Minutes inputs. |
 | **Phase 6: Backend Schema** | **Done** | Authored `/docs/BACKEND_SCHEMA.md` with ER diagram (Mermaid) and REST API contracts. Created Python SQLAlchemy ORM definitions in `/backend/app/models.py`. |
 | **Phase 7: Backend Project Setup** | **Done** | Built FastAPI modular structure (`/app/api`, `/app/core`). Initialized `pydantic-settings` for config, configured SQLAlchemy SQLite connection, established Alembic migrations (first schema migration applied), added global error middleware, and verified `/health` endpoint. |
-| Phase 8: Authentication and Roles | Pending | - |
-| Phase 9: Student Data APIs | Pending | - |
+| **Phase 8: Authentication and Roles** | **Done** | Implemented JWT generation/verification (`/app/core/security.py`), Pydantic models for user creation, Role-based dependencies (`get_current_student`, `get_current_teacher`), and `/auth/signup`, `/auth/login`, `/auth/me` endpoints. Verified with 100% passing tests in `pytest`. |
+| **Phase 9: Student Data APIs** | **Done** | Implemented Pydantic schemas parsing Hours + Minutes into flat minute totals. Added strict `@model_validator` logic limiting active daily time to 14 hours. Built `/students/me` (GET/PUT) CRUD endpoints using SQLAlchemy. Verified success with 100% passing Pytest suite. |
 | Phase 10: ML Inference API | Pending | - |
 | Phase 11: Frontend Setup and Design System | Pending | - |
 | Phase 12: Student Input Form | Pending | - |
