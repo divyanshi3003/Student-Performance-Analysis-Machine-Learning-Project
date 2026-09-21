@@ -12,6 +12,7 @@ class PredictionResponse(BaseModel):
     predicted_score: float
     predicted_category: str
     confidence: float
+    feature_drivers: List[Dict[str, Any]] = []
     
 class BatchPredictionResponse(BaseModel):
     results: List[PredictionResponse]

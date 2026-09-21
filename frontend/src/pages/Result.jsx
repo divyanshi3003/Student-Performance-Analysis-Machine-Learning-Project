@@ -94,20 +94,24 @@ export default function Result() {
           <p className="text-sm text-gray-500">What influenced your score the most?</p>
         </CardHeader>
         <CardContent>
-          {/* Note: Hardcoded fallback logic since SHAP was bypassed due to pip timeouts */}
           <ul className="space-y-3">
-            <li className="flex items-center justify-between p-3 bg-emerald-50 rounded-md">
-              <span className="text-emerald-800">✅ Previous Year Score</span>
-              <span className="text-sm text-emerald-600 font-medium">+ High Impact</span>
-            </li>
-            <li className="flex items-center justify-between p-3 bg-emerald-50 rounded-md">
-              <span className="text-emerald-800">✅ Daily Study Time</span>
-              <span className="text-sm text-emerald-600 font-medium">+ Medium Impact</span>
-            </li>
-            <li className="flex items-center justify-between p-3 bg-amber-50 rounded-md">
-              <span className="text-amber-800">⚠️ Attendance Percentage</span>
-              <span className="text-sm text-amber-600 font-medium">Needs Improvement</span>
-            </li>
+            {result.feature_drivers && result.feature_drivers.length > 0 ? (
+              result.feature_drivers.map((driver, idx) => {
+                const isPositive = driver.impact > 0;
+                return (
+                  <li key={idx} className={`flex items-center justify-between p-3 rounded-md ${isPositive ? 'bg-emerald-50' : 'bg-amber-50'}`}>
+                    <span className={isPositive ? 'text-emerald-800' : 'text-amber-800'}>
+                      {isPositive ? '✅' : '⚠️'} {driver.feature}
+                    </span>
+                    <span className={`text-sm font-medium ${isPositive ? 'text-emerald-600' : 'text-amber-600'}`}>
+                      {isPositive ? '+' : ''}{driver.impact.toFixed(2)} Impact
+                    </span>
+                  </li>
+                );
+              })
+            ) : (
+              <li className="text-gray-500 text-sm p-3">Feature drivers currently unavailable.</li>
+            )}
           </ul>
         </CardContent>
       </Card>

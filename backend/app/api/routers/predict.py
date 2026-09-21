@@ -53,7 +53,8 @@ def predict_single(
         "prediction_id": pred.id,
         "predicted_score": pred.predicted_score,
         "predicted_category": pred.predicted_category,
-        "confidence": result["confidence"]
+        "confidence": result["confidence"],
+        "feature_drivers": result.get("feature_drivers", [])
     }
 
 @router.get("/history")
