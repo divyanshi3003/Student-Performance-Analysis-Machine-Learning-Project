@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/student_perf.db:/app/student_perf.db
+      - ./ml/artifacts:/ml/artifacts
+    environment:
+      - DB_URL=sqlite:///./student_perf.db
+      - JWT_SECRET_KEY=supersecretkeyfortesting
+      - API_V1_STR=/api/v1
+    
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

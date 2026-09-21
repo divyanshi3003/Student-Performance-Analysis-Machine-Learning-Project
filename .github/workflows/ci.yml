@@ -25,7 +25,38 @@ jobs:
         pip install -r requirements.txt
         pip install pytest httpx
         
-    - name: Run Pytest
+    - name: Run Pytest (Backend)
       run: |
         cd backend
         pytest tests/ -v
+        
+  test-frontend:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Node.js 18
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        cd frontend
+        npm ci
+        
+    - name: Lint Frontend (Oxlint)
+      run: |
+        cd frontend
+        npm run lint
+        
+    - name: Run Vitest (Frontend)
+      run: |
+        cd frontend
+        npx vitest run
+        
+    - name: Build Frontend
+      run: |
+        cd frontend
+        npm run build
