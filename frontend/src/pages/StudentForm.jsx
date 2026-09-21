@@ -7,6 +7,8 @@ import { Input } from '../components/ui/Input';
 import { Select } from '../components/ui/Select';
 import { useAuth } from '../context/AuthContext';
 
+import { validateTimeLimit } from '../utils/validation';
+
 export default function StudentForm() {
   const navigate = useNavigate();
   const { user } = useAuth();
@@ -86,20 +88,6 @@ export default function StudentForm() {
     }));
   };
 
-  const validateTimeLimit = () => {
-    const act = formData.activities;
-    const studyMins = (act.study_time_daily.hours * 60) + act.study_time_daily.minutes;
-    const matMins = ((act.material_prep_weekly.hours * 60) + act.material_prep_weekly.minutes) / 7;
-    const extMins = ((act.extracurricular_weekly.hours * 60) + act.extracurricular_weekly.minutes) / 7;
-    const skillMins = ((act.skill_dev_weekly.hours * 60) + act.skill_dev_weekly.minutes) / 7;
-    
-    const totalDailyMins = studyMins + matMins + extMins + skillMins;
-    if (totalDailyMins > 840) {
-      return `Total active daily hours cannot exceed 14 hours. Currently at ${(totalDailyMins / 60).toFixed(1)} hours. Please reduce your time inputs.`;
-    }
-    return null;
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
@@ -109,7 +97,7 @@ export default function StudentForm() {
       return;
     }
 
-    const timeError = validateTimeLimit();
+    const timeError = validateTimeLimit(formData.activities);
     if (timeError) {
       setError(timeError);
       return;
