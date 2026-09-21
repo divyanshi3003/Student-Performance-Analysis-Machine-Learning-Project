@@ -11,7 +11,7 @@
 | **Phase 7: Backend Project Setup** | **Done** | Built FastAPI modular structure (`/app/api`, `/app/core`). Initialized `pydantic-settings` for config, configured SQLAlchemy SQLite connection, established Alembic migrations (first schema migration applied), added global error middleware, and verified `/health` endpoint. |
 | **Phase 8: Authentication and Roles** | **Done** | Implemented JWT generation/verification (`/app/core/security.py`), Pydantic models for user creation, Role-based dependencies (`get_current_student`, `get_current_teacher`), and `/auth/signup`, `/auth/login`, `/auth/me` endpoints. Verified with 100% passing tests in `pytest`. |
 | **Phase 9: Student Data APIs** | **Done** | Implemented Pydantic schemas parsing Hours + Minutes into flat minute totals. Added strict `@model_validator` logic limiting active daily time to 14 hours. Built `/students/me` (GET/PUT) CRUD endpoints using SQLAlchemy. Verified success with 100% passing Pytest suite. |
-| Phase 10: ML Inference API | Pending | - |
+| **Phase 10: ML Inference API** | **Done** | Built `/app/services/ml_service.py` to seamlessly load the pre-trained `scikit-learn` `.joblib` pipelines. Created `POST /predict/single` and `GET /predict/history` APIs. Wrapped API in DB transactions to save `Prediction` metadata tracking the active `ModelVersion`. Verified completely via end-to-end Pytest suite. |
 | Phase 11: Frontend Setup and Design System | Pending | - |
 | Phase 12: Student Input Form | Pending | - |
 | Phase 13: Prediction Result Page | Pending | - |
