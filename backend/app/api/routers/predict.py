@@ -31,31 +31,37 @@ def predict_single(
     # Run ML Inference
     try:
         result = ml_service.predict_single(request.features)
+    except ValueError as ve:
+        raise HTTPException(status_code=422, detail=f"ML Validation Error: {str(ve)}")
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"ML Inference failed: {str(e)}")
         
-    # Get model version
-    mv = get_or_create_model_version(db, ml_service.version_tag)
-    
-    # Save Prediction to DB
-    pred = Prediction(
-        student_id=student_id,
-        model_version_id=mv.id,
-        predicted_score=result["predicted_score"],
-        predicted_category=result["predicted_category"],
-        input_features=request.features
-    )
-    db.add(pred)
-    db.commit()
-    db.refresh(pred)
-    
-    return {
-        "prediction_id": pred.id,
-        "predicted_score": pred.predicted_score,
-        "predicted_category": pred.predicted_category,
-        "confidence": result["confidence"],
-        "feature_drivers": result.get("feature_drivers", [])
-    }
+    try:
+        # Get model version
+        mv = get_or_create_model_version(db, ml_service.version_tag)
+        
+        # Save Prediction to DB
+        pred = Prediction(
+            student_id=student_id,
+            model_version_id=mv.id,
+            predicted_score=result["predicted_score"],
+            predicted_category=result["predicted_category"],
+            input_features=request.features
+        )
+        db.add(pred)
+        db.commit()
+        db.refresh(pred)
+        
+        return {
+            "prediction_id": pred.id,
+            "predicted_score": pred.predicted_score,
+            "predicted_category": pred.predicted_category,
+            "confidence": result.get("confidence", 0.0),
+            "feature_drivers": result.get("feature_drivers", [])
+        }
+    except Exception as db_err:
+        db.rollback()
+        raise HTTPException(status_code=500, detail=f"Database error while saving prediction: {str(db_err)}")
 
 @router.get("/history")
 def get_prediction_history(db: Session = Depends(get_db), current_user: User = Depends(get_current_student)):
