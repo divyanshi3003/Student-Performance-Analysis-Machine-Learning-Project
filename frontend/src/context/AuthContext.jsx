@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import api from '../services/api';
+import { supabase } from '../services/supabase';
 
 const AuthContext = createContext(null);
 
@@ -8,77 +8,71 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    
-    // Mock token bypass for UI testing
-    if (token === 'mock_student_token') {
-      setUser({ email: 'student@edumetrics.com', role: 'student' });
+    // Check active sessions and sets the user
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user) {
+        // Set JWT so Axios API requests can use it
+        localStorage.setItem('token', session.access_token);
+        setUser({ 
+          email: session.user.email, 
+          role: session.user.user_metadata?.role || 'student',
+          id: session.user.id
+        });
+      } else {
+        localStorage.removeItem('token');
+      }
       setLoading(false);
-      return;
-    }
-    if (token === 'mock_teacher_token') {
-      setUser({ email: 'teacher@edumetrics.com', role: 'teacher' });
-      setLoading(false);
-      return;
-    }
+    });
 
-    if (token) {
-      api.get('/auth/me')
-        .then(res => {
-          setUser(res.data);
-        })
-        .catch(() => {
-          localStorage.removeItem('token');
-          localStorage.removeItem('role');
-        })
-        .finally(() => setLoading(false));
-    } else {
+    // Listen for changes on auth state (sign in, sign out, etc.)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (session?.user) {
+        localStorage.setItem('token', session.access_token);
+        setUser({ 
+          email: session.user.email, 
+          role: session.user.user_metadata?.role || 'student',
+          id: session.user.id
+        });
+      } else {
+        localStorage.removeItem('token');
+        setUser(null);
+      }
       setLoading(false);
-    }
+    });
+
+    return () => subscription.unsubscribe();
   }, []);
 
   const login = async (email, password) => {
-    // Temporary hardcoded credentials for testing UI
-    if (email === 'student@edumetrics.com' && password === 'password123') {
-      const mockUser = { email: 'student@edumetrics.com', role: 'student' };
-      localStorage.setItem('token', 'mock_student_token');
-      localStorage.setItem('role', 'student');
-      setUser(mockUser);
-      return { access_token: 'mock_student_token', role: 'student' };
-    }
-    
-    if (email === 'teacher@edumetrics.com' && password === 'password123') {
-      const mockUser = { email: 'teacher@edumetrics.com', role: 'teacher' };
-      localStorage.setItem('token', 'mock_teacher_token');
-      localStorage.setItem('role', 'teacher');
-      setUser(mockUser);
-      return { access_token: 'mock_teacher_token', role: 'teacher' };
-    }
-
-    const formData = new URLSearchParams();
-    formData.append('username', email); // OAuth2 expects username
-    formData.append('password', password);
-    
-    const res = await api.post('/auth/login', formData, {
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
     });
     
-    localStorage.setItem('token', res.data.access_token);
-    localStorage.setItem('role', res.data.role);
-    
-    const userRes = await api.get('/auth/me');
-    setUser(userRes.data);
-    return res.data;
+    if (error) throw error;
+    return data;
   };
 
-  const logout = () => {
+  const signup = async (email, password, role = 'student') => {
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        data: { role } // Store role in user_metadata
+      }
+    });
+    if (error) throw error;
+    return data;
+  };
+
+  const logout = async () => {
+    await supabase.auth.signOut();
     localStorage.removeItem('token');
-    localStorage.removeItem('role');
     setUser(null);
   };
 
   return (
-    <AuthContext.Provider value={{ user, loading, login, logout }}>
+    <AuthContext.Provider value={{ user, loading, login, signup, logout }}>
       {children}
     </AuthContext.Provider>
   );

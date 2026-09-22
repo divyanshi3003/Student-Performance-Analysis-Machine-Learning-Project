@@ -7,12 +7,13 @@ import { Input } from '../components/ui/Input';
 
 export default function Login() {
   const navigate = useNavigate();
-  const { login } = useAuth();
+  const { login, signup } = useAuth();
   
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [message, setMessage] = useState(null);
   
   // UI only states for tabs
   const [activeTab, setActiveTab] = useState('login');
@@ -22,16 +23,25 @@ export default function Login() {
     e.preventDefault();
     setLoading(true);
     setError(null);
+    setMessage(null);
+    
     try {
-      const data = await login(email, password);
-      // Route based on role
-      if (data.role === 'teacher' || data.role === 'admin') {
-        navigate('/teacher/dashboard');
+      if (activeTab === 'signup') {
+        await signup(email, password, activeRole);
+        setMessage("Signup successful! You can now log in.");
+        setActiveTab('login');
       } else {
-        navigate('/dashboard');
+        const data = await login(email, password);
+        // Supabase returns data.user and data.session
+        const role = data?.user?.user_metadata?.role || activeRole;
+        if (role === 'teacher' || role === 'admin') {
+          navigate('/teacher/dashboard');
+        } else {
+          navigate('/dashboard');
+        }
       }
     } catch (err) {
-      setError(err.response?.data?.detail || "Failed to authenticate. Please check your credentials.");
+      setError(err.message || "Failed to authenticate. Please check your credentials.");
     } finally {
       setLoading(false);
     }
@@ -111,27 +121,34 @@ export default function Login() {
             </button>
           </div>
 
-          {/* Role Toggle */}
-          <div className="flex gap-2 mb-6">
-            <button 
-              type="button"
-              className={`px-3 py-1 text-xs font-medium rounded-full transition-colors ${activeRole === 'student' ? 'bg-primary-100 text-primary-700' : 'text-text-muted hover:bg-app-bg'}`}
-              onClick={() => setActiveRole('student')}
-            >
-              Student
-            </button>
-            <button 
-              type="button"
-              className={`px-3 py-1 text-xs font-medium rounded-full transition-colors ${activeRole === 'teacher' ? 'bg-primary-100 text-primary-700' : 'text-text-muted hover:bg-app-bg'}`}
-              onClick={() => setActiveRole('teacher')}
-            >
-              Teacher
-            </button>
-          </div>
+          {/* Role Toggle (Only show on Signup) */}
+          {activeTab === 'signup' && (
+            <div className="flex gap-2 mb-6">
+              <button 
+                type="button"
+                className={`px-3 py-1 text-xs font-medium rounded-full transition-colors ${activeRole === 'student' ? 'bg-primary-100 text-primary-700' : 'text-text-muted hover:bg-app-bg'}`}
+                onClick={() => setActiveRole('student')}
+              >
+                Student
+              </button>
+              <button 
+                type="button"
+                className={`px-3 py-1 text-xs font-medium rounded-full transition-colors ${activeRole === 'teacher' ? 'bg-primary-100 text-primary-700' : 'text-text-muted hover:bg-app-bg'}`}
+                onClick={() => setActiveRole('teacher')}
+              >
+                Teacher
+              </button>
+            </div>
+          )}
 
           {error && (
             <div className="mb-6 bg-status-error-bg border border-status-error-border text-status-error-text px-4 py-3 rounded-md text-sm">
               {error}
+            </div>
+          )}
+          {message && (
+            <div className="mb-6 bg-status-success-bg border border-status-success-border text-status-success-text px-4 py-3 rounded-md text-sm">
+              {message}
             </div>
           )}
 
@@ -162,12 +179,12 @@ export default function Login() {
             </div>
 
             <Button type="submit" className="w-full py-3 mt-4" disabled={loading}>
-              {loading ? 'Authenticating...' : 'Log In Securely'}
+              {loading ? 'Authenticating...' : (activeTab === 'login' ? 'Log In Securely' : 'Sign Up')}
             </Button>
             
             <div className="mt-6 flex items-center justify-center text-xs text-text-muted gap-1">
               <Lock className="w-3 h-3 text-status-success-border" />
-              <span>Protected by secure JWT authentication. Your data is encrypted and never shared.</span>
+              <span>Protected by secure Supabase authentication.</span>
             </div>
           </form>
         </div>
