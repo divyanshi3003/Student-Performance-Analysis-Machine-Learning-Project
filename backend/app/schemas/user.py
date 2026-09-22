@@ -3,12 +3,13 @@ from typing import Optional
 from datetime import datetime
 
 class UserCreate(BaseModel):
+    # Typically handled by frontend and Supabase now
     email: EmailStr
     password: str
     role: Optional[str] = "student"
 
 class UserResponse(BaseModel):
-    id: int
+    id: str  # Updated to string to support Supabase UUID
     email: EmailStr
     role: str
     created_at: datetime
@@ -22,4 +23,4 @@ class Token(BaseModel):
     role: str
 
 class TokenData(BaseModel):
-    email: Optional[str] = None
+    user_id: Optional[str] = None

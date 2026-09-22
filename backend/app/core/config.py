@@ -6,12 +6,13 @@ class Settings(BaseSettings):
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api/v1"
     
-    # SQLite for development, can be overridden via env vars for Postgres
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./predictions.db")
+    # Use Supabase PostgreSQL connection string (Transaction pooler)
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://postgres.your_project:your_password@aws-0-eu-central-1.pooler.supabase.com:6543/postgres")
     
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7")
-    ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 120
+    # Supabase Configuration
+    SUPABASE_URL: str = os.getenv("SUPABASE_URL", "https://your_project.supabase.co")
+    SUPABASE_KEY: str = os.getenv("SUPABASE_KEY", "your_anon_key")
+    SUPABASE_JWT_SECRET: str = os.getenv("SUPABASE_JWT_SECRET", "your_supabase_jwt_secret_key")
 
     class Config:
         env_file = ".env"

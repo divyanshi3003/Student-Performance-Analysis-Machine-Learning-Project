@@ -24,6 +24,12 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response && error.response.status === 401) {
+      const token = localStorage.getItem('token');
+      // Don't log out if using the mock tokens
+      if (token === 'mock_student_token' || token === 'mock_teacher_token') {
+        return Promise.reject(error);
+      }
+      
       // Auto logout if unauthorized
       localStorage.removeItem('token');
       localStorage.removeItem('role');

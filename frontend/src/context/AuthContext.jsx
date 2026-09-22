@@ -9,6 +9,19 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
+    
+    // Mock token bypass for UI testing
+    if (token === 'mock_student_token') {
+      setUser({ email: 'student@edumetrics.com', role: 'student' });
+      setLoading(false);
+      return;
+    }
+    if (token === 'mock_teacher_token') {
+      setUser({ email: 'teacher@edumetrics.com', role: 'teacher' });
+      setLoading(false);
+      return;
+    }
+
     if (token) {
       api.get('/auth/me')
         .then(res => {
@@ -25,6 +38,23 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (email, password) => {
+    // Temporary hardcoded credentials for testing UI
+    if (email === 'student@edumetrics.com' && password === 'password123') {
+      const mockUser = { email: 'student@edumetrics.com', role: 'student' };
+      localStorage.setItem('token', 'mock_student_token');
+      localStorage.setItem('role', 'student');
+      setUser(mockUser);
+      return { access_token: 'mock_student_token', role: 'student' };
+    }
+    
+    if (email === 'teacher@edumetrics.com' && password === 'password123') {
+      const mockUser = { email: 'teacher@edumetrics.com', role: 'teacher' };
+      localStorage.setItem('token', 'mock_teacher_token');
+      localStorage.setItem('role', 'teacher');
+      setUser(mockUser);
+      return { access_token: 'mock_teacher_token', role: 'teacher' };
+    }
+
     const formData = new URLSearchParams();
     formData.append('username', email); // OAuth2 expects username
     formData.append('password', password);
