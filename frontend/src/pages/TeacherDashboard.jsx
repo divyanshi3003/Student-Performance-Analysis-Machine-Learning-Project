@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import api from '../services/api';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 import { useAuth } from '../context/AuthContext';
+import Layout from '../components/Layout';
 
 export default function TeacherDashboard() {
   const { user } = useAuth();
@@ -36,11 +37,12 @@ export default function TeacherDashboard() {
   if (loading) return <div className="text-center py-20">Loading Teacher Dashboard...</div>;
 
   return (
-    <div className="max-w-6xl mx-auto py-10 px-4">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">Teacher Dashboard</h1>
-        <p className="text-gray-500">Monitor student performance and identify at-risk individuals early.</p>
-      </div>
+    <Layout title="Teacher Portal" subtitle="Monitor student performance">
+      <div className="max-w-6xl mx-auto py-10 px-4">
+        <div className="mb-8">
+          <h1 className="text-2xl font-bold text-text-main">Teacher Dashboard</h1>
+          <p className="text-text-muted">Monitor student performance and identify at-risk individuals early.</p>
+        </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
         <Card>
@@ -119,5 +121,6 @@ export default function TeacherDashboard() {
         </CardContent>
       </Card>
     </div>
+    </Layout>
   );
 }

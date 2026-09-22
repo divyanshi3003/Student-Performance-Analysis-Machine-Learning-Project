@@ -6,6 +6,7 @@ import { Button } from '../components/ui/Button';
 import { Input } from '../components/ui/Input';
 import { Select } from '../components/ui/Select';
 import { useAuth } from '../context/AuthContext';
+import Layout from '../components/Layout';
 
 import { validateTimeLimit } from '../utils/validation';
 
@@ -115,16 +116,17 @@ export default function StudentForm() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4">
-      <Card>
-        <CardHeader>
-          <CardTitle>Student Profile Assessment (Step {step} of 3)</CardTitle>
-          <div className="flex gap-2 mt-4">
-            <div className={`h-2 flex-1 rounded ${step >= 1 ? 'bg-indigo-600' : 'bg-gray-200'}`} />
-            <div className={`h-2 flex-1 rounded ${step >= 2 ? 'bg-indigo-600' : 'bg-gray-200'}`} />
-            <div className={`h-2 flex-1 rounded ${step >= 3 ? 'bg-indigo-600' : 'bg-gray-200'}`} />
-          </div>
-        </CardHeader>
+    <Layout title="Assessment" subtitle="Student Profile Assessment">
+      <div className="max-w-3xl mx-auto py-10 px-4">
+        <Card>
+          <CardHeader>
+            <CardTitle>Student Profile Assessment (Step {step} of 3)</CardTitle>
+            <div className="flex gap-2 mt-4">
+              <div className={`h-2 flex-1 rounded ${step >= 1 ? 'bg-primary-600' : 'bg-border-default'}`} />
+              <div className={`h-2 flex-1 rounded ${step >= 2 ? 'bg-primary-600' : 'bg-border-default'}`} />
+              <div className={`h-2 flex-1 rounded ${step >= 3 ? 'bg-primary-600' : 'bg-border-default'}`} />
+            </div>
+          </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
             
@@ -207,5 +209,6 @@ export default function StudentForm() {
         </CardContent>
       </Card>
     </div>
+    </Layout>
   );
 }

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import api from '../services/api';
 import { useAuth } from '../context/AuthContext';
+import Layout from '../components/Layout';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 
@@ -42,17 +43,21 @@ export default function Dashboard() {
     : null;
 
   return (
-    <div className="max-w-5xl mx-auto py-10 px-4 space-y-6">
-      <div className="flex justify-between items-center border-b pb-4">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900">Welcome, {user?.email.split('@')[0]}!</h1>
-          <p className="text-gray-500">Track your academic progress and predictions.</p>
+    <Layout 
+      title="Overview" 
+      subtitle="Student performance and prediction history"
+    >
+      <div className="max-w-5xl mx-auto space-y-6">
+        <div className="flex justify-between items-center mb-6">
+          <div>
+            <h1 className="text-2xl font-bold text-text-main">Welcome, {user?.email.split('@')[0]}!</h1>
+            <p className="text-text-muted">Track your academic progress and predictions.</p>
+          </div>
+          <div className="flex gap-2">
+            <Button variant="secondary" onClick={() => navigate('/student/simulate')}>What-If Simulator</Button>
+            <Button onClick={() => navigate('/student/predict')}>Take New Assessment</Button>
+          </div>
         </div>
-        <div className="flex gap-2">
-          <Button variant="secondary" onClick={() => navigate('/student/simulate')}>What-If Simulator</Button>
-          <Button onClick={() => navigate('/student/predict')}>Take New Assessment</Button>
-        </div>
-      </div>
 
       {history.length === 0 ? (
         <Card className="text-center py-16 border-dashed">
@@ -134,6 +139,7 @@ export default function Dashboard() {
           </Card>
         </>
       )}
-    </div>
+      </div>
+    </Layout>
   );
 }

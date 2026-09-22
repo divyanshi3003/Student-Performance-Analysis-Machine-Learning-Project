@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
+import Layout from '../components/Layout';
 
 export default function Result() {
   const navigate = useNavigate();
@@ -68,14 +69,15 @@ export default function Result() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto py-10 px-4 space-y-6">
-      <Card className="overflow-hidden border-0 shadow-lg ring-1 ring-gray-900/5">
-        <div className="bg-gradient-to-r from-indigo-500 to-purple-600 px-6 py-10 text-center text-white">
-          <h2 className="text-xl font-medium opacity-90 mb-2">Predicted Final Score</h2>
-          <div className="text-7xl font-bold tracking-tight">
-            {result.predicted_score.toFixed(1)}<span className="text-3xl opacity-75">%</span>
+    <Layout title="Result" subtitle="Your predicted performance">
+      <div className="max-w-2xl mx-auto py-10 px-4 space-y-6">
+        <Card className="overflow-hidden border-0 shadow-surface ring-1 ring-border-default">
+          <div className="bg-primary-600 px-6 py-10 text-center text-white">
+            <h2 className="text-xl font-medium opacity-90 mb-2">Predicted Final Score</h2>
+            <div className="text-7xl font-bold tracking-tight">
+              {result.predicted_score.toFixed(1)}<span className="text-3xl opacity-75">%</span>
+            </div>
           </div>
-        </div>
         
         <CardContent className="pt-8">
           <div className="flex flex-col items-center space-y-4">
@@ -125,5 +127,6 @@ export default function Result() {
         </Button>
       </div>
     </div>
+    </Layout>
   );
 }

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
+import Layout from '../components/Layout';
 
 export default function Simulator() {
   const navigate = useNavigate();
@@ -86,11 +87,12 @@ export default function Simulator() {
   const diff = getDiff();
 
   return (
-    <div className="max-w-5xl mx-auto py-10 px-4">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">What-If Simulator</h1>
-        <p className="text-gray-500">Tweak your habits below to see how they impact your predicted final score.</p>
-      </div>
+    <Layout title="Simulator" subtitle="What-If Scenario Simulator">
+      <div className="max-w-5xl mx-auto py-10 px-4">
+        <div className="mb-8">
+          <h1 className="text-2xl font-bold text-text-main">What-If Simulator</h1>
+          <p className="text-text-muted">Tweak your habits below to see how they impact your predicted final score.</p>
+        </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Controls */}
@@ -199,5 +201,6 @@ export default function Simulator() {
         </Card>
       </div>
     </div>
+    </Layout>
   );
 }
