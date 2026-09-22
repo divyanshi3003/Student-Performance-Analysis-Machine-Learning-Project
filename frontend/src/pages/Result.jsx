@@ -40,21 +40,21 @@ export default function Result() {
     switch(category) {
       case 'Excellent':
       case 'Good':
-        return 'bg-emerald-100 text-emerald-800 border-emerald-300';
+        return 'bg-status-success-bg text-status-success-text border-status-success-bg';
       case 'Average':
-        return 'bg-amber-100 text-amber-800 border-amber-300';
+        return 'bg-status-warning-bg text-status-warning-text border-status-warning-bg';
       case 'Low':
       case 'Poor':
-        return 'bg-red-100 text-red-800 border-red-300';
+        return 'bg-status-error-bg text-status-error-text border-status-error-bg';
       default:
-        return 'bg-gray-100 text-gray-800 border-gray-300';
+        return 'bg-app-bg text-text-muted border-border-default';
     }
   };
 
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-[50vh]">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
       </div>
     );
   }
@@ -81,11 +81,11 @@ export default function Result() {
         
         <CardContent className="pt-8">
           <div className="flex flex-col items-center space-y-4">
-            <h3 className="text-gray-500 font-medium uppercase tracking-wider text-sm">Performance Category</h3>
+            <h3 className="text-text-muted font-medium uppercase tracking-wider text-sm">Performance Category</h3>
             <span className={`px-5 py-2 rounded-full text-lg font-semibold border ${getCategoryColor(result.predicted_category)}`}>
               {result.predicted_category}
             </span>
-            <p className="text-sm text-gray-400 mt-2">Model Confidence: {(result.confidence * 100).toFixed(1)}%</p>
+            <p className="text-sm text-text-muted opacity-80 mt-2">Model Confidence: {(result.confidence * 100).toFixed(1)}%</p>
           </div>
         </CardContent>
       </Card>
@@ -93,7 +93,7 @@ export default function Result() {
       <Card>
         <CardHeader>
           <CardTitle>Top Drivers (Feature Impact)</CardTitle>
-          <p className="text-sm text-gray-500">What influenced your score the most?</p>
+          <p className="text-sm text-text-muted">What influenced your score the most?</p>
         </CardHeader>
         <CardContent>
           <ul className="space-y-3">
@@ -101,18 +101,18 @@ export default function Result() {
               result.feature_drivers.map((driver, idx) => {
                 const isPositive = driver.impact > 0;
                 return (
-                  <li key={idx} className={`flex items-center justify-between p-3 rounded-md ${isPositive ? 'bg-emerald-50' : 'bg-amber-50'}`}>
-                    <span className={isPositive ? 'text-emerald-800' : 'text-amber-800'}>
-                      {isPositive ? '✅' : '⚠️'} {driver.feature}
+                  <li key={idx} className={`flex items-center justify-between p-4 rounded-xl border ${isPositive ? 'bg-status-success-bg border-status-success-bg' : 'bg-status-warning-bg border-status-warning-bg'}`}>
+                    <span className={`font-medium ${isPositive ? 'text-status-success-text' : 'text-status-warning-text'}`}>
+                      {isPositive ? '📈' : '📉'} {driver.feature}
                     </span>
-                    <span className={`text-sm font-medium ${isPositive ? 'text-emerald-600' : 'text-amber-600'}`}>
+                    <span className={`text-sm font-bold ${isPositive ? 'text-status-success-text' : 'text-status-warning-text'}`}>
                       {isPositive ? '+' : ''}{driver.impact.toFixed(2)} Impact
                     </span>
                   </li>
                 );
               })
             ) : (
-              <li className="text-gray-500 text-sm p-3">Feature drivers currently unavailable.</li>
+              <li className="text-text-muted text-sm p-3">Feature drivers currently unavailable.</li>
             )}
           </ul>
         </CardContent>

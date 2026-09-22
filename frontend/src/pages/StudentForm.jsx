@@ -132,7 +132,7 @@ export default function StudentForm() {
             
             {step === 1 && (
               <div className="space-y-4">
-                <h4 className="font-semibold text-gray-700 border-b pb-2">Demographics & Preferences</h4>
+                <h4 className="font-semibold text-text-main border-b pb-2">Demographics & Preferences</h4>
                 <div className="grid grid-cols-2 gap-4">
                   <Input label="Student Identifier" value={formData.profile.student_identifier} onChange={e => handleChange('profile', 'student_identifier', e.target.value)} required />
                   <Select label="Semester" value={formData.profile.semester} onChange={e => handleChange('profile', 'semester', parseInt(e.target.value))} options={[1,2,3,4,5,6,7,8]} required />
@@ -152,7 +152,7 @@ export default function StudentForm() {
 
             {step === 2 && (
               <div className="space-y-4">
-                <h4 className="font-semibold text-gray-700 border-b pb-2">Academic Records</h4>
+                <h4 className="font-semibold text-text-main border-b pb-2">Academic Records</h4>
                 <div className="grid grid-cols-2 gap-4">
                   <Input label="Attendance (%)" type="number" step="0.1" min="0" max="100" value={formData.academics.attendance_percentage} onChange={e => handleChange('academics', 'attendance_percentage', parseFloat(e.target.value))} required />
                   <Input label="Previous Year Score (%)" type="number" step="0.1" min="0" max="100" value={formData.academics.previous_year_score} onChange={e => handleChange('academics', 'previous_year_score', parseFloat(e.target.value))} required />
@@ -165,7 +165,7 @@ export default function StudentForm() {
 
             {step === 3 && (
               <div className="space-y-4">
-                <h4 className="font-semibold text-gray-700 border-b pb-2">Extracurriculars & Time Management</h4>
+                <h4 className="font-semibold text-text-main border-b pb-2">Extracurriculars & Time Management</h4>
                 
                 {error && <div className="p-3 bg-red-100 text-red-700 rounded-md text-sm">{error}</div>}
 
@@ -177,7 +177,7 @@ export default function StudentForm() {
                     { label: "Skill Dev (Weekly)", key: "skill_dev_weekly" },
                   ].map(item => (
                     <div key={item.key} className="flex gap-4 items-end">
-                      <div className="w-1/3 text-sm font-medium text-gray-700 pb-2">{item.label}</div>
+                      <div className="w-1/3 text-sm font-medium text-text-main pb-2">{item.label}</div>
                       <Input label="Hours" type="number" min="0" value={formData.activities[item.key].hours} onChange={e => handleTimeChange(item.key, 'hours', e.target.value)} required />
                       <Input label="Minutes" type="number" min="0" max="59" value={formData.activities[item.key].minutes} onChange={e => handleTimeChange(item.key, 'minutes', e.target.value)} required />
                     </div>

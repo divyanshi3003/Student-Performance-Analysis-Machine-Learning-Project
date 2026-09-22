@@ -103,7 +103,7 @@ export default function Simulator() {
           <CardContent className="space-y-6">
             
             <div>
-              <label className="flex justify-between text-sm font-medium text-gray-700 mb-2">
+              <label className="flex justify-between text-sm font-medium text-text-main mb-2">
                 <span>Study Time (Hours/Day)</span>
                 <span>{(simData.study_minutes_per_day / 60).toFixed(1)} hrs</span>
               </label>
@@ -111,12 +111,12 @@ export default function Simulator() {
                 type="range" min="0" max="840" step="30" // 840 mins = 14 hours
                 value={simData.study_minutes_per_day} 
                 onChange={e => setSimData({...simData, study_minutes_per_day: parseInt(e.target.value)})}
-                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                className="w-full h-2 bg-border-default rounded-lg appearance-none cursor-pointer"
               />
             </div>
 
             <div>
-              <label className="flex justify-between text-sm font-medium text-gray-700 mb-2">
+              <label className="flex justify-between text-sm font-medium text-text-main mb-2">
                 <span>Attendance (%)</span>
                 <span>{simData.attendance_percentage}%</span>
               </label>
@@ -124,12 +124,12 @@ export default function Simulator() {
                 type="range" min="0" max="100" step="1"
                 value={simData.attendance_percentage} 
                 onChange={e => setSimData({...simData, attendance_percentage: parseFloat(e.target.value)})}
-                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                className="w-full h-2 bg-border-default rounded-lg appearance-none cursor-pointer"
               />
             </div>
 
             <div>
-              <label className="flex justify-between text-sm font-medium text-gray-700 mb-2">
+              <label className="flex justify-between text-sm font-medium text-text-main mb-2">
                 <span>Projects Completed</span>
                 <span>{simData.projects_completed}</span>
               </label>
@@ -137,18 +137,18 @@ export default function Simulator() {
                 type="range" min="0" max="10" step="1"
                 value={simData.projects_completed} 
                 onChange={e => setSimData({...simData, projects_completed: parseInt(e.target.value)})}
-                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                className="w-full h-2 bg-border-default rounded-lg appearance-none cursor-pointer"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-text-main mb-2">
                 Sleep Quality
               </label>
               <select 
                 value={simData.sleep_quality}
                 onChange={e => setSimData({...simData, sleep_quality: e.target.value})}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                className="w-full px-3 py-2 border border-border-default rounded-md"
               >
                 <option value="Poor">Poor</option>
                 <option value="Average">Average</option>
@@ -165,9 +165,9 @@ export default function Simulator() {
         {/* Results */}
         <Card className="flex flex-col justify-center text-center">
           <CardContent>
-            <h3 className="text-gray-500 font-medium uppercase tracking-wider text-sm mb-4">Simulated Final Score</h3>
+            <h3 className="text-text-muted font-medium uppercase tracking-wider text-sm mb-4">Simulated Final Score</h3>
             
-            <div className="text-7xl font-bold tracking-tight text-indigo-600 mb-2">
+            <div className="text-7xl font-bold tracking-tight text-primary-600 mb-2">
               {simResult.predicted_score.toFixed(1)}<span className="text-3xl opacity-50">%</span>
             </div>
             
@@ -181,18 +181,18 @@ export default function Simulator() {
               {simResult.predicted_category}
             </span>
 
-            <div className="mt-8 pt-8 border-t border-gray-100">
-              <p className="text-gray-500 mb-2">Compared to your real baseline score ({originalScore.toFixed(1)}%)</p>
+            <div className="mt-8 pt-8 border-t border-border-default">
+              <p className="text-text-muted mb-2">Compared to your real baseline score ({originalScore.toFixed(1)}%)</p>
               {diff > 0.1 ? (
-                <div className="inline-flex items-center text-emerald-600 font-medium bg-emerald-50 px-3 py-1 rounded-md">
-                  <span className="mr-1">↑</span> +{diff.toFixed(1)}% Improvement
+                <div className="inline-flex items-center text-status-success-text font-bold bg-status-success-bg px-4 py-2 rounded-xl border border-status-success-bg">
+                  <span className="mr-1">📈</span> +{diff.toFixed(1)}% Improvement
                 </div>
               ) : diff < -0.1 ? (
-                <div className="inline-flex items-center text-red-600 font-medium bg-red-50 px-3 py-1 rounded-md">
-                  <span className="mr-1">↓</span> {diff.toFixed(1)}% Decline
+                <div className="inline-flex items-center text-status-error-text font-bold bg-status-error-bg px-4 py-2 rounded-xl border border-status-error-bg">
+                  <span className="mr-1">📉</span> {diff.toFixed(1)}% Decline
                 </div>
               ) : (
-                <div className="inline-flex items-center text-gray-600 font-medium bg-gray-50 px-3 py-1 rounded-md">
+                <div className="inline-flex items-center text-text-muted font-bold bg-app-bg px-4 py-2 rounded-xl border border-border-default">
                   No significant change
                 </div>
               )}

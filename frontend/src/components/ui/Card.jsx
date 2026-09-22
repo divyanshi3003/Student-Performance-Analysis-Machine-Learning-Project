@@ -1,19 +1,19 @@
 import React from 'react';
 
 export const Card = ({ children, className = '' }) => (
-  <div className={`bg-white rounded-lg border border-gray-200 shadow-sm ${className}`}>
+  <div className={`bg-surface rounded-xl border border-border-default shadow-surface ${className}`}>
     {children}
   </div>
 );
 
 export const CardHeader = ({ children, className = '' }) => (
-  <div className={`p-6 border-b border-gray-200 ${className}`}>
+  <div className={`px-6 py-5 border-b border-border-default ${className}`}>
     {children}
   </div>
 );
 
 export const CardTitle = ({ children, className = '' }) => (
-  <h3 className={`text-lg font-semibold text-gray-900 ${className}`}>
+  <h3 className={`text-base font-bold text-text-main ${className}`}>
     {children}
   </h3>
 );

@@ -21,10 +21,10 @@ export default function TeacherDashboard() {
   }, []);
 
   const getCategoryBadge = (category) => {
-    if (category === 'Excellent' || category === 'Good') return 'bg-emerald-100 text-emerald-800';
-    if (category === 'Average') return 'bg-amber-100 text-amber-800';
-    if (category === 'Poor' || category === 'Low') return 'bg-red-100 text-red-800';
-    return 'bg-gray-100 text-gray-800';
+    if (category === 'Excellent' || category === 'Good') return 'bg-status-success-bg text-status-success-text';
+    if (category === 'Average') return 'bg-status-warning-bg text-status-warning-text';
+    if (category === 'Poor' || category === 'Low') return 'bg-status-error-bg text-status-error-text';
+    return 'bg-app-bg text-text-muted';
   };
 
   const filteredStudents = students.filter(s => {
@@ -83,42 +83,52 @@ export default function TeacherDashboard() {
             </select>
           </div>
         </CardHeader>
-        <CardContent>
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="border-b text-sm font-medium text-gray-500">
-                  <th className="py-3 px-4">Student ID</th>
-                  <th className="py-3 px-4">Department</th>
-                  <th className="py-3 px-4">Sem</th>
-                  <th className="py-3 px-4 text-right">Latest Predicted Score</th>
-                  <th className="py-3 px-4">Category</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {filteredStudents.length > 0 ? filteredStudents.map(student => (
-                  <tr key={student.id} className="hover:bg-gray-50">
-                    <td className="py-3 px-4 font-medium text-gray-900">{student.student_identifier}</td>
-                    <td className="py-3 px-4 text-gray-600">{student.department}</td>
-                    <td className="py-3 px-4 text-gray-600">{student.semester}</td>
-                    <td className="py-3 px-4 text-right font-medium">
-                      {student.latest_score !== null ? `${student.latest_score.toFixed(1)}%` : 'No Data'}
-                    </td>
-                    <td className="py-3 px-4">
-                      <span className={`px-2 py-1 rounded-full text-xs font-semibold ${getCategoryBadge(student.latest_category)}`}>
-                        {student.latest_category}
-                      </span>
-                    </td>
+          <CardContent className="p-0">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-border-default bg-surface text-xs font-semibold text-text-muted uppercase tracking-wider">
+                    <th className="py-4 px-6">Student ID</th>
+                    <th className="py-4 px-6">Department</th>
+                    <th className="py-4 px-6">Sem</th>
+                    <th className="py-4 px-6 text-right">Latest Predicted Score</th>
+                    <th className="py-4 px-6">Category</th>
                   </tr>
-                )) : (
-                  <tr>
-                    <td colSpan="5" className="text-center py-8 text-gray-500">No students match the criteria.</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
-          </div>
-        </CardContent>
+                </thead>
+                <tbody className="divide-y divide-border-default">
+                  {filteredStudents.length > 0 ? filteredStudents.map(student => (
+                    <tr key={student.id} className="hover:bg-surface-hover transition-colors">
+                      <td className="py-4 px-6 font-medium text-text-main flex items-center gap-3">
+                        <div className="w-2 h-2 rounded-full bg-primary-500"></div>
+                        {student.student_identifier}
+                      </td>
+                      <td className="py-4 px-6 text-text-muted">{student.department}</td>
+                      <td className="py-4 px-6 text-text-muted">{student.semester}</td>
+                      <td className="py-4 px-6 text-right font-medium text-text-main">
+                        {student.latest_score !== null ? (
+                          <div className="flex items-center justify-end gap-2">
+                            <div className="w-16 h-1.5 bg-app-bg rounded-full overflow-hidden">
+                              <div className="h-full bg-primary-500 rounded-full" style={{ width: `${student.latest_score}%` }}></div>
+                            </div>
+                            <span>{student.latest_score.toFixed(1)}%</span>
+                          </div>
+                        ) : 'No Data'}
+                      </td>
+                      <td className="py-4 px-6">
+                        <span className={`px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide uppercase ${getCategoryBadge(student.latest_category)}`}>
+                          {student.latest_category}
+                        </span>
+                      </td>
+                    </tr>
+                  )) : (
+                    <tr>
+                      <td colSpan="5" className="text-center py-12 text-text-muted text-sm">No students match the criteria.</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </CardContent>
       </Card>
     </div>
     </Layout>
