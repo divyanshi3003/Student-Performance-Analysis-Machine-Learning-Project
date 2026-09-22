@@ -82,58 +82,118 @@ CREATE TABLE public.messages (
     sent_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Enable RLS on all tables
-ALTER TABLE public.users ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.courses ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.course_enrollments ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.assignments ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.submissions ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.grades ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.messages ENABLE ROW LEVEL SECURITY;
+-- ==========================================
+-- ML & Analytics Tables (EduMetrics Core)
+-- ==========================================
 
--- Users & Profiles
-CREATE POLICY "Profiles are viewable by everyone" ON public.profiles FOR SELECT USING (true);
-CREATE POLICY "Users can update own profile" ON public.profiles FOR UPDATE USING (auth.uid() = id);
+-- 9. Students (ML Profile)
+CREATE TABLE public.students (
+    id SERIAL PRIMARY KEY,
+    user_id UUID REFERENCES public.users(id) ON DELETE CASCADE UNIQUE,
+    student_identifier TEXT UNIQUE,
+    department TEXT,
+    semester INTEGER,
+    gender TEXT,
+    hostel_or_dayscholar TEXT,
+    study_time_preference TEXT,
+    learning_style TEXT,
+    sleep_quality TEXT,
+    stress_level TEXT,
+    internet_access_quality TEXT,
+    part_time_job TEXT,
+    mentor_support TEXT,
+    placement_status TEXT
+);
+CREATE INDEX idx_students_user_id ON public.students(user_id);
+CREATE INDEX idx_students_identifier ON public.students(student_identifier);
 
--- Courses
-CREATE POLICY "Courses are viewable by everyone" ON public.courses FOR SELECT USING (true);
-CREATE POLICY "Teachers can insert/update courses" ON public.courses 
-    FOR ALL USING (auth.uid() = teacher_id AND EXISTS (SELECT 1 FROM public.users WHERE id = auth.uid() AND role = 'teacher'));
+-- 10. Academic Records
+CREATE TABLE public.academic_records (
+    id SERIAL PRIMARY KEY,
+    student_id INTEGER REFERENCES public.students(id) ON DELETE CASCADE UNIQUE,
+    attendance_percentage NUMERIC(5,2),
+    previous_year_score NUMERIC(5,2),
+    previous_semester_gpa NUMERIC(4,2),
+    backlogs_count INTEGER,
+    internal_marks INTEGER,
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
 
--- Course Enrollments
-CREATE POLICY "View enrollments" ON public.course_enrollments FOR SELECT 
-    USING (student_id = auth.uid() OR EXISTS (SELECT 1 FROM public.courses WHERE id = course_id AND teacher_id = auth.uid()));
+-- 11. Study Logs
+CREATE TABLE public.study_logs (
+    id SERIAL PRIMARY KEY,
+    student_id INTEGER REFERENCES public.students(id) ON DELETE CASCADE UNIQUE,
+    study_minutes_per_day INTEGER,
+    material_prep_minutes_per_week INTEGER,
+    extracurricular_minutes_per_week INTEGER,
+    skill_dev_minutes_per_week INTEGER,
+    projects_completed INTEGER,
+    hackathons_participated INTEGER,
+    internships_completed INTEGER,
+    certifications_count INTEGER,
+    coding_problems_solved INTEGER,
+    coding_platform_rating INTEGER,
+    logged_at TIMESTAMPTZ DEFAULT NOW()
+);
 
--- Assignments
-CREATE POLICY "View assignments" ON public.assignments FOR SELECT 
-    USING (
-        EXISTS (SELECT 1 FROM public.course_enrollments WHERE course_id = public.assignments.course_id AND student_id = auth.uid()) 
-        OR 
-        EXISTS (SELECT 1 FROM public.courses WHERE id = public.assignments.course_id AND teacher_id = auth.uid())
-    );
+-- 12. Model Versions
+CREATE TABLE public.model_versions (
+    id SERIAL PRIMARY KEY,
+    version_tag TEXT UNIQUE,
+    description TEXT,
+    is_active BOOLEAN DEFAULT TRUE,
+    deployed_at TIMESTAMPTZ DEFAULT NOW()
+);
 
--- Submissions
-CREATE POLICY "Students manage own submissions" ON public.submissions FOR ALL 
-    USING (student_id = auth.uid());
-CREATE POLICY "Teachers view submissions" ON public.submissions FOR SELECT 
-    USING (EXISTS (
-        SELECT 1 FROM public.assignments a 
-        JOIN public.courses c ON a.course_id = c.id 
-        WHERE a.id = public.submissions.assignment_id AND c.teacher_id = auth.uid()
-    ));
+-- 13. Predictions
+CREATE TABLE public.predictions (
+    id SERIAL PRIMARY KEY,
+    student_id INTEGER REFERENCES public.students(id) ON DELETE CASCADE,
+    model_version_id INTEGER REFERENCES public.model_versions(id) ON DELETE SET NULL,
+    predicted_score NUMERIC(5,2),
+    predicted_category TEXT,
+    input_features JSONB,
+    predicted_at TIMESTAMPTZ DEFAULT NOW()
+);
 
--- Grades
-CREATE POLICY "Students view own grades" ON public.grades FOR SELECT 
-    USING (EXISTS (SELECT 1 FROM public.submissions WHERE id = public.grades.submission_id AND student_id = auth.uid()));
-CREATE POLICY "Teachers manage grades" ON public.grades FOR ALL 
-    USING (graded_by = auth.uid());
+-- 14. Recommendations
+CREATE TABLE public.recommendations (
+    id SERIAL PRIMARY KEY,
+    prediction_id INTEGER REFERENCES public.predictions(id) ON DELETE CASCADE,
+    rule_name TEXT,
+    suggestion_text TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
 
--- Messages
-CREATE POLICY "View own messages" ON public.messages FOR SELECT 
-    USING (sender_id = auth.uid() OR receiver_id = auth.uid());
-CREATE POLICY "Insert own messages" ON public.messages FOR INSERT 
-    WITH CHECK (sender_id = auth.uid());
+-- 15. Audit Logs
+CREATE TABLE public.audit_logs (
+    id SERIAL PRIMARY KEY,
+    user_id UUID REFERENCES public.users(id) ON DELETE SET NULL,
+    action TEXT,
+    resource TEXT,
+    timestamp TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Enable RLS on ML Tables
+ALTER TABLE public.students ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.academic_records ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.study_logs ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.predictions ENABLE ROW LEVEL SECURITY;
+
+-- Basic Policies for ML Tables
+CREATE POLICY "Students can view and update own profile" ON public.students FOR ALL USING (user_id = auth.uid());
+CREATE POLICY "Students can view and update own academic record" ON public.academic_records FOR ALL 
+    USING (EXISTS (SELECT 1 FROM public.students WHERE id = student_id AND user_id = auth.uid()));
+CREATE POLICY "Students can view and update own study log" ON public.study_logs FOR ALL 
+    USING (EXISTS (SELECT 1 FROM public.students WHERE id = student_id AND user_id = auth.uid()));
+CREATE POLICY "Students can view own predictions" ON public.predictions FOR SELECT 
+    USING (EXISTS (SELECT 1 FROM public.students WHERE id = student_id AND user_id = auth.uid()));
+CREATE POLICY "System can insert predictions" ON public.predictions FOR INSERT WITH CHECK (true); -- Usually restricted to service role in prod
+
+
+-- ==========================================
+-- Triggers
+-- ==========================================
 
 -- Trigger Function
 CREATE OR REPLACE FUNCTION public.handle_new_user() 
@@ -150,6 +210,7 @@ END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 
 -- Trigger
+DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
 CREATE TRIGGER on_auth_user_created
   AFTER INSERT ON auth.users
   FOR EACH ROW EXECUTE PROCEDURE public.handle_new_user();
