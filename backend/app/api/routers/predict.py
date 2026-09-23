@@ -21,6 +21,7 @@ def get_or_create_model_version(db: Session, version_tag: str):
 @router.post("/single", response_model=PredictionResponse)
 def predict_single(
     request: PredictionRequest, 
+    save: bool = True,
     db: Session = Depends(get_db), 
     current_user: User = Depends(get_current_user)
 ):
@@ -36,6 +37,16 @@ def predict_single(
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"ML Inference failed: {str(e)}")
         
+    if not save:
+        # Just return the prediction without saving
+        return {
+            "prediction_id": -1, # Ephemeral
+            "predicted_score": float(result["predicted_score"]),
+            "predicted_category": result["predicted_category"],
+            "confidence": result.get("confidence", 0.0),
+            "feature_drivers": result.get("feature_drivers", [])
+        }
+
     try:
         # Get model version
         mv = get_or_create_model_version(db, ml_service.version_tag)
@@ -44,7 +55,7 @@ def predict_single(
         pred = Prediction(
             student_id=student_id,
             model_version_id=mv.id,
-            predicted_score=result["predicted_score"],
+            predicted_score=float(result["predicted_score"]),
             predicted_category=result["predicted_category"],
             input_features=request.features
         )
@@ -63,8 +74,8 @@ def predict_single(
         db.rollback()
         raise HTTPException(status_code=500, detail=f"Database error while saving prediction: {str(db_err)}")
 
-@router.get("/history")
-def get_prediction_history(db: Session = Depends(get_db), current_user: User = Depends(get_current_student)):
+@router.get("/predictions")
+def get_predictions(db: Session = Depends(get_db), current_user: User = Depends(get_current_student)):
     student = db.query(Student).filter(Student.user_id == current_user.id).first()
     if not student:
         raise HTTPException(status_code=404, detail="Student profile not found")
@@ -79,3 +90,41 @@ def get_prediction_history(db: Session = Depends(get_db), current_user: User = D
             "predicted_at": p.predicted_at
         } for p in preds
     ]
+
+@router.get("/summary")
+def get_summary(db: Session = Depends(get_db), current_user: User = Depends(get_current_student)):
+    student = db.query(Student).filter(Student.user_id == current_user.id).first()
+    if not student:
+        raise HTTPException(status_code=404, detail="Student profile not found")
+        
+    preds = db.query(Prediction).filter(Prediction.student_id == student.id).order_by(Prediction.predicted_at.desc()).all()
+    
+    if not preds:
+        return {
+            "total_assessments": 0,
+            "average_score": None,
+            "highest_score": None,
+            "latest_score": None,
+            "latest_feature_drivers": []
+        }
+        
+    scores = [p.predicted_score for p in preds]
+    latest_pred = preds[0]
+    
+    # We re-run inference on the latest input features to get the feature drivers
+    # since we don't store the drivers in the DB, only the features.
+    drivers = []
+    if latest_pred.input_features:
+        try:
+            result = ml_service.predict_single(latest_pred.input_features)
+            drivers = result.get("feature_drivers", [])
+        except Exception:
+            pass # degrade gracefully
+            
+    return {
+        "total_assessments": len(scores),
+        "average_score": sum(scores) / len(scores),
+        "highest_score": max(scores),
+        "latest_score": latest_pred.predicted_score,
+        "latest_feature_drivers": drivers
+    }

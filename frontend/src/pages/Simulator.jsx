@@ -44,8 +44,8 @@ export default function Simulator() {
           projects_completed: features.projects_completed
         });
 
-        // 2. Get baseline score
-        return api.post('/predict/single', { features });
+        // 2. Get baseline score without saving
+        return api.post('/predict/single?save=false', { features });
       })
       .then(res => {
         setOriginalScore(res.data.predicted_score);
@@ -67,7 +67,7 @@ export default function Simulator() {
     };
 
     try {
-      const res = await api.post('/predict/single', { features });
+      const res = await api.post('/predict/single?save=false', { features });
       setSimResult(res.data);
     } catch (err) {
       console.error(err);

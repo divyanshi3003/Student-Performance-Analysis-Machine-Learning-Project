@@ -92,3 +92,23 @@ def test_assessment_prediction_pipeline():
     assert "predicted_score" in pred_data
     assert "predicted_category" in pred_data
     assert type(pred_data["prediction_id"]) == int
+    
+    # 4. Post Predict (save=False)
+    res_pred_nosave = client.post("/api/v1/predict/single?save=false", json={"features": features})
+    assert res_pred_nosave.status_code == 200
+    pred_data_nosave = res_pred_nosave.json()
+    assert pred_data_nosave["prediction_id"] == -1
+
+    # 5. Get Predictions
+    res_history = client.get("/api/v1/predict/predictions")
+    assert res_history.status_code == 200
+    history_data = res_history.json()
+    assert type(history_data) == list
+    assert len(history_data) > 0
+
+    # 6. Get Summary
+    res_summary = client.get("/api/v1/predict/summary")
+    assert res_summary.status_code == 200
+    summary_data = res_summary.json()
+    assert summary_data["total_assessments"] > 0
+    assert "latest_feature_drivers" in summary_data

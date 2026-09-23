@@ -11,24 +11,28 @@ export default function Dashboard() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [history, setHistory] = useState([]);
+  const [summary, setSummary] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    api.get('/predict/history')
-      .then(res => {
-        // Reverse history so oldest is first on the chart
-        const sortedData = res.data.reverse().map(item => ({
+    Promise.all([
+      api.get('/predict/predictions'),
+      api.get('/predict/summary')
+    ])
+      .then(([histRes, sumRes]) => {
+        const sortedData = histRes.data.reverse().map(item => ({
           date: new Date(item.predicted_at).toLocaleDateString(),
           score: parseFloat(item.predicted_score.toFixed(1)),
           category: item.predicted_category
         }));
         setHistory(sortedData);
+        setSummary(sumRes.data);
       })
       .catch(err => console.error(err))
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) {
+  if (loading || !summary) {
     return (
       <div className="flex items-center justify-center min-h-[50vh]">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
@@ -37,10 +41,8 @@ export default function Dashboard() {
   }
 
   // Calculate aggregates
-  const latestScore = history.length > 0 ? history[history.length - 1].score : null;
-  const avgScore = history.length > 0 
-    ? (history.reduce((acc, curr) => acc + curr.score, 0) / history.length).toFixed(1) 
-    : null;
+  const latestScore = summary.latest_score != null ? summary.latest_score.toFixed(1) : null;
+  const avgScore = summary.average_score != null ? summary.average_score.toFixed(1) : null;
 
   return (
     <Layout 
@@ -112,46 +114,77 @@ export default function Dashboard() {
             </Card>
           </div>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Score Progression Over Time</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="h-80 w-full mt-4">
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={history} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E5E7EB" />
-                    <XAxis 
-                      dataKey="date" 
-                      axisLine={false}
-                      tickLine={false}
-                      tick={{ fill: '#6B7280', fontSize: 12 }}
-                      dy={10}
-                    />
-                    <YAxis 
-                      domain={[0, 100]} 
-                      axisLine={false}
-                      tickLine={false}
-                      tick={{ fill: '#6B7280', fontSize: 12 }}
-                      dx={-10}
-                    />
-                    <Tooltip 
-                      contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                      formatter={(value) => [`${value}%`, 'Score']}
-                    />
-                    <Line 
-                      type="monotone" 
-                      dataKey="score" 
-                      stroke="#4F46E5" 
-                      strokeWidth={3}
-                      dot={{ r: 4, strokeWidth: 2, fill: '#fff' }}
-                      activeDot={{ r: 6, fill: '#4F46E5', stroke: '#fff', strokeWidth: 2 }}
-                    />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="lg:col-span-2">
+              <Card className="h-full">
+                <CardHeader>
+                  <CardTitle>Score Progression Over Time</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="h-80 w-full mt-4">
+                    <ResponsiveContainer width="100%" height="100%">
+                      <LineChart data={history} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E5E7EB" />
+                        <XAxis 
+                          dataKey="date" 
+                          axisLine={false}
+                          tickLine={false}
+                          tick={{ fill: '#6B7280', fontSize: 12 }}
+                          dy={10}
+                        />
+                        <YAxis 
+                          domain={[0, 100]} 
+                          axisLine={false}
+                          tickLine={false}
+                          tick={{ fill: '#6B7280', fontSize: 12 }}
+                          dx={-10}
+                        />
+                        <Tooltip 
+                          contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
+                          formatter={(value) => [`${value}%`, 'Score']}
+                        />
+                        <Line 
+                          type="monotone" 
+                          dataKey="score" 
+                          stroke="#4F46E5" 
+                          strokeWidth={3}
+                          dot={{ r: 4, strokeWidth: 2, fill: '#fff' }}
+                          activeDot={{ r: 6, fill: '#4F46E5', stroke: '#fff', strokeWidth: 2 }}
+                        />
+                      </LineChart>
+                    </ResponsiveContainer>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="lg:col-span-1">
+              <Card className="h-full">
+                <CardHeader>
+                  <CardTitle>Key Drivers (Latest)</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {summary.latest_feature_drivers && summary.latest_feature_drivers.length > 0 ? (
+                    <ul className="space-y-4 mt-2">
+                      {summary.latest_feature_drivers.map((driver, idx) => (
+                        <li key={idx} className="flex justify-between items-center text-sm border-b border-gray-100 pb-2 last:border-0">
+                          <span className="text-gray-700 capitalize">{driver.feature.replace(/_/g, ' ')}</span>
+                          <span className={`font-semibold ${driver.impact > 0 ? 'text-green-600' : 'text-red-600'}`}>
+                            {driver.impact > 0 ? '+' : ''}{driver.impact.toFixed(1)}%
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <div className="text-sm text-gray-500 py-8 text-center flex flex-col items-center">
+                      <svg className="w-8 h-8 text-gray-300 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                      <p>Feature drivers currently unavailable.</p>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </>
       )}
       </div>
