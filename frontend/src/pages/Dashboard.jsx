@@ -6,6 +6,7 @@ import { useAuth } from '../context/AuthContext';
 import Layout from '../components/Layout';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
+import MentorSelector from '../components/MentorSelector';
 
 export default function Dashboard() {
   const { user } = useAuth();
@@ -60,6 +61,8 @@ export default function Dashboard() {
             <Button onClick={() => navigate('/student/predict')}>Take New Assessment</Button>
           </div>
         </div>
+
+        <MentorSelector />
 
       {history.length === 0 ? (
         <Card className="text-center py-16 border-dashed">

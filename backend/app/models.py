@@ -135,8 +135,10 @@ class Student(Base):
     part_time_job = Column(String)
     mentor_support = Column(String)
     placement_status = Column(String)
+    mentor_id = Column(String, ForeignKey('users.id', ondelete="SET NULL"), nullable=True)
     
-    user = relationship("User", back_populates="student_profile")
+    user = relationship("User", foreign_keys=[user_id], back_populates="student_profile")
+    mentor = relationship("User", foreign_keys=[mentor_id])
     academic_record = relationship("AcademicRecord", back_populates="student", uselist=False)
     study_log = relationship("StudyLog", back_populates="student", uselist=False)
     predictions = relationship("Prediction", back_populates="student")
