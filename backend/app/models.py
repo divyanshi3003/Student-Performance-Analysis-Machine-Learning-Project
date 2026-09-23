@@ -15,7 +15,7 @@ class User(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
     
     profile = relationship("Profile", back_populates="user", uselist=False)
-    student_profile = relationship("Student", back_populates="user", uselist=False)
+    student_profile = relationship("Student", back_populates="user", uselist=False, foreign_keys="[Student.user_id]")
     audit_logs = relationship("AuditLog", back_populates="user")
     courses_taught = relationship("Course", back_populates="teacher")
     enrollments = relationship("CourseEnrollment", back_populates="student")

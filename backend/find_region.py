@@ -1,0 +1,20 @@
+﻿import psycopg2
+
+regions = [
+    'us-east-1', 'us-east-2', 'us-west-1', 'us-west-2',
+    'ap-south-1', 'ap-northeast-1', 'ap-northeast-2', 'ap-southeast-1', 'ap-southeast-2',
+    'ca-central-1', 'eu-central-1', 'eu-west-1', 'eu-west-2', 'eu-west-3',
+    'sa-east-1', 'eu-north-1', 'me-south-1', 'af-south-1'
+]
+
+for region in regions:
+    try:
+        conn_str = f'postgresql://postgres.wfsdnufncyzkvlsenwbh:Divyanshi3003%40@aws-0-{region}.pooler.supabase.com:6543/postgres'
+        conn = psycopg2.connect(conn_str)
+        print(f'SUCCESS in {region}!')
+        break
+    except Exception as e:
+        if 'tenant/user' in str(e) or 'ENOTFOUND' in str(e):
+            pass # wrong region
+        else:
+            print(f'Error in {region}: {e}')
