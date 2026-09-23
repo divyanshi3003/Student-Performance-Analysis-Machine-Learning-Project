@@ -3,6 +3,7 @@ import api from '../services/api';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 import { useAuth } from '../context/AuthContext';
 import Layout from '../components/Layout';
+import StudentDetailModal from '../components/StudentDetailModal';
 
 export default function TeacherDashboard() {
   const { user } = useAuth();
@@ -10,9 +11,10 @@ export default function TeacherDashboard() {
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedStudent, setSelectedStudent] = useState(null);
 
   useEffect(() => {
-    api.get('/students/all')
+    api.get('/students/mentees')
       .then(res => {
         setStudents(res.data);
       })
@@ -37,17 +39,17 @@ export default function TeacherDashboard() {
   if (loading) return <div className="text-center py-20">Loading Teacher Dashboard...</div>;
 
   return (
-    <Layout title="Teacher Portal" subtitle="Monitor student performance">
+    <Layout title="Teacher Portal" subtitle="Monitor your mentees">
       <div className="max-w-6xl mx-auto py-10 px-4">
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-text-main">Teacher Dashboard</h1>
-          <p className="text-text-muted">Monitor student performance and identify at-risk individuals early.</p>
+          <p className="text-text-muted">Monitor your assigned students' performance and identify at-risk individuals early.</p>
         </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
         <Card>
           <CardContent className="py-4">
-            <p className="text-sm font-medium text-gray-500">Total Students</p>
+            <p className="text-sm font-medium text-gray-500">My Mentees</p>
             <div className="text-2xl font-bold text-gray-900">{students.length}</div>
           </CardContent>
         </Card>
@@ -63,7 +65,7 @@ export default function TeacherDashboard() {
 
       <Card>
         <CardHeader className="flex flex-row items-center justify-between">
-          <CardTitle>Student Roster</CardTitle>
+          <CardTitle>My Roster</CardTitle>
           <div className="flex gap-4">
             <input 
               type="text"
@@ -97,7 +99,11 @@ export default function TeacherDashboard() {
                 </thead>
                 <tbody className="divide-y divide-border-default">
                   {filteredStudents.length > 0 ? filteredStudents.map(student => (
-                    <tr key={student.id} className="hover:bg-surface-hover transition-colors">
+                    <tr 
+                      key={student.student_id} 
+                      onClick={() => setSelectedStudent(student.student_id)}
+                      className="hover:bg-surface-hover transition-colors cursor-pointer"
+                    >
                       <td className="py-4 px-6 font-medium text-text-main flex items-center gap-3">
                         <div className="w-2 h-2 rounded-full bg-primary-500"></div>
                         {student.student_identifier}
@@ -130,6 +136,14 @@ export default function TeacherDashboard() {
             </div>
           </CardContent>
       </Card>
+      
+      {/* Drill-down Modal */}
+      {selectedStudent && (
+        <StudentDetailModal 
+          studentId={selectedStudent} 
+          onClose={() => setSelectedStudent(null)} 
+        />
+      )}
     </div>
     </Layout>
   );
