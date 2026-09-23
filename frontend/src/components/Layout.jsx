@@ -9,7 +9,8 @@ import {
   Bell, 
   LogOut,
   Menu,
-  X
+  X,
+  MessageSquare
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
@@ -29,6 +30,7 @@ export default function Layout({ children, title, subtitle }) {
     { name: 'Assessment', path: '/student/predict', icon: FileText },
     { name: 'Simulator', path: '/student/simulate', icon: Activity },
     { name: 'Teacher Portal', path: '/teacher/dashboard', icon: Users },
+    { name: 'Messages', path: '/messages', icon: MessageSquare },
   ];
 
   const SidebarContent = () => (

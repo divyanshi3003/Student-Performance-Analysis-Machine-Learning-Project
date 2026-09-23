@@ -76,3 +76,23 @@ def get_all_students(db: Session = Depends(get_db), current_user: User = Depends
             'latest_category': latest_pred.predicted_category if latest_pred else 'N/A'
         })
     return results
+
+@router.get('/mentees')
+def get_teacher_mentees(db: Session = Depends(get_db), current_user: User = Depends(get_current_teacher)):
+    """Get all students assigned to the logged-in teacher"""
+    students = db.query(Student).filter(Student.mentor_id == current_user.id).all()
+    results = []
+    for s in students:
+        # Also join with user to get email/name
+        user_info = db.query(User).filter(User.id == s.user_id).first()
+        results.append({
+            'student_id': s.id,
+            'user_id': s.user_id,
+            'email': user_info.email if user_info else 'Unknown',
+            'first_name': user_info.profile.first_name if (user_info and user_info.profile) else '',
+            'last_name': user_info.profile.last_name if (user_info and user_info.profile) else '',
+            'student_identifier': s.student_identifier,
+            'department': s.department,
+            'semester': s.semester
+        })
+    return results

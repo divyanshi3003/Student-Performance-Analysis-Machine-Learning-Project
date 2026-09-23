@@ -8,6 +8,7 @@ import Result from './pages/Result';
 import Dashboard from './pages/Dashboard';
 import Simulator from './pages/Simulator';
 import TeacherDashboard from './pages/TeacherDashboard';
+import Messages from './pages/Messages';
 
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -46,6 +47,11 @@ function App() {
           <Route path="/teacher/dashboard" element={
             <PrivateRoute>
               <TeacherDashboard />
+            </PrivateRoute>
+          } />
+          <Route path="/messages" element={
+            <PrivateRoute>
+              <Messages />
             </PrivateRoute>
           } />
           <Route path="/" element={<Navigate to="/student/predict" />} />
