@@ -31,15 +31,6 @@ def on_startup():
     except Exception as e:
         logger.warning(f"Database table verification skipped: {e}")
 
-@app.get("/", tags=["System"])
-def root():
-    return {
-        "message": "EduMetrics ML Backend API is live and operational!",
-        "status": "online",
-        "documentation": "/docs",
-        "health": "/health",
-        "version": settings.VERSION,
-    }
 
 app.add_middleware(
     CORSMiddleware,
@@ -75,3 +66,35 @@ async def global_exception_handler(request: Request, exc: Exception):
 async def health_check():
     """Basic health check endpoint"""
     return {"status": "ok", "project": settings.PROJECT_NAME, "version": settings.VERSION}
+
+# Serve Frontend Static Files & SPA Fallback
+import os
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+from fastapi import HTTPException
+
+static_dir = os.path.join(os.path.dirname(__file__), "static")
+if os.path.exists(static_dir):
+    assets_dir = os.path.join(static_dir, "assets")
+    if os.path.exists(assets_dir):
+        app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
+
+    @app.get("/{full_path:path}", include_in_schema=False)
+    async def serve_spa(full_path: str):
+        if full_path.startswith("api/") or full_path in ["health", "docs", "redoc", "openapi.json"]:
+            raise HTTPException(status_code=404, detail="Not Found")
+        
+        file_path = os.path.join(static_dir, full_path)
+        if full_path and os.path.exists(file_path) and os.path.isfile(file_path):
+            return FileResponse(file_path)
+        return FileResponse(os.path.join(static_dir, "index.html"))
+else:
+    @app.get("/", tags=["System"])
+    def root():
+        return {
+            "message": "EduMetrics ML Backend API is live and operational!",
+            "status": "online",
+            "documentation": "/docs",
+            "health": "/health",
+            "version": settings.VERSION,
+        }
