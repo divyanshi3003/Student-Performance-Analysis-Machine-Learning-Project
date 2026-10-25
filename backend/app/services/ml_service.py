@@ -6,7 +6,21 @@ from typing import Dict, Any, List
 
 class MLService:
     def __init__(self):
-        artifacts_dir = os.path.join(os.path.dirname(__file__), '../../../ml/artifacts/v1')
+        candidates = [
+            os.path.abspath(os.path.join(os.path.dirname(__file__), '../ml_artifacts')),
+            os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../ml/artifacts/v1')),
+            os.path.abspath(os.path.join(os.getcwd(), 'app/ml_artifacts')),
+            os.path.abspath(os.path.join(os.getcwd(), 'ml/artifacts/v1')),
+        ]
+        artifacts_dir = None
+        for candidate in candidates:
+            if os.path.exists(os.path.join(candidate, 'best_regressor.joblib')):
+                artifacts_dir = candidate
+                break
+
+        if not artifacts_dir:
+            raise FileNotFoundError(f"Could not find ML model artifacts in any of: {candidates}")
+
         self.reg_pipe = joblib.load(os.path.join(artifacts_dir, 'best_regressor.joblib'))
         self.clf_pipe = joblib.load(os.path.join(artifacts_dir, 'best_classifier.joblib'))
         self.le = joblib.load(os.path.join(artifacts_dir, 'label_encoder.joblib'))

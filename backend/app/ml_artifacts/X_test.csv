@@ -1,0 +1,1001 @@
+department,semester,gender,hostel_or_dayscholar,study_time_preference,learning_style,sleep_quality,stress_level,internet_access_quality,part_time_job,mentor_support,placement_status,study_minutes_per_day,material_prep_minutes_per_week,extracurricular_minutes_per_week,skill_dev_minutes_per_week,attendance_percentage,previous_year_score,previous_semester_gpa,backlogs_count,internal_marks,projects_completed,hackathons_participated,internships_completed,certifications_count,coding_problems_solved,coding_platform_rating
+CSE-DS,4,Female,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Average,No,Yes,Not Started,110,167,182,385,67.1,62.2,6.5,2,29,2,1,0,1.0,51,944
+CSE-AIML,8,Female,Hostel,Night,Auditory,Average,High,Average,No,No,Placed,284,307,65,199,71.7,60.7,5.59,3,24,8,2,1,5.0,152,1130
+CSE,8,Male,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Average,No,No,Placed,175,363,100,228,74.5,68.5,7.31,0,31,9,0,2,4.0,206,1406
+CSE-AIML,3,Male,Hostel,Morning,Auditory,Poor,Low,Average,No,No,Not Started,171,234,139,120,92.1,73.6,7.39,0,38,2,1,2,2.0,22,992
+CSE,3,Female,Day Scholar,Night,Visual,Good,Low,Good,No,Yes,Not Started,191,390,21,59,68.9,73.7,7.43,0,34,1,0,0,2.0,39,1084
+IT,7,Male,Day Scholar,Night,Auditory,Good,Low,Good,No,No,Placed,202,290,138,296,85.3,67.5,6.61,0,34,4,3,0,3.0,137,748
+CSE-DS,3,Female,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,No,Not Started,92,222,69,637,94.2,84.2,8.31,0,42,4,0,0,0.0,165,972
+IT,6,Male,Day Scholar,Morning,Auditory,Good,Medium,Good,No,No,Not Started,62,338,145,667,99.5,72.0,7.26,0,33,4,3,1,2.0,421,1217
+CSE,8,Male,Hostel,Morning,Auditory,Good,Low,Average,No,Yes,In Progress,179,464,88,4,88.4,85.7,7.66,0,41,4,3,1,2.0,0,1079
+CSE,1,Male,Day Scholar,Night,Visual,Poor,High,Good,No,No,Not Started,114,277,233,382,89.9,75.6,6.99,0,36,2,1,0,2.0,107,943
+CSE,7,Female,Hostel,Afternoon,Auditory,Good,Medium,Average,No,No,Placed,173,104,246,434,69.7,66.4,7.05,1,30,7,1,2,2.0,301,938
+CSE,2,Female,Day Scholar,,Kinesthetic,Average,High,Good,No,Yes,Not Started,16,65,60,200,78.8,56.3,5.62,0,27,1,2,0,2.0,15,1270
+CSE-DS,1,Female,Day Scholar,Morning,Visual,Average,Medium,Average,No,No,Not Started,238,283,63,227,95.2,85.4,9.36,0,43,0,0,0,0.0,5,1163
+CSE,1,Male,Day Scholar,Night,Kinesthetic,Average,Medium,,No,Yes,Not Started,361,12,0,238,75.1,76.5,8.1,0,36,1,1,0,1.0,58,924
+CSE,1,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Good,Yes,No,Not Started,201,327,148,510,71.4,65.6,6.59,1,36,0,0,0,0.0,60,955
+CSE-DS,6,Female,Hostel,Night,Kinesthetic,Average,High,Poor,No,Yes,Not Started,130,55,124,543,76.5,69.2,6.62,0,39,6,0,0,4.0,317,1022
+CSE-DS,7,Male,Day Scholar,Night,Kinesthetic,Average,Low,Average,No,No,Placed,179,227,0,94,100.0,82.8,8.55,0,38,9,3,1,5.0,51,808
+ECE,7,Female,Day Scholar,Afternoon,Visual,Poor,High,Good,Yes,Yes,Placed,253,413,186,147,80.8,64.3,6.34,2,28,6,3,0,4.0,113,1169
+IT,4,Female,Hostel,Night,Kinesthetic,Average,Medium,Average,No,No,Not Started,0,487,89,469,79.7,58.9,6.32,0,29,6,2,0,0.0,183,852
+CSE-AIML,6,Female,Hostel,Afternoon,Auditory,Average,Medium,Good,No,Yes,In Progress,324,289,143,508,100.0,77.6,7.2,1,40,6,1,0,5.0,327,769
+ECE,7,Male,Day Scholar,Afternoon,Auditory,Poor,Medium,Good,No,No,In Progress,230,212,94,346,84.0,76.8,7.49,0,38,7,3,2,3.0,164,682
+IT,4,Male,Hostel,Morning,Kinesthetic,Good,Medium,Good,No,Yes,Not Started,106,39,196,230,90.3,66.0,7.06,2,38,3,2,0,0.0,2,885
+CSE,1,Male,Day Scholar,Night,Visual,Average,Medium,Good,No,No,Not Started,236,483,35,165,73.9,71.1,7.16,0,29,0,0,0,0.0,0,982
+CSE-DS,3,Female,Hostel,Morning,Visual,Average,Medium,Average,No,Yes,Not Started,293,370,165,582,85.7,72.4,7.45,0,37,3,0,0,1.0,174,1016
+CSE,8,Male,Hostel,Morning,Visual,Average,Medium,Good,Yes,Yes,In Progress,247,153,165,14,75.3,71.6,6.84,0,36,8,1,1,7.0,0,1047
+CSE-DS,1,Female,Day Scholar,Morning,Visual,Poor,Medium,Good,No,Yes,Not Started,116,135,215,362,96.8,73.0,7.82,0,38,0,0,0,3.0,43,993
+CSE-AIML,2,Other,Day Scholar,Morning,Kinesthetic,Average,Medium,Good,No,No,Not Started,235,121,192,213,77.1,69.0,6.91,0,36,4,2,0,1.0,87,1120
+ECE,6,Male,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Good,No,No,Not Started,115,301,333,301,70.8,73.3,7.2,0,31,5,4,2,1.0,194,1213
+CSE-DS,7,Female,Day Scholar,Night,Visual,Average,Low,Average,No,Yes,Placed,161,231,0,391,70.5,58.8,7.36,0,30,5,1,0,2.0,227,1059
+CSE-AIML,5,Male,Day Scholar,Night,Kinesthetic,Good,High,Good,No,No,Not Started,86,210,59,308,78.7,62.5,5.46,1,30,3,0,1,2.0,96,939
+CSE-DS,6,Male,Day Scholar,Morning,Auditory,Poor,High,,No,No,Not Started,96,186,133,560,74.8,65.7,6.52,0,38,4,2,1,3.0,336,914
+CSE,7,Female,Hostel,Night,Kinesthetic,Average,Medium,Average,No,No,Placed,122,111,85,138,87.0,77.3,7.1,0,42,6,2,4,5.0,155,1129
+CSE,6,Male,Day Scholar,Night,Auditory,Average,Medium,Poor,Yes,No,Not Started,238,177,80,0,78.3,68.3,7.38,0,36,3,4,1,1.0,0,1241
+CSE-AIML,7,Male,Hostel,Morning,Visual,Average,Low,Average,No,Yes,Placed,307,443,178,708,80.2,71.8,7.45,0,33,4,5,3,3.0,522,1168
+CSE-DS,8,Female,Hostel,Morning,Visual,Average,Low,Good,No,No,Placed,190,260,171,182,99.2,75.2,7.19,0,39,4,4,1,6.0,105,1218
+CSE,3,Female,Day Scholar,,Auditory,Poor,High,,No,No,Not Started,130,134,219,220,100.0,68.8,7.28,0,34,2,0,0,0.0,114,1136
+IT,8,Female,Day Scholar,Night,Kinesthetic,Poor,Medium,Average,No,No,Placed,282,440,155,327,62.1,57.3,6.62,0,31,5,1,4,6.0,279,1291
+CSE-DS,4,Male,Day Scholar,Morning,Visual,Poor,High,Good,Yes,No,Not Started,162,218,145,518,88.8,75.9,7.6,0,40,3,2,1,1.0,239,1436
+CSE,2,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,186,224,253,0,68.3,68.3,7.27,1,30,2,0,0,0.0,0,982
+ECE,1,Male,Hostel,Afternoon,Kinesthetic,Average,Low,Average,No,No,Not Started,296,177,116,0,57.7,75.5,7.52,0,31,1,0,0,0.0,0,962
+CSE,6,Male,Day Scholar,Night,Visual,Good,Low,Average,No,No,In Progress,108,309,121,178,91.8,62.7,5.93,1,34,11,0,2,2.0,94,1115
+CSE,6,Male,Day Scholar,Night,Auditory,Poor,Medium,Good,Yes,No,Not Started,123,351,178,346,62.3,69.0,7.01,0,29,6,5,1,0.0,225,960
+CSE-AIML,5,Female,Hostel,Night,Kinesthetic,Poor,Medium,Good,No,Yes,Not Started,142,73,196,604,64.1,69.5,6.26,2,35,4,3,2,5.0,343,1401
+ECE,4,Male,Day Scholar,Morning,Auditory,Good,High,Good,No,No,Not Started,144,282,269,489,73.1,68.4,7.18,0,34,4,2,0,2.0,320,1298
+CSE,1,Female,Hostel,Night,Auditory,Poor,Medium,Average,No,Yes,Not Started,63,289,157,415,74.4,54.8,7.09,0,25,1,0,0,0.0,24,1042
+CSE,5,Male,Day Scholar,Night,Visual,Average,Medium,Average,No,Yes,Not Started,306,269,61,180,74.9,72.9,8.08,0,38,3,2,2,4.0,45,1079
+CSE-DS,8,Female,Hostel,Night,Kinesthetic,Good,Low,Good,No,No,Placed,138,268,104,122,88.3,69.5,7.55,0,34,3,2,0,7.0,52,1244
+IT,1,Male,Day Scholar,Night,Auditory,Poor,Low,Good,No,Yes,Not Started,187,281,269,333,73.5,70.7,6.42,1,35,0,0,0,0.0,107,890
+CSE,2,Male,Day Scholar,Night,Visual,Good,Medium,Poor,No,Yes,Not Started,199,214,73,558,75.2,65.2,6.46,2,35,1,3,0,3.0,87,1077
+CSE-AIML,6,Male,Day Scholar,Morning,Auditory,Average,Medium,Good,No,No,Not Started,144,105,120,609,77.0,67.5,5.83,1,33,5,4,1,3.0,418,1377
+ECE,7,Male,Hostel,Night,Kinesthetic,Good,Medium,Good,No,No,Placed,389,205,91,409,81.9,72.7,6.93,0,37,2,0,2,2.0,342,1154
+CSE-AIML,5,Female,Hostel,Morning,Auditory,Poor,Medium,Good,No,No,Not Started,238,196,101,341,74.9,66.6,6.6,0,33,5,1,1,2.0,151,1022
+CSE,5,Female,Hostel,Night,Auditory,Average,Medium,Average,No,No,Not Started,198,316,123,377,82.4,67.1,5.81,0,33,3,1,0,2.0,238,1103
+IT,8,Female,Hostel,Afternoon,Visual,Poor,Medium,Good,No,No,Placed,83,42,0,302,90.6,68.9,6.62,0,31,6,1,2,3.0,159,891
+CSE-DS,7,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,No,In Progress,286,305,68,218,74.9,71.8,6.47,1,36,4,2,2,6.0,91,621
+CSE,4,Female,Hostel,Night,Kinesthetic,Poor,Medium,Poor,No,Yes,Not Started,301,304,156,579,100.0,79.8,7.81,0,45,3,3,0,1.0,243,1206
+CSE-AIML,7,Male,Hostel,Night,Visual,Good,High,Good,No,No,Placed,172,307,35,524,89.4,74.0,7.35,1,38,2,1,1,8.0,354,1181
+CSE-AIML,4,Male,Hostel,Morning,Kinesthetic,Average,Medium,Average,Yes,Yes,Not Started,174,154,125,0,77.9,70.3,6.02,2,35,2,0,1,0.0,0,816
+IT,8,Female,Hostel,Afternoon,Kinesthetic,Average,High,Good,No,Yes,In Progress,328,320,130,176,100.0,76.8,7.86,0,37,9,3,1,5.0,241,938
+CSE-DS,6,Male,Day Scholar,Night,Auditory,Poor,High,Good,No,Yes,Not Started,175,135,0,158,76.8,65.1,5.78,2,35,2,1,0,5.0,89,1090
+CSE,6,Female,Hostel,Morning,Visual,Average,Low,Average,No,No,Not Started,200,152,205,336,72.8,70.2,6.72,0,35,5,3,1,2.0,230,1128
+CSE-DS,8,Female,Hostel,Morning,Visual,Good,Medium,Good,No,Yes,Placed,397,206,151,358,72.9,69.1,7.06,0,34,5,5,1,6.0,327,1141
+CSE,7,Male,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Poor,No,No,In Progress,328,249,208,232,78.5,65.8,6.61,0,33,7,0,1,3.0,152,1082
+ECE,4,Male,Day Scholar,Morning,Visual,Poor,High,Average,No,No,Not Started,302,356,0,332,69.3,73.5,7.2,0,34,3,1,0,1.0,82,1135
+CSE-AIML,8,Female,Hostel,Night,Kinesthetic,Average,Medium,Poor,No,Yes,Placed,212,216,102,550,92.6,72.9,6.78,0,35,12,1,2,2.0,381,1282
+CSE-DS,2,Male,Day Scholar,Morning,Auditory,Average,Low,Average,No,Yes,Not Started,395,291,208,103,81.3,75.3,7.19,0,34,0,0,0,0.0,31,1085
+IT,8,Male,Hostel,Morning,Visual,Good,Low,,No,No,In Progress,227,261,154,490,61.4,75.4,7.16,1,39,4,2,4,6.0,337,1173
+CSE-DS,3,Male,Day Scholar,Morning,Kinesthetic,Good,Low,Good,No,No,Not Started,152,186,243,390,82.7,77.6,8.27,0,38,3,0,1,1.0,134,1096
+CSE,1,Male,Day Scholar,Afternoon,Visual,Average,Medium,Good,No,Yes,Not Started,120,150,161,429,80.2,66.9,6.56,1,34,1,1,0,0.0,89,1123
+IT,4,Female,Day Scholar,Morning,Visual,Good,Low,Average,No,No,Not Started,265,53,226,235,77.9,68.8,7.02,0,34,0,2,0,0.0,122,1105
+CSE,7,Female,Day Scholar,Night,Auditory,Poor,High,Average,Yes,Yes,In Progress,103,93,110,95,100.0,68.7,6.25,1,34,7,1,0,6.0,0,839
+ECE,1,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,Yes,No,Not Started,40,170,0,26,83.5,63.9,6.36,1,30,0,0,0,1.0,95,1081
+CSE-AIML,6,Male,Hostel,Morning,Auditory,Good,Medium,Good,No,No,Not Started,141,249,97,638,80.9,60.0,6.45,2,26,5,3,0,2.0,415,1074
+ECE,3,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,41,210,151,272,67.9,63.1,6.05,1,28,3,1,0,2.0,160,1032
+CSE,6,Male,Hostel,Night,Visual,Average,Medium,Average,No,Yes,In Progress,292,143,201,102,89.5,74.1,7.48,0,35,3,3,5,6.0,30,968
+CSE,3,Male,Hostel,Afternoon,Visual,Poor,Medium,Average,No,No,Not Started,333,80,240,784,95.4,81.1,8.13,0,34,1,0,0,3.0,266,1329
+CSE,8,Female,Hostel,Morning,Visual,Poor,Low,Average,No,No,In Progress,119,411,361,0,78.0,69.5,6.83,0,36,14,1,2,6.0,110,890
+CSE-DS,1,Male,Day Scholar,Afternoon,Auditory,Average,Medium,Poor,Yes,No,Not Started,244,132,0,540,83.6,69.9,6.29,0,33,2,0,0,1.0,139,826
+CSE-AIML,2,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Average,No,Yes,Not Started,259,216,76,203,59.8,64.4,5.97,0,29,3,0,0,0.0,23,995
+CSE,4,Male,Day Scholar,Night,Visual,Good,Low,Good,No,Yes,Not Started,234,336,168,0,92.6,76.9,7.0,0,45,4,1,2,1.0,0,1128
+CSE,1,Female,Day Scholar,Night,Visual,Good,Medium,,No,No,Not Started,214,395,70,327,85.2,73.0,7.85,0,34,1,1,0,2.0,0,989
+CSE-DS,5,Female,Hostel,Night,Auditory,Poor,Medium,Average,No,No,Not Started,282,254,190,71,83.7,68.6,7.1,0,41,2,2,0,2.0,0,1296
+CSE,6,Male,Hostel,Night,Auditory,Good,Low,Average,No,Yes,In Progress,349,170,0,555,100.0,79.2,8.44,0,40,7,2,1,2.0,343,1267
+CSE,6,Female,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Good,No,No,Not Started,137,245,134,550,77.1,68.2,5.84,2,34,2,5,1,3.0,226,1008
+CSE-DS,6,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,122,55,7,0,87.7,70.3,6.51,1,36,4,3,0,2.0,0,788
+CSE,3,Female,Hostel,Night,Auditory,Good,Medium,Average,No,No,Not Started,45,282,161,52,73.1,60.1,5.78,3,24,2,2,0,4.0,40,973
+IT,6,Male,Day Scholar,Night,Auditory,Good,High,Good,No,No,Not Started,259,444,74,217,85.8,78.8,7.23,0,39,4,2,1,3.0,23,977
+CSE-DS,5,Male,Day Scholar,Afternoon,Visual,Average,Medium,Good,Yes,Yes,Not Started,309,414,0,37,87.0,82.2,7.71,0,38,4,0,0,6.0,60,1058
+CSE,2,Male,Hostel,Afternoon,Visual,Average,Low,Good,No,Yes,Not Started,106,219,84,33,84.6,72.3,7.16,1,32,2,3,0,2.0,12,953
+CSE,1,Female,Hostel,Afternoon,Visual,Average,Medium,Good,No,No,Not Started,293,495,111,187,78.6,77.9,7.73,0,41,0,0,0,0.0,0,839
+CSE-DS,2,Male,Hostel,Morning,Auditory,Good,Low,Average,No,No,Not Started,56,19,182,207,76.4,64.5,6.72,0,29,2,0,0,2.0,53,945
+CSE-DS,1,Female,Day Scholar,Morning,Visual,Poor,Medium,Good,No,Yes,Not Started,246,115,0,547,89.9,77.1,7.82,0,38,1,0,0,2.0,0,695
+CSE-AIML,2,Male,Hostel,Morning,Kinesthetic,Poor,High,Average,No,No,Not Started,102,224,56,34,88.9,69.8,6.65,2,35,0,1,0,0.0,48,940
+IT,4,Male,Hostel,Night,Auditory,Poor,High,Average,No,No,Not Started,280,154,83,674,69.5,65.4,5.84,5,38,4,1,1,0.0,215,1049
+ECE,1,Female,Hostel,Night,Visual,Good,Low,Average,No,No,Not Started,166,332,125,250,80.4,66.7,6.67,0,32,1,0,0,0.0,0,706
+CSE-DS,8,Female,Hostel,Morning,Auditory,Poor,Medium,Good,No,No,Placed,301,202,113,230,98.1,78.1,8.67,0,36,15,0,3,5.0,75,1098
+CSE-AIML,3,Female,Hostel,Afternoon,Auditory,Average,High,Good,No,Yes,Not Started,211,288,238,664,87.3,78.7,7.61,0,45,3,0,1,2.0,208,875
+CSE,5,Male,Hostel,Night,Auditory,Good,Medium,Good,No,No,Not Started,215,310,55,350,92.0,73.3,7.53,0,36,6,3,1,3.0,168,996
+ECE,6,Female,Hostel,Afternoon,Kinesthetic,Poor,High,Good,No,Yes,Not Started,155,304,84,0,77.7,73.0,8.4,0,34,4,2,2,3.0,38,833
+ECE,4,Male,Day Scholar,Night,Kinesthetic,Average,High,Average,No,No,Not Started,237,187,0,538,88.2,77.5,8.65,0,35,4,1,1,3.0,271,1123
+CSE,8,Male,Hostel,Morning,Kinesthetic,Poor,High,Average,No,No,Placed,185,197,207,262,95.8,80.2,7.64,0,43,4,2,1,3.0,267,1150
+CSE-AIML,8,Female,Hostel,Morning,Kinesthetic,Good,Low,Good,No,Yes,Placed,165,230,219,210,90.6,69.1,6.11,2,36,5,2,2,5.0,147,1033
+CSE,2,Male,Hostel,Night,Visual,Good,Medium,Good,No,Yes,Not Started,63,198,259,450,84.9,68.0,7.32,0,37,2,0,0,2.0,80,917
+CSE,8,Female,Hostel,Afternoon,Auditory,Average,Medium,Average,No,No,Placed,248,196,234,0,86.9,71.6,7.17,1,35,6,4,3,6.0,15,780
+CSE,4,Female,Day Scholar,Morning,Visual,Poor,High,Good,No,No,Not Started,228,246,174,0,71.3,67.6,5.79,0,33,6,0,0,6.0,75,1126
+ECE,7,Other,Hostel,Night,Auditory,Average,Medium,Average,No,No,In Progress,155,280,59,0,77.2,68.6,6.0,3,37,9,1,0,4.0,0,998
+CSE,1,Female,Day Scholar,Night,Visual,Poor,Medium,Good,No,Yes,Not Started,157,343,142,98,98.6,75.2,7.87,0,38,1,1,0,0.0,37,997
+IT,7,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,No,No,Placed,354,351,181,402,74.7,76.4,8.25,0,39,7,2,4,4.0,315,1179
+IT,1,Female,Hostel,Afternoon,Auditory,Average,High,Good,No,Yes,Not Started,244,408,67,155,72.1,71.0,6.81,0,32,2,1,0,0.0,0,1078
+CSE-AIML,5,Female,Hostel,Night,Kinesthetic,Good,Low,Good,No,No,Not Started,154,269,15,0,100.0,67.7,6.69,0,30,3,1,0,4.0,0,1032
+CSE,4,Male,Hostel,Night,Visual,Poor,High,Good,No,No,Not Started,113,226,107,42,70.4,57.8,6.17,4,32,7,0,0,3.0,21,917
+CSE,6,Female,Day Scholar,Afternoon,Visual,Average,Medium,Good,No,No,Not Started,107,177,0,373,51.8,59.9,6.09,5,24,4,1,1,2.0,236,1286
+ECE,4,Male,Hostel,Night,Auditory,Good,Low,Average,No,No,Not Started,151,183,71,150,73.8,65.1,6.3,2,29,3,2,0,1.0,0,945
+CSE-DS,2,Female,Hostel,Afternoon,Auditory,Poor,Low,Average,No,Yes,Not Started,49,338,22,604,76.6,65.4,6.64,2,31,3,2,0,2.0,221,1167
+CSE,1,Female,Hostel,Morning,Visual,Average,High,Good,No,Yes,Not Started,213,376,63,395,76.0,64.8,6.01,1,31,3,0,0,0.0,0,926
+CSE,6,Male,Day Scholar,Night,Visual,Average,Low,Average,No,No,Not Started,142,326,186,585,85.4,73.0,7.95,0,30,3,3,3,3.0,342,1363
+CSE,8,Male,Hostel,Night,Kinesthetic,Poor,High,Average,No,No,Placed,315,288,104,131,92.1,84.6,8.0,0,36,6,0,1,4.0,108,815
+CSE,8,Female,Hostel,Night,Visual,Average,Medium,Poor,No,No,Placed,134,360,189,507,85.0,62.4,6.5,5,28,4,5,1,,392,1090
+CSE-DS,1,Male,Hostel,Night,Visual,Average,Medium,Average,No,No,Not Started,187,169,135,0,67.7,65.6,6.25,1,34,0,0,0,0.0,0,878
+CSE-DS,3,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Average,No,No,Not Started,70,311,18,466,62.8,66.7,6.49,2,31,3,2,1,0.0,111,1094
+IT,7,Female,Day Scholar,Morning,Kinesthetic,Average,Medium,Poor,Yes,Yes,Placed,128,89,220,125,77.3,71.0,7.14,0,36,5,0,1,5.0,190,960
+CSE,8,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,No,Placed,205,227,0,236,79.3,66.4,6.77,0,36,4,1,2,5.0,197,1017
+CSE-DS,5,Female,Hostel,Afternoon,Visual,Average,Medium,Average,No,No,Not Started,124,248,185,222,65.8,76.0,7.61,0,42,2,2,0,3.0,34,1092
+CSE,6,Male,Hostel,,Visual,Average,Medium,Good,No,No,Not Started,312,223,294,540,71.8,71.3,7.25,0,37,2,0,0,6.0,407,1194
+CSE-DS,1,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,No,Not Started,180,406,247,300,67.4,66.8,5.68,2,32,0,0,0,0.0,60,866
+CSE-AIML,4,Male,Hostel,Night,Kinesthetic,Good,Low,Poor,Yes,No,Not Started,162,361,19,276,82.9,74.8,7.6,1,34,1,1,0,5.0,99,1142
+CSE,1,Male,Day Scholar,Night,Auditory,Good,Medium,Average,No,No,Not Started,156,313,55,452,62.0,55.0,5.22,1,30,0,0,0,0.0,49,834
+CSE-AIML,1,Female,Day Scholar,Afternoon,Kinesthetic,Poor,Low,Good,No,No,Not Started,242,280,119,375,72.8,63.7,6.69,0,32,1,2,0,0.0,113,1184
+CSE,7,Female,Hostel,Night,Auditory,Average,Medium,Good,No,Yes,In Progress,63,275,254,206,100.0,70.9,7.11,0,44,2,1,1,6.0,209,1133
+CSE-DS,4,Male,Day Scholar,Night,Kinesthetic,Good,Low,Poor,No,Yes,Not Started,109,201,96,286,73.2,72.0,6.74,0,36,4,1,1,1.0,74,1014
+CSE,2,Male,Hostel,Night,Auditory,Average,Medium,Good,No,No,Not Started,101,79,248,322,100.0,84.3,8.0,0,40,0,0,0,1.0,111,1216
+CSE,4,Female,Day Scholar,Afternoon,Auditory,Average,High,Good,No,No,Not Started,73,0,154,145,98.7,77.4,6.58,0,39,4,1,0,1.0,31,1018
+ECE,5,Male,Hostel,Morning,Kinesthetic,Good,Medium,Good,No,Yes,Not Started,228,28,153,0,84.2,76.4,7.73,0,41,3,1,1,6.0,20,1059
+CSE,6,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,No,Not Started,191,253,26,422,79.7,68.0,7.93,0,31,7,2,1,2.0,190,1395
+CSE,6,Male,Hostel,Night,Visual,Good,Low,Good,No,Yes,Not Started,74,251,128,434,97.7,66.8,6.88,0,32,4,1,1,1.0,269,1278
+CSE-DS,8,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,No,Placed,274,61,83,83,95.1,71.1,7.22,0,32,5,1,5,2.0,90,965
+CSE-DS,5,Male,Hostel,Morning,Visual,Poor,High,Good,No,Yes,Not Started,68,358,145,140,78.7,60.3,6.62,2,30,2,2,4,1.0,79,1062
+CSE,4,Female,Hostel,Afternoon,Kinesthetic,Good,Low,Average,No,Yes,Not Started,164,330,97,334,93.1,77.0,8.27,0,41,1,0,4,3.0,71,977
+CSE-DS,6,Male,Hostel,Night,Auditory,Poor,Low,Average,No,No,Not Started,108,267,149,281,79.5,53.2,5.87,2,21,5,1,0,2.0,168,1009
+CSE-DS,2,Female,Hostel,Night,Visual,Good,High,Good,No,No,Not Started,56,330,0,57,86.0,69.8,6.85,0,27,1,1,0,1.0,0,1013
+CSE,2,Female,Hostel,Afternoon,Visual,Average,Low,Good,No,No,Not Started,212,267,8,693,86.6,79.0,8.48,0,37,1,0,0,1.0,152,1377
+CSE-AIML,5,Female,Hostel,Night,Kinesthetic,Poor,High,Poor,No,No,Not Started,0,403,33,410,95.6,72.2,7.55,0,37,2,3,0,4.0,177,944
+IT,8,Male,Hostel,Night,Kinesthetic,Average,Low,Good,No,No,Placed,59,134,187,158,76.1,65.3,7.33,0,30,8,1,3,3.0,118,1102
+ECE,4,Male,Day Scholar,Night,Auditory,Average,Low,Good,No,Yes,Not Started,284,109,116,215,95.1,65.8,6.58,0,31,2,1,1,2.0,76,1161
+CSE-DS,7,Male,Hostel,Afternoon,Kinesthetic,Good,Low,Average,No,No,Placed,286,63,106,313,100.0,81.4,8.23,0,47,12,3,3,5.0,162,1054
+CSE,4,Female,Hostel,Morning,Visual,Average,Medium,Good,No,No,Not Started,240,310,172,426,73.1,64.3,7.44,0,34,1,1,0,3.0,178,1177
+CSE-AIML,8,Female,Day Scholar,Night,Visual,Good,Medium,Good,No,No,Placed,223,286,145,535,82.0,81.2,7.99,1,38,6,0,2,4.0,536,967
+IT,5,Female,Day Scholar,Night,Auditory,Average,Low,Poor,Yes,Yes,Not Started,133,216,231,158,98.3,75.5,7.61,0,36,3,2,0,3.0,108,1040
+CSE-AIML,7,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,Yes,Placed,224,335,0,290,71.9,71.8,8.04,0,30,3,1,0,3.0,279,1229
+CSE,8,Male,Day Scholar,Night,Kinesthetic,Poor,Medium,Good,No,No,Placed,186,277,195,99,74.5,61.0,5.41,1,31,5,1,2,4.0,29,926
+CSE-DS,1,Female,Hostel,Night,Kinesthetic,Average,Medium,Average,Yes,Yes,Not Started,226,260,195,106,71.0,68.7,5.86,5,32,2,0,0,1.0,0,762
+CSE-DS,5,Female,Day Scholar,Afternoon,Auditory,Average,High,Good,No,Yes,Not Started,287,346,375,305,98.4,77.3,8.02,0,36,4,2,1,2.0,178,1027
+CSE-AIML,6,Female,Hostel,Night,Auditory,Average,Low,Good,No,Yes,Not Started,243,207,169,227,89.9,73.7,7.83,0,39,6,3,2,2.0,196,975
+CSE,1,Male,Day Scholar,Night,Auditory,Good,Low,Poor,Yes,Yes,Not Started,198,395,27,263,68.6,74.7,7.33,1,41,0,0,0,1.0,0,1031
+CSE-AIML,6,Male,Hostel,Night,Visual,Good,Medium,Good,Yes,Yes,Not Started,409,362,66,666,97.0,81.0,8.27,0,36,7,2,1,5.0,370,1202
+CSE,6,Female,Hostel,Night,Auditory,Poor,High,Average,No,Yes,Not Started,42,150,230,320,65.5,56.3,6.44,1,27,5,2,0,5.0,239,1052
+CSE-DS,2,Female,Hostel,Night,Kinesthetic,Poor,Low,Poor,No,No,Not Started,160,298,97,161,97.7,74.1,7.21,0,36,1,0,0,1.0,0,669
+IT,4,Male,Hostel,Morning,Auditory,Good,Medium,Good,No,No,Not Started,129,334,0,368,79.8,73.4,7.17,0,36,4,1,1,0.0,284,1046
+CSE-DS,1,Female,Day Scholar,Night,Auditory,Average,Medium,Poor,No,Yes,Not Started,194,429,56,508,93.6,83.4,9.19,0,42,1,1,0,0.0,52,959
+CSE,2,Female,Hostel,Morning,Kinesthetic,Average,High,Average,Yes,Yes,Not Started,33,187,126,590,47.7,56.2,5.48,5,26,2,0,0,1.0,103,994
+CSE-DS,5,Male,Day Scholar,Afternoon,Auditory,Average,Low,Good,No,No,Not Started,84,49,88,608,53.9,50.4,5.61,1,28,3,3,1,1.0,327,1108
+CSE,2,Male,Hostel,Afternoon,Visual,Good,Medium,Good,No,Yes,Not Started,153,257,3,367,79.6,62.5,7.01,0,30,4,0,0,0.0,48,1042
+CSE,6,Female,Day Scholar,Night,Auditory,Poor,High,Good,No,No,Not Started,120,218,176,331,77.5,64.5,5.98,0,34,1,1,0,3.0,139,1070
+CSE,1,Female,Hostel,Night,Kinesthetic,Good,Medium,Good,Yes,Yes,Not Started,150,118,176,451,81.5,70.5,7.14,1,34,1,1,0,0.0,24,1224
+CSE-AIML,4,Female,Hostel,Night,Auditory,Poor,Low,Average,No,No,Not Started,167,219,107,311,78.5,62.7,5.69,1,36,3,0,0,2.0,179,904
+CSE-DS,2,Male,Day Scholar,Morning,Visual,Poor,High,Good,Yes,Yes,Not Started,248,306,77,206,89.4,79.7,8.66,0,39,1,2,0,1.0,3,1316
+CSE-AIML,5,Female,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,0,0,72,207,86.5,54.7,5.72,5,23,5,1,0,3.0,54,1042
+CSE,5,Male,Hostel,Morning,Visual,Good,Low,Good,No,No,Not Started,185,85,62,232,77.7,65.6,6.6,1,34,10,1,1,3.0,42,1149
+CSE-AIML,1,Male,Day Scholar,Night,Visual,Poor,Medium,Average,No,Yes,Not Started,179,330,0,53,77.3,66.6,6.99,0,34,4,0,0,1.0,64,1200
+ECE,6,Male,Day Scholar,Night,Auditory,Good,Low,Good,No,No,Not Started,214,434,72,264,67.9,68.2,6.88,1,30,3,0,1,3.0,82,937
+CSE,5,Female,Day Scholar,Night,Auditory,Average,Medium,Good,No,Yes,Not Started,315,161,97,191,78.6,82.9,8.55,0,35,1,2,0,3.0,160,852
+CSE-AIML,7,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,No,Yes,In Progress,207,128,128,315,86.5,67.7,5.85,2,34,2,3,0,3.0,218,1072
+ECE,8,Female,Day Scholar,Night,Visual,Good,Low,Good,Yes,No,Placed,292,398,178,117,67.5,63.3,6.51,0,31,5,5,3,1.0,120,1087
+CSE-DS,1,Male,Hostel,Morning,Auditory,Average,Medium,Good,No,No,Not Started,124,268,113,357,81.6,69.2,7.67,0,35,1,1,0,0.0,55,1035
+CSE,2,Male,Hostel,Morning,Visual,Good,Low,Good,Yes,No,Not Started,133,285,63,480,100.0,71.3,7.17,0,33,3,0,0,1.0,116,1208
+CSE,2,Female,Day Scholar,Night,Visual,Poor,Low,Good,No,Yes,Not Started,39,215,206,773,76.7,65.4,5.77,1,29,0,1,0,0.0,117,1080
+CSE-AIML,6,Female,Hostel,Night,Visual,Good,Medium,Average,No,No,Not Started,208,186,96,318,75.7,64.0,6.34,3,31,3,3,2,1.0,126,952
+CSE,3,Male,Day Scholar,Night,Auditory,Poor,Medium,Good,No,Yes,Not Started,36,159,187,550,86.6,72.5,6.89,0,31,5,4,1,1.0,106,1019
+CSE-AIML,7,Female,Day Scholar,Night,Visual,Average,Medium,Average,No,Yes,In Progress,279,316,184,476,91.8,77.2,6.94,1,38,5,2,1,1.0,312,1365
+CSE-DS,6,Male,Day Scholar,Morning,Kinesthetic,Average,Low,Average,No,No,Not Started,81,398,149,400,59.3,58.2,6.54,0,32,4,3,4,0.0,305,1426
+CSE,8,Male,Day Scholar,Morning,Visual,Average,Medium,Poor,No,No,Placed,146,218,110,224,96.7,77.5,7.86,0,45,3,2,3,3.0,179,1074
+CSE-AIML,1,Female,Day Scholar,Night,Visual,Poor,High,Good,No,No,Not Started,193,231,212,328,68.7,68.0,6.64,0,30,2,1,0,0.0,0,945
+CSE-DS,4,Male,Hostel,Night,Visual,Good,Low,Average,No,Yes,Not Started,302,289,59,0,90.2,84.1,8.76,0,44,3,0,1,2.0,34,1293
+IT,1,Male,Day Scholar,,Kinesthetic,Average,Low,Good,No,Yes,Not Started,44,362,257,242,67.7,56.9,4.46,1,27,1,0,0,,18,1141
+CSE,5,Male,Hostel,Night,Visual,Average,High,Good,No,No,Not Started,153,41,0,547,81.6,78.0,7.53,0,37,5,1,0,1.0,244,1142
+CSE-DS,8,Female,Hostel,Night,Kinesthetic,Average,Medium,Average,Yes,No,Placed,171,236,137,26,76.1,74.1,8.16,0,37,5,2,2,8.0,0,1115
+CSE-DS,3,Male,Day Scholar,Morning,Kinesthetic,Average,Low,Good,No,Yes,Not Started,424,129,412,474,74.9,81.2,7.88,0,38,2,0,0,1.0,195,1174
+CSE,4,Male,Hostel,Night,Kinesthetic,Average,Medium,Average,No,No,Not Started,150,237,0,69,61.7,68.0,6.6,0,32,0,1,0,2.0,18,813
+ECE,4,Male,Hostel,Night,Visual,Average,Medium,Good,Yes,Yes,Not Started,322,222,279,256,67.9,67.5,5.05,0,30,3,1,0,3.0,218,1246
+CSE,5,Male,Day Scholar,Afternoon,Auditory,Average,Medium,Good,No,No,Not Started,133,293,111,167,79.7,57.8,6.02,1,26,3,0,2,,77,1028
+CSE-AIML,4,Male,Hostel,Night,Kinesthetic,Poor,High,Good,No,No,Not Started,161,275,58,560,75.8,76.5,7.54,0,38,5,1,1,3.0,194,1027
+CSE,4,Female,Hostel,Night,Visual,Poor,Medium,Good,No,Yes,Not Started,245,0,126,517,80.0,62.6,6.5,2,26,5,0,1,1.0,183,1131
+CSE,4,Female,Hostel,Night,Visual,Average,Medium,Average,No,Yes,Not Started,126,278,144,177,91.7,78.1,6.92,0,40,4,1,2,1.0,78,863
+CSE,5,Male,Day Scholar,,Auditory,Average,High,Good,No,No,Not Started,165,201,148,496,88.6,69.0,6.17,1,28,3,3,0,1.0,298,1212
+CSE,7,Female,Hostel,Afternoon,Kinesthetic,Poor,Low,Average,No,No,In Progress,291,439,76,21,87.8,74.4,7.51,1,38,7,3,1,5.0,44,780
+CSE,7,Female,Hostel,Night,Auditory,Poor,High,Average,No,Yes,Placed,190,291,0,572,79.2,74.4,7.26,0,35,10,3,2,8.0,296,1116
+CSE-AIML,3,Male,Day Scholar,Morning,Visual,Average,High,Average,No,Yes,Not Started,67,109,35,275,60.1,60.0,5.89,1,29,2,3,0,2.0,128,835
+CSE-DS,5,Female,Hostel,Night,Auditory,Average,Low,Good,No,Yes,Not Started,63,292,232,285,77.3,63.7,6.04,0,31,5,0,1,3.0,89,976
+CSE,6,Male,Hostel,Morning,Auditory,Average,High,Good,No,No,Not Started,322,123,14,227,71.4,66.8,7.13,0,33,3,3,1,5.0,141,1352
+CSE-DS,2,Female,Hostel,Afternoon,Kinesthetic,Poor,High,Good,No,Yes,Not Started,164,136,249,0,91.2,72.3,6.99,0,38,0,1,0,1.0,0,1214
+CSE-DS,4,Female,Hostel,Afternoon,Kinesthetic,Poor,High,Good,No,No,Not Started,65,100,0,572,86.5,68.4,6.38,1,33,0,1,1,1.0,197,1099
+CSE,1,Male,Day Scholar,Night,Kinesthetic,Average,Low,Average,Yes,Yes,Not Started,88,370,69,470,100.0,70.5,7.15,0,37,1,1,0,0.0,41,837
+CSE-AIML,2,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,119,62,114,567,75.6,66.4,6.72,0,33,3,1,0,1.0,145,1188
+CSE,1,Female,Day Scholar,Afternoon,Visual,Poor,Medium,Average,No,No,Not Started,48,566,115,330,100.0,71.8,6.45,3,32,2,0,0,0.0,74,1074
+CSE,7,Male,Day Scholar,Morning,Auditory,Poor,High,Good,No,No,In Progress,343,438,338,438,80.3,76.8,8.82,0,40,4,6,0,5.0,283,1160
+CSE-AIML,3,Female,Day Scholar,Night,Auditory,Average,Medium,Average,No,Yes,Not Started,177,227,71,362,64.6,74.2,7.62,0,40,3,0,0,1.0,20,1245
+CSE-AIML,2,Female,Day Scholar,Afternoon,Auditory,Good,Low,Good,No,Yes,Not Started,262,287,110,375,74.1,71.8,7.59,0,40,0,1,0,2.0,0,1175
+IT,8,Male,Day Scholar,Morning,Auditory,Good,Medium,Good,No,Yes,In Progress,217,22,0,191,92.1,74.2,7.6,0,40,10,0,0,6.0,126,1437
+CSE-AIML,4,Male,Hostel,Morning,Visual,Poor,Medium,Good,No,No,Not Started,246,389,14,398,100.0,63.2,5.36,2,26,7,0,0,5.0,201,846
+ECE,6,Male,Hostel,Morning,Auditory,Poor,Medium,Average,No,No,In Progress,231,539,109,246,100.0,79.3,7.88,2,35,4,2,1,2.0,157,872
+CSE,1,Male,Day Scholar,Morning,Kinesthetic,Poor,High,Average,No,Yes,Not Started,371,135,240,0,82.8,79.6,8.52,0,44,0,0,0,0.0,3,1168
+CSE,3,Male,Day Scholar,Night,Visual,Average,Medium,Good,Yes,No,Not Started,55,59,0,291,88.7,66.4,7.19,1,32,3,1,0,2.0,106,1087
+ECE,6,Male,Hostel,Morning,Kinesthetic,Average,Medium,Average,No,Yes,Not Started,170,44,69,448,89.4,72.6,8.36,0,33,7,1,1,3.0,301,1160
+IT,6,Male,Hostel,Morning,Auditory,Good,Medium,Good,No,No,In Progress,100,349,154,313,82.2,65.8,5.63,1,27,4,2,3,7.0,286,1037
+CSE,5,Male,Hostel,Morning,Visual,Poor,High,Average,No,Yes,Not Started,0,328,145,252,90.4,67.1,6.72,1,33,2,0,0,1.0,54,1216
+CSE,2,Male,Day Scholar,Afternoon,Auditory,Average,Medium,Average,No,Yes,Not Started,483,177,20,395,82.4,83.0,8.48,0,42,2,0,0,0.0,164,1165
+CSE-AIML,1,Female,Day Scholar,Morning,Auditory,Average,Medium,Average,Yes,Yes,Not Started,254,326,117,396,77.3,76.5,7.66,0,39,2,0,0,0.0,0,935
+CSE,8,Male,Hostel,Night,Visual,Average,Medium,Good,No,Yes,In Progress,169,384,0,343,84.8,82.1,8.66,0,37,7,1,2,3.0,274,891
+CSE-AIML,5,Male,Day Scholar,Night,Kinesthetic,Average,Low,Good,No,No,Not Started,243,145,150,424,89.1,74.1,6.98,2,38,5,1,1,3.0,176,1172
+CSE-DS,3,Other,Day Scholar,Morning,Kinesthetic,Average,Medium,Average,No,No,Not Started,353,69,62,321,68.0,73.2,7.06,0,33,1,5,0,2.0,165,1320
+CSE,8,Female,Hostel,Night,Kinesthetic,Poor,Medium,Average,No,No,Placed,172,252,88,395,67.0,64.0,6.36,1,32,6,1,1,4.0,318,1207
+CSE-AIML,2,Male,Day Scholar,Afternoon,Auditory,Average,Low,Good,No,No,Not Started,198,314,153,426,92.5,81.7,8.24,0,50,1,0,0,2.0,91,1199
+CSE-DS,1,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,203,262,200,682,99.2,78.4,7.28,0,37,1,0,0,1.0,168,1129
+IT,2,Female,Hostel,Night,Kinesthetic,Average,Medium,Poor,No,Yes,Not Started,185,147,118,399,89.5,74.2,6.94,2,40,2,1,0,1.0,22,996
+CSE,4,Male,Day Scholar,Afternoon,Kinesthetic,Poor,Low,Average,Yes,No,Not Started,359,310,28,537,59.5,63.5,6.82,1,35,3,1,0,2.0,186,850
+CSE,5,Male,Day Scholar,Morning,Kinesthetic,Poor,Medium,Good,No,No,Not Started,202,292,81,141,90.2,72.3,7.61,0,36,4,0,2,1.0,70,1124
+CSE,1,Male,Hostel,Night,Auditory,Average,High,,Yes,Yes,Not Started,137,485,156,213,100.0,65.7,6.92,0,31,0,1,0,0.0,44,1229
+CSE,3,Male,Hostel,Afternoon,Auditory,Average,Medium,Poor,No,No,Not Started,143,223,184,504,75.9,65.7,7.05,0,30,1,1,1,1.0,202,1288
+CSE,7,Female,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,No,In Progress,160,170,174,311,89.9,71.5,7.11,0,34,5,3,2,7.0,150,1010
+CSE-DS,3,Male,Day Scholar,Night,Visual,Average,Medium,Average,No,No,Not Started,163,182,154,98,100.0,79.6,8.32,0,40,3,3,0,5.0,0,977
+CSE,7,Male,Day Scholar,Morning,Visual,Poor,Low,Good,Yes,Yes,Placed,265,254,86,0,72.8,68.9,6.67,0,33,5,1,2,2.0,0,1022
+CSE,6,Female,Day Scholar,Night,Auditory,Good,Low,Good,No,Yes,Not Started,175,174,244,381,76.9,72.0,7.81,2,38,5,2,1,,240,850
+IT,8,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,No,Yes,Placed,14,445,307,12,88.9,70.1,6.33,1,35,7,6,2,4.0,32,741
+CSE,5,Female,Hostel,Night,Auditory,Average,High,Good,No,No,Not Started,74,256,258,397,67.0,61.4,5.59,2,35,7,1,1,2.0,220,1081
+ECE,1,Male,Hostel,Night,Kinesthetic,Average,Medium,Average,No,No,Not Started,94,331,0,170,76.9,73.1,8.26,0,34,2,0,0,1.0,85,1018
+CSE,2,Female,Day Scholar,Morning,Auditory,Average,Medium,Good,No,No,Not Started,57,110,17,39,85.1,67.0,5.65,1,33,2,0,0,1.0,34,1086
+ECE,1,Female,Day Scholar,Night,Kinesthetic,Poor,Low,Good,Yes,No,Not Started,176,196,164,393,77.3,66.6,7.02,0,29,2,0,0,1.0,2,950
+IT,1,Male,Hostel,Night,Visual,Average,Medium,Average,No,No,Not Started,211,358,32,306,54.8,58.3,5.5,2,28,2,0,0,0.0,0,1145
+CSE-AIML,1,Female,Hostel,Night,Kinesthetic,Average,Medium,Poor,Yes,No,Not Started,264,112,237,300,81.5,78.8,7.45,0,36,1,0,0,0.0,82,1501
+CSE-AIML,5,Male,Day Scholar,Afternoon,Visual,Average,High,Poor,No,Yes,Not Started,236,355,121,429,94.3,78.3,8.39,0,41,1,1,0,7.0,96,1120
+ECE,1,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,Yes,No,Not Started,358,450,16,576,79.5,70.6,6.74,0,33,1,0,0,1.0,129,966
+CSE,1,Female,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,175,105,40,772,96.9,68.6,6.03,1,32,0,1,0,,145,832
+CSE,7,Other,Hostel,Night,Kinesthetic,Good,High,Average,No,No,Placed,276,364,0,484,88.7,79.7,8.03,0,36,7,1,1,2.0,401,964
+CSE,3,Male,Hostel,,Auditory,Good,High,Good,No,No,Not Started,100,254,64,344,81.3,68.3,7.42,1,30,2,0,0,3.0,123,913
+CSE,4,Male,Hostel,Night,Visual,Poor,Medium,Good,No,No,Not Started,298,52,78,441,83.0,76.4,7.05,0,39,5,1,0,2.0,85,1158
+CSE-AIML,7,Female,Day Scholar,Night,Kinesthetic,Good,Low,Average,No,Yes,In Progress,190,222,20,783,77.3,70.4,7.31,0,41,10,3,2,,548,1589
+CSE,3,Male,Day Scholar,Night,Kinesthetic,Good,Low,Average,No,Yes,Not Started,214,451,0,471,88.3,69.1,6.77,0,34,3,0,1,2.0,115,1080
+CSE,5,Male,Hostel,Night,Visual,Average,High,Average,No,No,Not Started,250,166,177,222,75.2,64.2,6.77,0,27,2,0,0,1.0,43,1207
+CSE-DS,4,Female,Hostel,Morning,Visual,Average,Low,Good,No,No,Not Started,91,169,192,145,100.0,67.2,6.51,0,29,4,0,0,5.0,39,799
+IT,1,Male,Hostel,Night,Auditory,Average,Medium,Average,No,Yes,Not Started,141,237,115,324,64.3,66.8,7.46,0,38,1,0,0,0.0,0,1368
+CSE,3,Male,Hostel,Morning,Visual,Average,Medium,Good,Yes,No,Not Started,158,49,0,212,100.0,71.5,8.22,0,36,4,2,0,1.0,74,1136
+CSE,2,Male,Day Scholar,Night,Visual,Average,Medium,Good,No,Yes,Not Started,266,337,84,557,94.7,79.5,7.55,0,43,3,1,0,0.0,17,845
+CSE,2,Female,Hostel,Night,Visual,Average,Medium,Good,Yes,Yes,Not Started,436,225,133,0,100.0,88.2,7.81,0,44,3,0,0,1.0,66,995
+CSE-AIML,5,Female,Day Scholar,Night,Visual,Good,Medium,Good,Yes,Yes,Not Started,95,192,49,489,83.5,66.8,6.6,0,34,1,1,2,5.0,344,1113
+CSE-AIML,6,Male,Hostel,Night,Kinesthetic,Average,Medium,Poor,No,Yes,Not Started,280,235,249,209,81.9,76.7,7.84,0,38,6,0,2,0.0,99,1224
+CSE-AIML,3,Male,Hostel,Night,Kinesthetic,Good,Low,Good,Yes,Yes,Not Started,283,32,67,314,74.7,71.8,7.24,0,41,0,1,0,1.0,129,1116
+CSE-AIML,7,Male,Hostel,Morning,Visual,Good,Low,Good,Yes,No,Placed,174,163,156,113,82.2,69.9,7.23,0,32,2,1,5,6.0,83,705
+ECE,5,Female,Hostel,,Auditory,Average,Medium,Average,Yes,Yes,Not Started,123,159,52,462,94.8,75.2,6.98,0,36,3,2,2,2.0,237,936
+IT,3,Other,Hostel,Night,Kinesthetic,Average,High,Good,No,No,Not Started,0,248,13,791,70.2,60.9,6.16,3,28,2,0,1,2.0,229,1219
+CSE-AIML,4,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,182,290,0,483,78.8,60.2,5.75,1,30,3,1,2,3.0,227,1369
+CSE,8,Female,Hostel,Night,Visual,Good,Medium,Average,No,Yes,Placed,259,235,22,380,78.6,74.4,7.51,0,31,7,1,3,3.0,424,1373
+ECE,7,Male,Hostel,Morning,Visual,Poor,High,Average,Yes,No,Placed,181,98,54,254,88.5,77.4,7.38,0,36,9,3,1,3.0,187,1089
+ECE,5,Female,Day Scholar,Night,Auditory,Good,Medium,Average,No,No,Not Started,377,321,182,48,95.7,78.5,7.48,0,40,3,1,1,0.0,0,910
+ECE,7,Female,Day Scholar,Morning,Visual,Good,High,Good,No,No,Placed,260,188,301,439,67.7,62.5,5.31,2,27,5,2,5,6.0,371,1001
+CSE-AIML,3,Female,Hostel,Morning,Auditory,Good,Medium,Average,No,Yes,Not Started,185,222,76,34,90.3,74.9,7.09,2,34,4,0,0,3.0,94,972
+ECE,8,Male,Hostel,Night,Auditory,Poor,High,Average,No,Yes,Placed,192,225,0,295,84.9,69.5,7.15,1,32,7,3,2,2.0,280,1040
+CSE-AIML,5,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,206,190,278,0,73.7,69.2,6.56,0,32,4,3,0,4.0,0,837
+IT,1,Male,Hostel,Morning,Kinesthetic,Poor,Medium,Good,No,Yes,Not Started,147,371,0,191,66.8,60.7,5.96,0,33,0,0,0,1.0,0,581
+CSE,4,Male,Day Scholar,Morning,Visual,Poor,High,Good,Yes,Yes,Not Started,190,146,85,421,95.6,74.8,7.37,0,43,3,8,0,2.0,168,1003
+CSE,2,Female,Day Scholar,Night,Visual,Poor,High,Average,No,No,Not Started,309,529,289,94,95.2,81.2,8.17,0,43,1,1,0,2.0,11,1014
+IT,5,Female,Hostel,Night,Auditory,Poor,Medium,Average,Yes,No,Not Started,183,166,137,412,78.3,72.0,7.19,0,34,5,1,0,2.0,154,1184
+CSE,3,Female,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,152,332,293,243,81.3,68.9,7.07,0,25,4,2,0,4.0,2,711
+CSE-AIML,5,Male,Hostel,Afternoon,Visual,Good,Low,Average,No,No,Not Started,149,173,97,915,73.0,67.3,6.81,0,32,2,3,1,2.0,469,1375
+CSE,7,Female,Hostel,Night,Kinesthetic,Average,High,Average,No,Yes,Placed,134,269,198,215,81.6,67.5,6.51,0,33,6,0,1,4.0,182,1062
+CSE,1,Male,Hostel,Night,Auditory,Poor,High,Good,Yes,Yes,Not Started,158,214,66,255,74.7,67.4,6.38,3,32,1,0,0,0.0,86,1248
+CSE-AIML,6,Male,Day Scholar,Night,Visual,Average,Medium,Good,No,No,Not Started,131,178,134,595,94.8,77.3,8.64,0,39,7,0,0,2.0,312,1331
+ECE,2,Male,Day Scholar,Night,Kinesthetic,Average,High,Average,No,Yes,Not Started,18,382,200,179,95.3,60.5,6.58,1,28,2,0,0,1.0,111,1062
+CSE-AIML,6,Male,Hostel,Morning,Auditory,Good,Medium,Average,No,Yes,Not Started,128,109,0,397,91.1,61.0,5.69,2,26,1,0,0,1.0,200,1060
+CSE,1,Female,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,89,287,0,335,82.6,71.7,6.95,0,32,1,0,0,0.0,121,1050
+ECE,7,Male,Hostel,Night,Kinesthetic,Average,Medium,Average,No,No,In Progress,198,315,158,618,82.2,75.1,7.3,0,38,10,0,1,4.0,435,1575
+CSE,5,Female,Hostel,Morning,Visual,Average,Low,Average,No,No,Not Started,81,348,120,601,90.9,68.3,6.8,0,30,3,1,0,1.0,299,1129
+CSE-DS,8,Male,Day Scholar,Night,Auditory,Average,Medium,Good,No,No,In Progress,198,132,68,546,80.7,71.6,6.83,1,34,10,2,3,3.0,489,1509
+CSE,2,Female,Hostel,Night,Kinesthetic,Good,Low,Good,No,No,Not Started,74,185,74,791,82.2,63.7,5.82,1,29,2,1,0,1.0,123,1236
+CSE-AIML,6,Female,Hostel,Night,Auditory,Average,Low,Good,No,No,Not Started,422,117,130,48,71.2,79.0,7.92,0,39,4,2,3,1.0,44,1004
+CSE,4,Female,Hostel,Night,Visual,Poor,High,Good,No,Yes,Not Started,165,415,266,18,80.7,71.0,6.45,1,37,3,2,1,3.0,7,963
+CSE-AIML,4,Male,Day Scholar,Night,Auditory,Average,Medium,Good,No,No,Not Started,33,30,90,320,83.4,68.2,7.19,0,37,0,1,0,3.0,139,1226
+CSE,7,Male,Day Scholar,Night,Auditory,Average,Medium,Poor,No,Yes,Placed,306,319,146,194,89.7,78.0,8.03,0,43,7,0,3,,112,1308
+CSE-AIML,1,Female,Hostel,Morning,Auditory,Average,Medium,Good,No,No,Not Started,120,219,0,605,94.9,77.4,7.49,0,39,1,0,0,0.0,88,1139
+CSE-DS,4,Male,Day Scholar,Night,Visual,Good,Low,Good,No,Yes,Not Started,51,239,78,82,81.6,69.1,7.74,0,31,3,0,0,3.0,89,1112
+CSE-AIML,2,Female,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,164,440,111,111,70.0,63.7,6.0,3,32,3,0,0,0.0,73,998
+CSE,8,Male,Day Scholar,Morning,Visual,Poor,High,Average,Yes,No,Placed,121,0,141,279,79.3,71.7,6.87,0,40,8,1,3,3.0,167,1315
+IT,5,Female,Day Scholar,Afternoon,Kinesthetic,Average,High,Average,No,No,Not Started,189,234,247,325,78.9,65.1,6.79,1,31,5,1,1,6.0,295,999
+CSE-AIML,2,Female,Day Scholar,Morning,Kinesthetic,Average,Medium,Poor,No,Yes,Not Started,296,181,138,341,73.5,76.1,7.94,0,38,2,1,0,0.0,50,1001
+CSE-AIML,5,Male,Day Scholar,Morning,Kinesthetic,Good,Low,Average,No,No,Not Started,194,0,249,388,84.6,81.8,8.08,0,43,2,5,0,4.0,227,1130
+CSE,8,Male,Hostel,Night,Auditory,Average,Medium,Good,No,No,In Progress,268,67,89,503,64.4,63.3,6.59,0,27,6,5,1,1.0,416,1141
+CSE,6,Male,Hostel,Morning,Kinesthetic,Good,Medium,Good,No,Yes,Not Started,227,171,62,266,94.4,72.2,6.93,0,37,6,2,0,6.0,238,1230
+IT,2,Female,Hostel,Morning,Auditory,Average,Medium,Average,No,Yes,Not Started,184,64,185,5,93.3,60.6,5.96,1,32,1,0,0,0.0,4,1094
+CSE-DS,4,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,116,358,42,348,92.2,78.5,8.07,0,38,4,1,0,1.0,110,887
+CSE-AIML,3,Male,Hostel,Night,Auditory,Good,Low,Average,No,No,Not Started,108,244,173,251,72.9,71.9,7.8,1,34,0,0,1,3.0,17,1246
+ECE,4,Female,Hostel,Morning,Visual,Average,Medium,Average,No,Yes,Not Started,276,243,28,526,90.7,81.3,8.08,0,40,4,1,0,3.0,248,1074
+CSE-AIML,4,Male,Day Scholar,Afternoon,Visual,Good,Low,Average,No,Yes,Not Started,189,302,40,440,76.7,67.9,6.49,2,36,1,0,0,1.0,196,1027
+CSE,8,Male,Day Scholar,Night,Visual,Average,Low,Good,No,Yes,Placed,64,24,0,0,66.6,58.6,5.55,2,30,8,2,4,6.0,35,841
+CSE,3,Female,Hostel,Night,Kinesthetic,Poor,High,Average,No,No,Not Started,266,238,205,834,61.1,68.5,7.26,0,36,3,3,0,1.0,275,1041
+CSE-DS,3,Male,Day Scholar,Morning,Visual,Good,Low,Good,No,Yes,Not Started,70,246,195,331,77.5,58.6,5.48,0,30,1,1,0,2.0,107,1057
+CSE,3,Male,Hostel,Morning,Auditory,Average,Medium,Average,No,No,Not Started,42,15,157,285,79.1,63.5,5.68,1,29,3,3,0,2.0,60,1006
+CSE-DS,3,Female,Hostel,Morning,Kinesthetic,Good,Medium,Good,No,No,Not Started,395,372,58,292,61.9,65.3,6.92,0,31,3,1,0,1.0,80,1128
+CSE-AIML,1,Male,Day Scholar,Afternoon,Visual,Poor,High,Good,No,No,Not Started,147,180,114,407,66.9,62.7,5.9,5,29,2,0,0,1.0,79,1155
+CSE-DS,7,Male,Day Scholar,Morning,Kinesthetic,Poor,Medium,Good,No,No,In Progress,263,165,315,0,70.2,70.5,6.51,1,33,5,2,0,2.0,0,1158
+CSE-DS,3,Female,Hostel,Morning,Auditory,Poor,High,Good,No,No,Not Started,138,216,0,293,94.2,66.9,6.19,1,24,3,0,1,7.0,38,868
+ECE,8,Female,Day Scholar,Night,Visual,Good,Low,Average,Yes,No,Placed,197,459,248,150,100.0,75.7,7.19,0,36,5,2,1,4.0,119,1012
+CSE-DS,2,Female,Day Scholar,Night,Auditory,Good,Medium,Average,No,Yes,Not Started,148,148,38,640,96.3,73.8,7.62,1,34,1,0,0,0.0,204,1153
+CSE-DS,2,Male,Hostel,Night,Visual,Poor,High,Good,No,Yes,Not Started,303,196,161,351,70.5,69.1,6.71,0,37,1,1,0,0.0,70,1031
+CSE,4,Female,Day Scholar,Night,Auditory,Average,Medium,Good,No,No,Not Started,188,136,99,552,86.1,82.9,8.8,0,42,3,2,0,7.0,230,1037
+CSE,7,Male,Hostel,Morning,Auditory,Poor,Medium,Good,No,No,In Progress,67,175,157,141,67.7,60.0,6.38,0,27,2,3,0,2.0,103,854
+CSE,7,Male,Hostel,Night,Auditory,Good,Low,Average,No,Yes,Placed,157,113,49,592,73.7,68.2,7.04,2,35,7,2,2,4.0,462,1181
+IT,3,Female,Hostel,Night,Kinesthetic,Good,Low,Good,No,No,Not Started,258,228,202,194,74.2,63.2,6.29,0,38,1,1,0,1.0,25,1023
+CSE,1,Female,Hostel,Night,Auditory,Poor,Low,Average,No,No,Not Started,240,295,111,127,85.3,74.1,7.91,0,40,1,0,0,0.0,103,1112
+IT,4,Female,Day Scholar,Morning,Kinesthetic,Good,Low,Average,No,No,Not Started,0,162,34,434,100.0,63.6,6.75,0,33,3,2,0,2.0,215,1252
+CSE,5,Male,Hostel,Morning,Visual,Average,High,Good,No,No,Not Started,79,340,143,426,75.9,61.6,5.16,4,31,2,1,0,3.0,219,998
+CSE-AIML,5,Female,Day Scholar,Afternoon,Auditory,Poor,Medium,Poor,No,No,Not Started,157,262,118,395,88.9,73.0,8.06,0,37,3,2,1,0.0,187,1137
+IT,2,Male,Day Scholar,Night,Kinesthetic,Poor,High,Good,No,No,Not Started,394,433,189,58,82.8,69.8,7.22,0,38,0,0,0,1.0,39,917
+CSE-AIML,7,Male,Hostel,Afternoon,Visual,Average,Medium,Poor,No,No,In Progress,197,94,20,839,82.8,73.5,7.33,0,39,5,0,2,2.0,551,1121
+ECE,4,Female,Hostel,Night,Kinesthetic,Average,High,Good,No,Yes,Not Started,247,275,81,259,76.8,79.0,7.4,0,37,5,5,0,1.0,142,1166
+CSE-AIML,7,Female,Hostel,Morning,Kinesthetic,Good,Low,Good,No,No,Placed,237,371,118,310,92.0,73.6,6.91,0,39,8,1,1,1.0,182,1247
+ECE,6,Male,Hostel,Afternoon,Auditory,Average,Medium,Good,No,Yes,Not Started,127,306,98,646,100.0,68.3,6.68,0,28,6,4,3,1.0,457,1320
+CSE,1,Male,Hostel,Night,Auditory,Good,Medium,Good,No,No,Not Started,211,211,104,444,95.6,78.9,7.16,1,37,0,1,0,,56,980
+CSE-DS,7,Male,Hostel,Night,Kinesthetic,Poor,High,Average,No,Yes,In Progress,175,249,30,531,85.4,67.0,6.94,2,36,3,1,1,3.0,375,1303
+IT,3,Male,Day Scholar,Night,Visual,Good,Low,Average,No,No,Not Started,193,354,87,529,79.9,70.2,6.75,0,34,3,2,3,1.0,173,995
+CSE,3,Female,Hostel,Morning,Auditory,Good,Low,Average,No,Yes,Not Started,132,260,79,48,75.4,67.7,6.38,1,36,5,1,0,0.0,68,1066
+CSE-DS,3,Female,Day Scholar,Night,Kinesthetic,Good,Low,Poor,Yes,No,Not Started,0,309,170,0,84.8,63.0,6.07,2,29,4,1,0,0.0,0,929
+CSE-DS,5,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Average,Yes,No,Not Started,371,86,315,344,91.4,80.2,9.1,0,33,1,3,0,3.0,167,1207
+CSE,8,Female,Hostel,Night,Kinesthetic,Poor,High,Good,Yes,Yes,Placed,162,102,104,455,84.6,75.7,7.43,0,37,5,0,1,7.0,398,1153
+CSE-AIML,8,Female,Day Scholar,Night,Auditory,Good,High,Good,No,Yes,Placed,213,106,101,92,77.5,69.7,7.59,0,33,9,1,1,2.0,76,935
+CSE-AIML,2,Female,Hostel,Night,Kinesthetic,Good,Low,Good,No,Yes,Not Started,172,93,87,236,88.5,73.2,7.45,0,37,1,1,0,2.0,28,1058
+CSE-AIML,6,Male,Hostel,Night,Kinesthetic,Average,Low,Poor,No,No,Not Started,250,457,144,358,76.8,64.6,6.87,0,38,4,3,0,5.0,188,963
+CSE,3,Male,Hostel,Night,Auditory,Poor,High,Average,No,Yes,Not Started,338,231,186,462,60.0,68.7,6.78,1,32,2,1,0,2.0,168,1312
+CSE,8,Female,Day Scholar,Morning,Visual,Average,Medium,Average,No,No,In Progress,247,278,92,238,88.7,76.2,7.02,0,42,6,4,1,4.0,92,1202
+ECE,1,Male,Hostel,Afternoon,Kinesthetic,Poor,Medium,Good,No,No,Not Started,245,240,40,461,99.0,71.2,6.91,0,34,0,0,0,0.0,0,918
+CSE,3,Female,Day Scholar,Night,Auditory,Good,Low,Good,No,No,Not Started,90,116,17,664,70.8,69.5,6.45,3,35,0,0,0,1.0,249,949
+CSE-AIML,8,Male,Day Scholar,,Visual,Poor,High,Good,No,No,Placed,159,233,215,480,67.5,61.9,6.05,1,26,7,2,1,3.0,357,1140
+CSE,4,Male,Day Scholar,Night,Kinesthetic,Average,Medium,,No,No,Not Started,212,273,39,297,91.3,68.1,6.99,0,30,3,2,1,0.0,131,733
+IT,1,Female,Hostel,Morning,Kinesthetic,Good,Low,Average,Yes,No,Not Started,194,283,199,73,67.6,60.5,5.91,1,30,0,1,0,1.0,24,1053
+CSE-DS,1,Male,Day Scholar,Afternoon,Visual,Average,Low,Poor,Yes,No,Not Started,293,193,109,53,88.8,82.9,8.61,0,42,1,0,0,,37,797
+IT,1,Male,Day Scholar,Night,Kinesthetic,Good,Low,Good,No,Yes,Not Started,192,365,125,245,79.1,66.8,6.96,0,28,0,0,0,1.0,112,1118
+CSE,2,Female,Day Scholar,Night,Visual,Average,Medium,Good,No,No,Not Started,178,157,18,481,87.3,68.1,6.47,3,33,1,0,0,1.0,59,1159
+IT,5,Male,Day Scholar,Night,Auditory,Average,Low,Good,No,Yes,Not Started,277,300,196,442,84.5,73.1,6.43,4,33,4,1,0,2.0,261,1296
+IT,7,Female,Day Scholar,Morning,Kinesthetic,Good,Medium,Poor,No,Yes,In Progress,0,337,123,526,65.6,60.1,5.58,2,34,3,1,2,5.0,422,959
+CSE,4,Female,Hostel,Afternoon,Kinesthetic,Average,High,Poor,No,No,Not Started,203,428,59,97,81.6,68.0,6.96,1,36,4,2,0,4.0,0,991
+IT,7,Male,Hostel,Morning,Auditory,Average,Low,Good,No,No,Placed,245,242,0,505,85.2,79.2,7.49,0,34,3,2,3,6.0,417,1180
+CSE-AIML,5,Male,Hostel,Night,Kinesthetic,Good,High,Good,No,Yes,Not Started,200,156,40,388,77.4,68.3,6.75,0,32,6,2,1,1.0,171,1194
+IT,5,Male,Hostel,Night,Kinesthetic,Average,Low,,Yes,No,Not Started,126,231,0,83,74.9,67.3,7.51,2,33,7,2,1,7.0,84,1014
+IT,1,Female,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,111,366,0,531,76.1,63.6,7.0,0,31,0,0,0,1.0,125,1079
+CSE-DS,5,Female,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,243,73,0,389,84.2,70.1,7.83,0,34,3,2,0,2.0,147,1030
+CSE,2,Female,Hostel,Night,Kinesthetic,Poor,Medium,Good,No,Yes,Not Started,237,240,158,549,92.9,66.3,6.96,0,32,1,0,0,2.0,48,1085
+CSE-AIML,3,Male,Hostel,Night,Auditory,Average,Medium,Average,No,No,Not Started,264,181,0,406,100.0,78.1,8.56,0,42,0,0,1,0.0,11,1202
+CSE-DS,6,Male,Hostel,Afternoon,Visual,Poor,High,Good,No,Yes,Not Started,47,246,304,733,68.2,53.9,4.68,0,27,7,2,4,1.0,383,1197
+CSE,8,Male,Hostel,Afternoon,Visual,Average,High,Average,No,Yes,Placed,79,33,0,198,86.8,67.4,6.27,1,28,4,6,1,4.0,205,1123
+CSE,4,Male,Hostel,Night,Auditory,Average,Medium,Good,No,Yes,Not Started,126,203,88,470,91.6,65.5,6.33,2,31,1,1,0,1.0,181,827
+CSE,6,Female,Hostel,Afternoon,Kinesthetic,Poor,Low,Good,No,No,Not Started,270,347,135,44,91.0,76.0,7.65,0,35,5,1,0,4.0,0,1370
+CSE,6,Male,Day Scholar,Morning,Kinesthetic,Average,Medium,Good,No,No,Not Started,0,72,167,122,87.2,68.0,7.15,0,31,7,0,1,2.0,60,1163
+CSE,6,Male,Day Scholar,Night,Visual,Poor,High,Poor,No,No,Not Started,151,286,71,236,80.8,66.4,7.41,0,32,2,3,0,5.0,192,1119
+CSE-AIML,1,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,167,210,76,195,60.9,62.1,6.28,4,28,0,0,0,0.0,0,1045
+CSE,6,Female,Day Scholar,Morning,Kinesthetic,Poor,High,Good,No,No,Not Started,193,408,312,154,87.1,67.8,6.86,0,28,2,3,1,4.0,45,983
+CSE-AIML,7,Female,Hostel,Afternoon,Auditory,Good,Medium,Poor,No,No,In Progress,124,97,94,249,90.8,68.5,7.55,0,33,6,1,3,4.0,194,1321
+IT,3,Female,Hostel,Morning,Kinesthetic,Average,Low,Good,Yes,No,Not Started,60,303,0,661,69.8,66.3,6.68,0,30,2,0,0,2.0,289,1190
+IT,8,Male,Hostel,Night,Auditory,Good,Low,Good,Yes,No,In Progress,192,361,401,332,93.1,64.4,7.03,0,30,11,0,4,5.0,226,1323
+CSE-AIML,4,Female,Day Scholar,Night,Visual,Average,Medium,Good,No,No,Not Started,181,236,70,404,92.0,79.8,7.36,0,41,5,0,1,5.0,253,1169
+CSE-AIML,2,Male,Hostel,Night,Kinesthetic,Average,High,Good,Yes,No,Not Started,270,156,30,443,90.0,71.8,7.04,0,42,1,0,0,0.0,137,1211
+CSE,3,Female,Hostel,Night,Kinesthetic,Average,Medium,Average,No,Yes,Not Started,262,220,58,19,60.4,71.1,7.18,0,33,4,1,0,0.0,0,864
+CSE-DS,6,Male,Day Scholar,Afternoon,Auditory,Good,Low,Average,No,Yes,Not Started,116,332,109,340,81.4,70.3,7.89,0,34,4,2,2,1.0,301,1138
+CSE,5,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,No,Not Started,103,165,0,190,82.7,69.8,7.54,0,34,8,0,2,1.0,151,851
+CSE-DS,8,Male,Day Scholar,Night,Visual,Good,Medium,Poor,No,Yes,In Progress,173,331,74,185,76.6,72.4,7.74,0,42,8,0,0,2.0,178,1126
+CSE-DS,8,Female,Hostel,Afternoon,Auditory,Average,Medium,Good,No,No,In Progress,178,121,228,592,79.8,60.5,6.15,1,29,9,2,2,4.0,457,1181
+CSE-DS,5,Male,Hostel,Night,Kinesthetic,Average,Low,Good,No,No,Not Started,304,215,131,108,81.8,81.3,7.52,1,35,5,3,0,0.0,72,1293
+CSE-AIML,6,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,Yes,Yes,Not Started,337,277,182,373,94.7,79.4,6.33,2,38,5,1,1,2.0,219,1098
+CSE,3,Female,Hostel,Night,Kinesthetic,Average,Medium,Poor,No,Yes,Not Started,348,129,0,204,99.5,89.7,9.17,0,46,2,0,0,1.0,0,949
+IT,5,Male,Hostel,Afternoon,Auditory,Poor,High,Good,No,Yes,Not Started,1,346,145,377,100.0,67.7,6.7,0,34,4,1,0,2.0,245,1042
+CSE-AIML,7,Male,Hostel,Morning,Auditory,Good,Low,Good,No,No,In Progress,183,447,171,707,77.3,68.2,6.12,0,33,5,0,3,6.0,540,1442
+CSE,1,Male,Hostel,Night,Auditory,Poor,Medium,Good,No,No,Not Started,125,149,97,151,92.2,80.0,8.42,0,37,0,0,0,0.0,15,1284
+CSE-AIML,7,Female,Hostel,Morning,Visual,Good,Low,Good,No,No,Placed,225,204,138,212,74.8,69.5,5.99,0,36,5,3,2,1.0,188,1198
+CSE-DS,3,Female,Day Scholar,Night,Kinesthetic,Average,Medium,Average,No,No,Not Started,111,351,198,314,59.6,52.8,5.65,1,27,1,4,0,1.0,131,1218
+ECE,8,Male,Hostel,Night,Visual,Average,Low,Good,No,No,Placed,116,198,8,673,54.3,55.7,5.27,1,28,10,1,5,6.0,546,1161
+ECE,2,Male,Hostel,Morning,Kinesthetic,Good,Low,Poor,No,Yes,Not Started,244,58,24,119,62.8,63.0,7.05,0,33,1,1,0,2.0,21,1007
+CSE-DS,1,Male,Hostel,Night,Auditory,Good,Low,Good,No,Yes,Not Started,216,338,200,59,84.0,65.5,7.55,1,30,2,0,0,1.0,0,979
+CSE-AIML,2,Female,Hostel,Night,Kinesthetic,Average,Medium,,No,No,Not Started,197,154,123,557,75.6,64.1,6.95,0,31,1,1,0,0.0,122,1023
+IT,3,Male,Hostel,Afternoon,Kinesthetic,Average,High,Good,No,Yes,Not Started,0,146,293,686,57.8,55.4,5.6,0,27,1,0,0,1.0,247,1219
+CSE,2,Male,Hostel,Night,Auditory,Poor,High,Average,No,Yes,Not Started,339,457,135,484,96.9,85.5,9.37,0,47,1,0,0,0.0,70,581
+ECE,8,Female,Hostel,Morning,Visual,Average,Low,Average,Yes,No,In Progress,179,324,0,433,70.6,71.4,7.67,0,40,8,0,2,5.0,396,1048
+IT,7,Female,Day Scholar,Night,Visual,Average,Medium,Average,No,No,In Progress,89,410,77,174,74.7,67.6,6.12,1,29,5,4,1,0.0,148,1069
+CSE,3,Female,Day Scholar,Afternoon,Visual,Average,Medium,Good,No,No,Not Started,199,477,223,468,74.1,55.6,5.52,2,29,3,1,0,1.0,167,986
+CSE,7,Male,Day Scholar,Night,Visual,Poor,High,Good,Yes,No,In Progress,151,201,156,375,82.3,74.6,7.61,0,38,6,5,3,4.0,335,1125
+CSE,6,Male,Hostel,Night,Kinesthetic,Good,Low,Good,No,No,In Progress,27,192,50,107,87.8,68.9,6.77,0,33,7,3,0,1.0,12,806
+CSE,2,Female,Hostel,Night,Visual,Poor,Medium,Poor,No,Yes,Not Started,202,329,58,301,74.2,63.3,6.68,2,33,3,1,0,1.0,90,1117
+CSE,5,Male,Day Scholar,Night,Auditory,Poor,High,Poor,No,No,Not Started,251,276,196,73,94.0,74.4,7.75,2,33,4,1,0,2.0,155,665
+CSE,2,Female,Hostel,Morning,Visual,Poor,High,Good,Yes,No,Not Started,138,224,30,484,82.6,77.2,7.93,0,35,3,0,0,1.0,81,1086
+CSE-DS,4,Male,Day Scholar,Night,Visual,Average,Medium,Average,No,Yes,Not Started,255,322,103,324,90.7,82.3,8.37,0,42,3,2,2,0.0,84,907
+CSE-AIML,8,Male,Day Scholar,Night,Kinesthetic,Poor,High,Average,No,Yes,Placed,78,156,15,389,86.8,64.7,5.76,1,29,8,2,1,2.0,339,1146
+CSE,3,Female,Day Scholar,Night,Visual,Average,Medium,Good,No,Yes,Not Started,194,409,195,122,71.1,61.3,6.16,1,33,7,1,0,2.0,0,1016
+IT,7,Female,Day Scholar,Morning,Visual,Average,Medium,Good,No,No,Placed,207,335,300,464,80.7,77.8,7.17,0,39,5,1,5,4.0,456,1159
+CSE-DS,8,Male,Day Scholar,Afternoon,Visual,Average,Medium,Good,No,Yes,In Progress,0,208,187,391,100.0,73.5,8.12,0,35,7,2,2,4.0,362,1144
+CSE-AIML,4,Other,Hostel,Afternoon,Kinesthetic,Good,Medium,Good,No,No,Not Started,287,252,262,499,66.2,71.7,6.76,1,39,1,2,1,2.0,163,1462
+CSE,4,Male,Hostel,Night,Visual,Average,Medium,Average,No,No,Not Started,36,73,0,339,66.9,51.9,5.12,1,21,3,1,1,2.0,142,944
+ECE,5,Male,Day Scholar,Night,Auditory,Poor,High,Average,No,No,Not Started,247,307,83,422,81.5,75.9,7.65,0,36,2,3,0,3.0,292,1093
+CSE-DS,5,Male,Day Scholar,Morning,Visual,Average,Medium,Average,No,No,Not Started,41,170,17,544,100.0,66.4,7.48,0,32,5,2,1,0.0,279,1123
+CSE,1,Female,Hostel,Night,Kinesthetic,Poor,High,Good,No,Yes,Not Started,70,21,184,153,71.8,54.7,5.91,2,25,1,0,0,1.0,0,1125
+ECE,8,Female,Hostel,Night,Kinesthetic,Good,Low,Poor,No,No,In Progress,0,338,56,342,81.6,61.2,5.67,5,28,9,3,1,5.0,321,1063
+CSE,5,Male,Day Scholar,Night,Visual,Average,Low,Good,No,No,Not Started,0,446,218,422,76.7,58.9,6.22,3,28,5,2,0,2.0,277,1194
+CSE,5,Female,Day Scholar,Afternoon,Auditory,Average,Medium,Good,No,Yes,Not Started,100,361,0,333,76.6,71.7,6.68,0,36,2,2,1,6.0,220,976
+ECE,8,Male,Day Scholar,Night,Visual,Poor,Low,Good,No,No,Placed,106,387,192,349,100.0,73.2,7.2,0,35,1,1,2,1.0,291,1046
+CSE-DS,1,Female,Hostel,Morning,Visual,Average,High,Good,Yes,No,Not Started,242,351,56,406,78.6,71.6,7.31,0,36,0,0,0,1.0,0,897
+CSE-DS,5,Female,Hostel,Night,Kinesthetic,Good,Low,Good,Yes,No,Not Started,152,226,0,153,71.4,66.0,7.57,0,33,4,1,2,6.0,62,1394
+CSE-AIML,8,Male,Day Scholar,Morning,Auditory,Poor,High,Good,No,Yes,Placed,113,159,0,0,67.0,69.7,5.99,1,30,6,3,4,5.0,0,1072
+CSE,7,Male,Hostel,Afternoon,Visual,Poor,High,Good,No,No,In Progress,188,136,111,0,68.8,66.2,6.42,2,37,3,3,1,6.0,0,1007
+CSE-DS,6,Male,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,99,271,43,127,79.3,68.6,6.56,0,38,4,2,2,4.0,10,755
+CSE,5,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,295,4,249,211,82.6,82.4,7.96,1,39,3,2,1,6.0,152,857
+CSE-DS,7,Male,Hostel,Morning,Auditory,Average,Medium,Good,No,No,In Progress,111,150,236,518,74.7,60.0,6.11,2,25,7,6,1,5.0,313,1306
+IT,1,Male,Hostel,Morning,Auditory,Good,Medium,Good,No,No,Not Started,185,107,251,319,93.4,87.4,8.86,0,41,0,0,0,0.0,5,1046
+CSE,7,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,Yes,In Progress,187,345,160,401,75.0,74.4,7.59,0,35,7,0,0,2.0,303,1087
+CSE-DS,6,Female,Hostel,Morning,Auditory,Good,Low,Good,Yes,Yes,Not Started,96,111,59,592,92.0,66.3,6.33,0,32,3,2,2,2.0,292,1139
+IT,6,Male,Hostel,,Kinesthetic,Average,Medium,Good,No,No,Not Started,226,315,0,600,71.1,68.0,6.93,0,34,7,1,1,4.0,335,1223
+IT,4,Female,Hostel,Night,Auditory,Average,Medium,Good,No,Yes,Not Started,348,144,57,365,73.8,72.2,6.22,0,40,2,2,1,2.0,133,968
+CSE,2,Male,Hostel,Morning,Visual,Average,Medium,Average,No,No,Not Started,148,153,61,497,67.6,67.3,5.99,3,35,2,0,0,3.0,50,858
+CSE,8,Male,Hostel,Night,Kinesthetic,Good,Low,Average,Yes,No,Placed,334,111,105,40,86.9,86.2,9.01,0,46,5,1,2,5.0,9,695
+CSE,5,Male,Day Scholar,Night,Kinesthetic,Good,Low,Good,No,Yes,Not Started,140,100,128,467,78.0,67.3,7.06,0,33,2,2,2,3.0,239,1053
+CSE,5,Male,Hostel,Night,Kinesthetic,Poor,Medium,Good,No,Yes,Not Started,108,249,64,767,81.5,67.8,6.51,0,34,5,2,1,3.0,326,1015
+CSE,8,Other,Day Scholar,Night,Visual,Average,Medium,Average,No,Yes,In Progress,244,300,58,426,90.8,64.9,6.26,3,30,2,1,0,2.0,277,1212
+IT,3,Female,Hostel,Night,Kinesthetic,Good,Low,Average,No,No,Not Started,229,396,175,212,84.2,69.5,7.18,0,31,1,0,0,4.0,65,749
+CSE-AIML,5,Male,Hostel,Night,Visual,Average,High,Good,No,No,Not Started,0,11,209,41,89.0,70.4,7.43,0,35,7,1,1,2.0,3,1112
+CSE,6,Other,Hostel,Morning,Visual,Average,Medium,Average,No,Yes,Not Started,66,0,166,490,81.7,73.1,7.07,1,36,4,2,2,3.0,293,1005
+CSE-DS,2,Male,Hostel,Night,Kinesthetic,Poor,Medium,Poor,Yes,Yes,Not Started,106,387,154,99,61.9,70.9,7.1,0,29,1,3,0,0.0,0,1065
+CSE-DS,1,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,No,Not Started,176,315,117,265,93.2,71.6,6.5,1,30,0,0,0,1.0,71,1143
+CSE-AIML,1,Male,Hostel,Afternoon,Visual,Good,High,Good,No,No,Not Started,92,136,133,167,88.3,73.7,8.53,0,31,2,0,0,0.0,0,1084
+IT,2,Female,Hostel,Afternoon,Auditory,Poor,Medium,Good,Yes,Yes,Not Started,325,417,80,402,93.4,77.2,7.92,0,38,1,0,0,0.0,59,938
+CSE-AIML,3,Male,Hostel,Night,Kinesthetic,Average,Low,Good,No,No,Not Started,370,306,93,264,88.3,82.6,8.62,0,43,4,1,0,3.0,152,1285
+ECE,1,Male,Hostel,Night,Kinesthetic,Good,Low,Average,No,No,Not Started,206,353,88,366,82.8,65.6,6.19,4,34,0,0,0,0.0,90,1052
+CSE-DS,6,Female,Hostel,,Kinesthetic,Average,Medium,Average,No,No,Not Started,264,298,41,253,61.9,69.9,7.0,1,36,7,1,2,5.0,151,1029
+CSE,4,Male,Day Scholar,Morning,Kinesthetic,Good,Medium,Good,No,No,Not Started,166,263,34,74,72.6,67.0,6.96,0,31,1,0,0,0.0,17,1253
+ECE,2,Male,Hostel,Morning,Kinesthetic,Poor,High,Good,No,No,Not Started,0,306,24,317,89.2,60.6,5.22,0,29,1,0,0,1.0,172,900
+CSE,3,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,No,Not Started,203,88,218,73,99.3,73.4,6.89,0,35,1,0,1,0.0,0,1096
+CSE,5,Female,Hostel,Night,Auditory,Poor,High,Good,No,No,Not Started,421,263,154,535,59.3,70.9,7.45,1,33,3,1,0,1.0,306,1201
+CSE,1,Female,Day Scholar,Night,Visual,Average,Medium,Good,No,No,Not Started,304,175,296,358,82.7,71.3,7.54,1,31,2,0,0,1.0,68,1169
+IT,2,Female,Hostel,Night,Visual,Average,Medium,Good,No,Yes,Not Started,362,0,0,651,78.9,75.8,7.94,1,34,1,0,0,1.0,155,923
+CSE,6,Female,Hostel,Night,Kinesthetic,Good,High,Good,No,Yes,Not Started,101,179,33,579,75.9,72.8,7.71,0,31,3,1,2,,318,1153
+ECE,2,Male,Hostel,Night,Kinesthetic,Poor,High,Good,Yes,No,Not Started,139,217,122,292,85.0,65.4,7.01,0,37,3,0,0,1.0,108,1040
+CSE-AIML,5,Female,Hostel,Night,Auditory,Average,Medium,Average,Yes,No,Not Started,228,359,14,378,66.0,59.5,4.92,2,26,3,2,0,1.0,118,980
+CSE-AIML,5,Male,Hostel,Night,Kinesthetic,Average,Low,Average,No,No,Not Started,153,251,349,67,90.8,70.0,6.78,0,36,5,1,2,4.0,4,1003
+CSE-AIML,2,Male,Hostel,Night,Visual,Poor,High,Average,No,No,Not Started,136,192,31,168,52.3,54.5,5.26,1,29,2,1,0,0.0,0,1002
+CSE,5,Female,Hostel,Night,Auditory,Poor,High,Good,No,No,Not Started,253,75,97,627,67.0,68.1,6.61,0,33,3,4,0,3.0,297,1067
+CSE,4,Female,Day Scholar,Morning,Visual,Good,Low,Average,No,Yes,Not Started,246,253,15,496,100.0,81.0,8.17,0,41,6,2,0,0.0,199,873
+IT,5,Female,Day Scholar,Night,Auditory,Average,Low,,Yes,No,Not Started,314,132,162,127,83.1,77.4,7.39,0,40,3,4,2,2.0,118,1068
+CSE,2,Female,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,Yes,No,Not Started,140,249,166,417,92.0,66.5,6.82,0,33,1,1,0,0.0,94,1210
+IT,1,Female,Hostel,Night,Kinesthetic,Average,Medium,Average,No,Yes,Not Started,221,134,222,231,100.0,82.4,8.13,0,41,1,0,0,1.0,52,1260
+CSE,4,Female,Hostel,Morning,Auditory,Average,Medium,Good,Yes,Yes,Not Started,103,195,0,267,88.8,64.1,7.19,1,35,6,1,0,0.0,74,1297
+CSE,5,Female,Day Scholar,Night,Visual,Average,Medium,Good,No,Yes,Not Started,202,399,93,496,69.5,70.6,5.97,2,32,8,3,0,2.0,242,1333
+CSE,5,Female,Hostel,Morning,Visual,Poor,Medium,Average,Yes,Yes,Not Started,273,249,129,510,100.0,77.7,7.21,1,37,4,1,0,3.0,208,1071
+CSE-DS,1,Other,Hostel,Morning,Kinesthetic,Poor,Medium,Good,No,Yes,Not Started,263,231,126,99,65.7,61.1,6.65,1,26,0,1,0,0.0,0,998
+CSE-AIML,1,Female,Day Scholar,Afternoon,Auditory,Average,Medium,Good,Yes,No,Not Started,18,377,153,116,86.8,67.1,7.46,0,33,0,1,0,1.0,0,883
+CSE-AIML,5,Male,Hostel,Afternoon,Auditory,Poor,Medium,Average,No,Yes,Not Started,155,46,262,454,84.2,71.6,6.99,0,31,3,0,2,1.0,217,1183
+IT,1,Male,Hostel,Afternoon,Auditory,Poor,Medium,Good,No,No,Not Started,306,218,174,341,73.8,64.4,6.29,1,31,1,1,0,0.0,48,1052
+CSE,7,Female,Day Scholar,Morning,Auditory,Average,Low,Good,No,Yes,Placed,177,118,136,193,71.8,58.2,6.37,0,31,9,3,2,3.0,152,1298
+CSE,7,Male,Day Scholar,Afternoon,Auditory,Poor,Low,Good,No,Yes,In Progress,111,430,26,424,73.9,64.1,6.27,2,31,2,2,3,3.0,286,895
+CSE-AIML,7,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,Yes,No,In Progress,138,25,104,443,100.0,76.6,7.33,0,37,7,2,2,1.0,293,1080
+CSE,3,Female,Hostel,Morning,Kinesthetic,Good,High,Good,No,No,Not Started,289,165,146,491,92.6,73.8,8.27,0,31,4,1,0,0.0,102,1119
+CSE-DS,2,Female,Day Scholar,Morning,Auditory,Good,Low,Average,No,Yes,Not Started,275,386,237,228,96.2,75.7,7.18,0,37,5,1,0,1.0,8,1169
+CSE-AIML,2,Male,Day Scholar,Night,Visual,Poor,High,Average,No,Yes,Not Started,176,220,79,53,78.8,69.1,6.08,0,34,2,0,0,3.0,0,1047
+CSE-AIML,8,Female,Hostel,Afternoon,Kinesthetic,Average,Low,Good,Yes,No,Placed,227,274,129,207,93.4,74.7,8.08,0,37,8,1,2,5.0,112,1149
+IT,3,Female,Hostel,Morning,Kinesthetic,Good,Low,Good,No,Yes,Not Started,190,272,176,301,62.1,68.5,7.61,0,34,0,1,0,0.0,73,923
+CSE-DS,3,Female,Hostel,Night,Visual,Average,Medium,Poor,No,Yes,Not Started,307,430,72,280,84.2,71.1,7.47,1,37,1,3,0,0.0,151,1237
+CSE,6,Female,Hostel,Afternoon,Auditory,Average,Medium,Average,Yes,No,In Progress,198,134,91,296,63.2,67.0,6.7,0,35,1,2,3,3.0,188,1165
+CSE,3,Male,Day Scholar,Night,Kinesthetic,Average,Low,Average,Yes,No,Not Started,244,353,133,266,79.5,68.2,6.38,4,30,5,0,0,1.0,73,1071
+IT,4,Male,Hostel,Night,Auditory,Good,Medium,Poor,No,No,Not Started,62,277,232,124,77.0,58.9,6.1,2,26,3,2,0,3.0,101,1144
+CSE,5,Female,Hostel,Night,Kinesthetic,Good,Medium,Good,No,Yes,Not Started,181,79,332,54,82.7,58.2,6.46,1,25,7,0,1,5.0,26,841
+CSE,8,Male,Day Scholar,Morning,Visual,Average,Medium,Average,No,No,Placed,242,220,114,605,93.2,78.0,7.75,0,41,6,3,1,7.0,500,1402
+CSE-DS,1,Male,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,347,246,73,186,66.3,75.6,7.29,0,38,1,0,0,0.0,43,829
+CSE,4,Male,Day Scholar,Night,Auditory,Good,Medium,Average,No,No,Not Started,206,291,102,264,95.0,85.5,7.77,0,42,4,1,0,4.0,142,777
+CSE,2,Male,Day Scholar,,Visual,Good,Low,Average,No,No,Not Started,183,232,109,338,78.3,67.6,7.2,0,37,3,1,0,1.0,55,870
+CSE-DS,2,Male,Day Scholar,Night,Auditory,Average,Medium,Good,No,No,Not Started,175,154,7,302,98.6,72.5,8.03,0,33,0,0,0,0.0,46,1037
+CSE,6,Female,Day Scholar,Morning,Visual,Average,Medium,Average,No,Yes,Not Started,25,35,261,494,96.9,72.2,8.0,1,37,5,1,1,2.0,350,1130
+ECE,4,Female,Day Scholar,Morning,Visual,Good,High,Average,No,Yes,Not Started,259,40,253,27,74.1,63.2,5.5,5,30,4,0,1,0.0,51,1075
+CSE,6,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,156,204,28,498,89.1,72.9,7.81,0,40,4,7,0,3.0,278,1110
+CSE,4,Female,Hostel,Morning,Visual,Good,Medium,Poor,No,Yes,Not Started,177,374,0,133,87.2,73.9,8.23,0,37,2,4,0,0.0,112,1310
+CSE-DS,6,Male,Day Scholar,Morning,Auditory,Average,Medium,Average,No,Yes,Not Started,228,361,180,917,92.2,70.4,6.52,0,32,7,2,1,1.0,539,1446
+CSE-AIML,4,Female,Day Scholar,Night,Auditory,Average,Medium,Poor,No,No,Not Started,244,166,70,395,98.5,77.3,8.53,0,37,2,0,0,3.0,191,1120
+ECE,4,Female,Hostel,Afternoon,Auditory,Average,Low,Good,No,Yes,Not Started,376,12,19,328,97.4,87.7,9.61,0,48,1,1,0,0.0,104,1031
+CSE,7,Female,Hostel,Night,Kinesthetic,Good,Low,Good,No,Yes,In Progress,194,320,180,221,72.2,79.2,7.36,0,41,3,4,1,5.0,138,891
+IT,7,Male,Hostel,Afternoon,Visual,Average,High,Average,No,Yes,Placed,252,497,45,314,100.0,83.0,8.51,0,38,7,2,2,4.0,227,1303
+CSE-AIML,7,Female,Hostel,Afternoon,Visual,Good,Low,Good,No,No,Placed,191,101,53,253,75.1,61.3,6.28,1,30,11,5,2,2.0,66,880
+ECE,5,Other,Day Scholar,Afternoon,Kinesthetic,Poor,High,Average,No,Yes,Not Started,10,32,24,216,71.8,63.6,6.17,5,38,4,2,1,4.0,129,1140
+CSE-AIML,4,Male,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Average,No,Yes,Not Started,126,152,336,105,94.8,81.3,7.72,0,43,2,0,3,3.0,0,1039
+CSE-AIML,2,Female,Hostel,Morning,Visual,Poor,Low,Average,No,No,Not Started,167,244,180,458,83.5,70.7,6.88,0,39,1,0,0,1.0,167,804
+ECE,2,Male,Day Scholar,Night,Auditory,Good,Medium,Good,No,No,Not Started,226,273,177,769,69.3,62.6,6.44,0,29,3,0,0,0.0,135,945
+CSE-AIML,4,Male,Day Scholar,Night,Kinesthetic,Poor,Medium,Good,No,Yes,Not Started,146,273,56,316,100.0,73.3,7.55,0,32,4,1,1,1.0,164,932
+CSE,3,Male,Day Scholar,Night,Auditory,Poor,High,Good,No,No,Not Started,162,215,132,939,96.2,77.5,7.51,0,42,1,1,0,2.0,324,1220
+CSE,2,Male,Hostel,Afternoon,Kinesthetic,Good,Low,Good,No,Yes,Not Started,79,68,112,428,75.2,70.5,7.7,0,35,0,0,0,3.0,103,769
+CSE-AIML,6,Female,Hostel,Night,Kinesthetic,Average,Low,Average,No,No,Not Started,121,252,37,428,77.7,66.2,7.06,1,28,6,4,2,1.0,289,1223
+CSE,5,Female,Day Scholar,Morning,Kinesthetic,Good,Medium,Good,No,No,Not Started,310,118,114,42,78.2,72.8,7.51,0,36,8,3,1,2.0,48,1372
+ECE,4,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Average,No,Yes,Not Started,156,163,62,183,88.0,71.0,6.84,0,33,6,0,0,3.0,9,1035
+CSE,5,Male,Hostel,Night,Kinesthetic,Good,Low,Good,No,Yes,Not Started,138,466,212,0,100.0,75.7,7.74,0,40,2,1,0,4.0,66,1034
+IT,8,Female,Hostel,Night,Auditory,Good,Low,Average,No,No,Placed,233,325,16,332,92.8,71.1,6.19,2,32,7,2,3,3.0,266,1113
+CSE-AIML,8,Male,Hostel,Night,Visual,Average,Medium,Good,No,Yes,Placed,42,187,152,366,81.1,69.8,6.98,0,33,6,2,2,7.0,276,1203
+CSE,2,Female,Hostel,Night,Visual,Poor,High,Good,No,No,Not Started,0,206,55,446,73.7,57.0,6.73,0,29,2,1,0,0.0,106,841
+CSE,8,Male,Day Scholar,Afternoon,Auditory,Average,High,Average,No,Yes,Placed,141,472,28,348,92.7,79.1,8.01,0,40,9,2,3,2.0,314,1473
+IT,2,Male,Hostel,Afternoon,Auditory,Good,Low,Average,No,Yes,Not Started,226,303,321,399,87.4,73.9,6.7,0,32,0,1,0,1.0,112,902
+CSE,8,Male,Hostel,Morning,Visual,Good,Medium,Good,No,Yes,In Progress,141,136,181,370,100.0,83.0,8.64,0,37,4,4,2,1.0,213,1094
+CSE-DS,1,Male,Day Scholar,Night,Auditory,Average,High,Average,No,No,Not Started,134,326,150,267,87.3,70.0,6.58,0,34,0,0,0,1.0,21,897
+CSE-DS,2,Male,Day Scholar,Night,Auditory,Poor,Medium,Good,No,No,Not Started,12,125,137,78,87.7,69.3,7.36,0,30,2,0,0,0.0,29,945
+CSE-AIML,8,Female,Day Scholar,Afternoon,Auditory,Poor,High,Good,Yes,No,Placed,196,235,167,312,78.8,77.1,7.79,2,33,7,2,1,6.0,215,1195
+CSE-AIML,3,Male,Day Scholar,Morning,Visual,Poor,Low,Good,No,No,Not Started,410,381,0,101,75.8,74.1,7.5,0,38,1,3,0,0.0,0,1118
+CSE-AIML,5,Male,Hostel,Morning,Auditory,Good,Medium,Average,No,No,Not Started,71,234,286,458,79.4,69.3,6.74,0,33,7,0,0,2.0,323,1254
+CSE,7,Male,Day Scholar,Night,Visual,Average,Medium,Poor,No,No,Placed,25,65,214,0,92.8,75.9,7.48,0,38,6,5,5,6.0,24,748
+CSE-DS,1,Male,Hostel,Afternoon,Auditory,Average,Medium,Good,No,No,Not Started,104,134,324,397,87.2,71.3,6.74,0,34,0,0,0,0.0,92,1024
+ECE,3,Male,Day Scholar,Night,Kinesthetic,Good,Low,Average,No,No,Not Started,0,4,200,30,58.8,52.7,5.49,1,31,5,2,0,0.0,0,1097
+CSE-DS,5,Male,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,14,232,81,446,78.9,62.2,7.2,0,27,3,0,1,3.0,174,1055
+CSE,4,Female,Hostel,Night,Kinesthetic,Poor,Low,Average,Yes,Yes,Not Started,215,212,127,500,77.4,70.1,6.39,2,30,6,0,0,2.0,200,1136
+CSE,4,Male,Hostel,Night,Auditory,Good,Low,Good,No,No,Not Started,100,113,22,180,87.7,78.0,7.65,0,38,5,1,0,0.0,120,829
+ECE,8,Female,Hostel,Night,Auditory,Average,Low,Good,No,Yes,Placed,118,401,217,267,67.2,65.6,6.7,1,31,10,2,4,5.0,259,1181
+CSE,6,Male,Day Scholar,Morning,Kinesthetic,Good,Medium,Good,No,Yes,In Progress,130,551,153,354,81.2,63.6,5.85,1,33,1,2,1,5.0,151,1198
+CSE,6,Male,Day Scholar,Night,Visual,Poor,Medium,Average,No,No,Not Started,206,356,322,296,36.7,59.3,6.36,1,33,4,2,2,2.0,153,1320
+CSE-DS,1,Female,Hostel,Night,Kinesthetic,Poor,Medium,Good,No,No,Not Started,145,135,203,269,69.7,76.9,7.61,0,39,2,0,0,2.0,0,1440
+ECE,5,Male,Hostel,Night,Auditory,Average,Medium,Average,No,No,Not Started,91,345,173,461,72.0,61.5,6.21,3,28,4,0,1,4.0,205,1070
+CSE-DS,4,Female,Hostel,Morning,Visual,Average,Medium,Good,Yes,No,Not Started,170,259,37,313,71.7,62.4,5.27,1,29,8,1,0,2.0,105,1107
+CSE-DS,8,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,Yes,In Progress,128,180,73,475,82.1,66.7,7.43,1,32,7,3,0,4.0,439,1209
+CSE,8,Male,Hostel,Night,Auditory,Poor,High,Good,No,No,Placed,248,229,58,406,86.9,76.8,7.06,0,37,10,2,1,8.0,370,1085
+CSE,5,Female,Hostel,Morning,Visual,Poor,High,Good,No,No,Not Started,278,287,145,238,70.9,69.6,6.48,3,33,3,1,0,0.0,133,1106
+CSE-AIML,5,Male,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,27,401,226,48,54.0,55.7,5.67,0,31,6,0,3,0.0,0,894
+CSE,7,Female,Day Scholar,Night,Visual,Poor,Medium,Good,No,Yes,In Progress,260,322,153,0,86.8,75.1,7.7,0,40,4,2,1,1.0,35,996
+CSE,1,Male,Hostel,Morning,Visual,Good,Medium,Good,No,No,Not Started,147,437,192,501,100.0,77.8,6.98,0,41,0,0,0,2.0,23,1070
+CSE-AIML,1,Female,Day Scholar,Night,Kinesthetic,Poor,High,Good,No,No,Not Started,160,188,115,19,71.8,66.8,5.61,0,31,1,0,0,0.0,32,1200
+CSE,7,Male,Hostel,Morning,Visual,Poor,Medium,Good,No,Yes,In Progress,184,276,7,97,61.5,54.7,4.28,1,28,7,1,2,3.0,135,1007
+CSE-DS,4,Female,Day Scholar,Night,Auditory,Average,High,Average,No,No,Not Started,219,206,1,671,96.6,85.5,10.0,0,44,8,0,1,2.0,239,1033
+CSE,3,Male,Hostel,Morning,Kinesthetic,Poor,Medium,Good,No,Yes,Not Started,263,170,76,103,78.5,78.5,7.34,0,39,1,2,0,2.0,49,1084
+CSE,6,Female,Day Scholar,Night,Kinesthetic,Average,Medium,Average,No,No,Not Started,0,405,132,338,100.0,80.3,7.3,2,37,10,1,1,3.0,152,901
+CSE-AIML,2,Male,Hostel,Morning,Auditory,Good,Medium,Average,No,No,Not Started,78,301,54,303,99.0,74.4,7.84,0,43,2,0,0,3.0,50,876
+CSE,5,Female,Day Scholar,Night,Visual,Average,Medium,Average,No,Yes,Not Started,162,390,167,83,82.4,63.4,6.32,0,32,2,1,0,3.0,63,1064
+CSE-DS,2,Male,Day Scholar,Night,Auditory,Good,Medium,Good,No,No,Not Started,126,343,190,361,85.1,74.9,8.13,0,44,3,0,0,0.0,94,1205
+ECE,7,Female,Hostel,Morning,Kinesthetic,Average,High,Good,Yes,No,In Progress,109,368,89,230,74.7,67.6,7.5,0,37,3,3,2,4.0,115,951
+CSE-AIML,4,Male,Day Scholar,Morning,Visual,Average,Low,Good,No,No,Not Started,186,137,0,646,70.0,64.5,7.73,1,31,5,1,0,5.0,268,1220
+ECE,7,Female,Day Scholar,Afternoon,Auditory,Good,Low,Good,No,Yes,Placed,3,119,242,46,74.4,60.9,6.21,0,31,5,1,1,5.0,48,1238
+ECE,3,Male,Hostel,Night,Visual,Average,Medium,,No,No,Not Started,239,308,232,302,84.0,70.1,7.12,0,35,1,1,2,1.0,105,1238
+CSE,5,Male,Hostel,Morning,Visual,Average,Medium,Poor,No,Yes,Not Started,239,90,6,34,68.6,65.1,7.17,0,34,4,1,0,2.0,0,632
+CSE,6,Male,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,351,256,107,220,90.0,73.7,7.57,0,34,3,0,1,4.0,113,1503
+CSE,3,Male,Hostel,Night,Kinesthetic,Good,Low,Average,No,No,Not Started,254,345,201,139,59.0,70.0,6.41,0,38,1,2,0,2.0,0,1068
+CSE,6,Male,Hostel,Night,Kinesthetic,Average,High,Good,No,No,Not Started,336,5,2,310,70.5,78.4,8.73,0,40,6,4,1,4.0,130,1077
+IT,3,Female,Day Scholar,Morning,Kinesthetic,Good,Low,Average,Yes,No,Not Started,336,259,179,30,67.0,71.9,7.78,0,37,4,0,0,0.0,8,1179
+CSE-DS,2,Female,Hostel,Afternoon,Visual,Average,Medium,Good,No,No,Not Started,144,104,180,304,82.3,66.5,6.65,0,36,1,1,0,1.0,99,821
+CSE,2,Male,Hostel,Afternoon,Visual,Average,Medium,Average,No,No,Not Started,201,465,81,440,82.9,79.4,8.25,0,35,1,1,0,0.0,76,1195
+CSE,7,Female,Day Scholar,Morning,Auditory,Good,High,Good,No,Yes,In Progress,44,248,8,211,69.9,60.3,5.54,5,30,7,2,1,2.0,137,912
+CSE,6,Female,Hostel,Morning,Visual,Poor,Medium,Good,No,No,Not Started,101,93,0,87,93.5,75.8,7.67,0,39,4,3,1,4.0,18,1075
+CSE,7,Male,Hostel,Night,Auditory,Poor,High,Good,No,No,In Progress,79,364,139,166,92.1,68.7,7.13,0,37,7,3,2,1.0,193,1123
+CSE,7,Female,Hostel,Morning,Visual,Good,Low,Good,No,Yes,Placed,234,115,128,178,90.1,69.5,6.75,1,30,2,3,1,6.0,163,1232
+CSE,3,Female,Day Scholar,Night,Auditory,Average,High,Average,No,No,Not Started,123,119,46,715,94.4,73.0,7.12,0,36,5,3,0,,319,1401
+IT,7,Male,Day Scholar,Night,Auditory,Average,High,Good,No,No,Placed,80,307,88,455,93.0,66.7,6.47,3,29,5,2,2,8.0,353,909
+CSE,5,Female,Day Scholar,Night,Kinesthetic,Poor,High,Average,No,Yes,Not Started,131,261,200,248,76.5,79.2,7.85,0,39,7,1,1,2.0,31,1233
+IT,2,Female,Hostel,Night,Auditory,Poor,High,Average,Yes,No,Not Started,171,135,144,314,92.1,74.1,7.59,0,36,3,0,0,1.0,121,1048
+CSE,7,Female,Hostel,Night,Auditory,Poor,Medium,Good,No,Yes,In Progress,130,457,0,22,81.0,68.7,7.42,0,29,9,1,1,4.0,0,1150
+IT,7,Male,Hostel,Morning,Visual,Poor,Low,Poor,No,Yes,Placed,103,369,273,123,76.4,65.0,6.57,0,26,5,2,2,0.0,90,1018
+ECE,7,Male,Day Scholar,Night,Visual,Good,Low,Good,No,Yes,Placed,190,344,170,249,99.6,78.7,7.91,0,40,6,2,1,3.0,133,1205
+CSE-DS,4,Female,Hostel,Morning,Auditory,Good,Low,Good,No,Yes,Not Started,303,133,138,417,71.5,71.7,7.31,0,33,4,0,1,3.0,109,1094
+ECE,5,Female,Day Scholar,Morning,Auditory,Good,Medium,Good,No,Yes,Not Started,73,223,171,193,65.3,64.8,6.13,2,31,6,1,2,4.0,147,1033
+CSE-AIML,7,Male,Day Scholar,Morning,Auditory,Average,Low,Poor,No,No,In Progress,142,304,324,123,84.3,68.6,6.82,0,31,4,3,0,6.0,197,1185
+CSE,1,Female,Day Scholar,Morning,Kinesthetic,Average,Medium,Average,No,No,Not Started,240,130,161,174,88.0,71.5,7.82,1,39,0,3,0,0.0,145,828
+IT,8,Male,Hostel,Night,Kinesthetic,Good,Low,Average,No,No,Placed,114,97,78,376,88.7,70.3,7.57,0,36,8,2,2,3.0,292,799
+CSE,4,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Average,No,No,Not Started,49,311,93,301,90.9,68.9,5.79,4,35,5,1,0,3.0,98,978
+CSE,3,Male,Hostel,Night,Kinesthetic,Good,Low,Average,No,No,Not Started,76,279,0,326,87.0,66.9,5.89,2,32,3,0,0,4.0,108,1020
+IT,8,Male,Hostel,Night,Kinesthetic,Good,Low,Good,No,Yes,Placed,248,165,89,43,93.1,74.0,7.68,0,37,8,4,1,,59,1290
+CSE-AIML,5,Male,Day Scholar,Night,Visual,Average,Medium,Average,No,Yes,Not Started,334,92,79,326,82.7,81.5,7.85,1,39,5,2,0,1.0,256,1015
+CSE,6,Male,Hostel,Night,Kinesthetic,Good,Low,Good,No,No,Not Started,242,105,13,340,69.4,64.2,6.96,0,33,3,1,1,3.0,132,926
+CSE,6,Female,Hostel,Afternoon,Visual,Good,Medium,Poor,Yes,No,Not Started,151,410,90,99,79.4,71.2,6.87,1,29,3,0,3,1.0,62,1105
+IT,6,Female,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Average,Yes,No,In Progress,280,329,0,444,100.0,86.3,8.76,0,39,4,0,1,3.0,271,1325
+CSE,7,Other,Day Scholar,Night,Auditory,Poor,High,Average,No,Yes,Placed,19,173,99,13,71.9,58.0,7.1,0,22,2,3,2,6.0,87,1335
+CSE,6,Female,Day Scholar,Morning,Kinesthetic,Average,Low,Average,Yes,No,In Progress,32,648,147,538,76.2,66.6,6.4,3,32,6,3,0,4.0,351,1105
+IT,1,Female,Day Scholar,Afternoon,Kinesthetic,Good,Low,Poor,No,Yes,Not Started,133,252,146,530,92.1,79.7,7.79,0,39,0,1,0,0.0,26,1116
+IT,7,Female,Hostel,Night,Auditory,Average,Low,Good,No,No,In Progress,210,289,0,482,87.7,70.8,7.45,0,35,8,2,1,8.0,304,1155
+CSE-DS,7,Male,Day Scholar,Night,Visual,Poor,Medium,Poor,No,No,Placed,45,150,115,383,69.6,64.3,5.66,4,34,7,1,0,4.0,284,1513
+CSE,8,Male,Day Scholar,Morning,Kinesthetic,Good,High,Good,No,No,Placed,99,338,129,362,68.7,59.7,5.6,2,31,9,3,2,1.0,321,1089
+CSE-AIML,4,Male,Hostel,Night,Visual,Good,Low,Average,No,No,Not Started,226,246,149,151,72.4,73.3,6.76,0,34,3,0,1,3.0,106,1323
+IT,1,Other,Hostel,Afternoon,Visual,Average,High,,No,Yes,Not Started,131,156,6,301,82.1,70.6,6.91,0,38,1,1,0,2.0,48,1264
+IT,1,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,No,Not Started,82,308,100,108,60.4,63.9,6.13,1,29,0,0,0,0.0,16,1004
+CSE-DS,4,Male,Hostel,Night,Kinesthetic,Good,Low,Good,Yes,No,Not Started,183,391,239,592,86.1,74.8,6.76,0,37,3,1,0,1.0,258,1174
+CSE,7,Female,Hostel,Night,Kinesthetic,Poor,Medium,Good,No,No,In Progress,299,244,122,360,65.6,67.6,6.24,0,38,5,1,1,1.0,144,1286
+CSE,8,Female,Day Scholar,Afternoon,Visual,Good,Low,Average,No,No,Placed,72,168,0,388,90.7,77.8,8.21,0,36,12,1,1,4.0,242,1159
+CSE-DS,4,Female,Hostel,Morning,Auditory,Average,Medium,Good,No,Yes,Not Started,186,192,110,165,59.4,67.6,6.48,0,38,3,2,0,1.0,56,1081
+ECE,1,Male,Day Scholar,Night,Kinesthetic,Good,Low,Good,Yes,No,Not Started,104,177,102,313,60.6,63.2,6.27,1,32,2,0,0,0.0,28,854
+CSE,6,Male,Day Scholar,,Visual,Good,Low,Poor,No,Yes,Not Started,256,306,0,342,83.6,77.6,6.99,2,33,3,2,1,3.0,223,1358
+CSE,2,Male,Day Scholar,Afternoon,Auditory,Poor,High,Average,No,No,Not Started,107,129,130,281,80.3,65.3,5.38,0,39,1,1,0,1.0,41,1115
+CSE,5,Female,Day Scholar,Afternoon,Kinesthetic,Poor,Medium,Average,No,Yes,Not Started,211,40,42,18,85.8,66.3,6.49,3,38,1,2,1,3.0,0,1065
+IT,8,Male,Hostel,Morning,Auditory,Average,Low,Good,No,Yes,Placed,229,400,0,426,79.7,68.9,6.6,0,36,1,2,0,6.0,335,1413
+CSE-AIML,3,Female,Hostel,Night,Visual,Average,Medium,Good,No,Yes,Not Started,114,374,105,278,92.2,65.8,6.37,3,35,2,0,0,2.0,0,948
+CSE,8,Male,Hostel,Night,Kinesthetic,Average,Low,Good,No,Yes,In Progress,17,121,130,144,69.1,53.6,5.64,0,29,13,4,4,1.0,146,813
+CSE-DS,6,Male,Hostel,Night,Auditory,Good,Medium,Good,No,Yes,Not Started,87,218,156,3,95.6,69.1,6.48,1,36,6,1,2,3.0,0,1209
+IT,4,Male,Day Scholar,,Auditory,Average,High,Good,No,Yes,Not Started,37,124,26,290,85.2,76.1,7.55,0,34,4,2,1,2.0,241,1045
+CSE,8,Female,Day Scholar,Night,Kinesthetic,Average,Medium,Average,No,No,Placed,187,493,11,326,84.9,75.0,7.78,1,40,8,2,3,2.0,317,1053
+CSE,2,Female,Hostel,Morning,Visual,Poor,Medium,Good,No,Yes,Not Started,19,351,253,0,67.9,65.3,6.01,1,36,2,1,0,2.0,0,911
+CSE,8,Female,Day Scholar,Night,Auditory,Average,Medium,Good,No,No,Placed,166,144,204,381,96.6,76.5,7.29,0,36,11,2,0,2.0,330,805
+CSE-DS,4,Male,Hostel,Night,Auditory,Poor,Medium,Good,No,No,Not Started,176,321,68,190,53.4,64.9,6.38,1,33,3,2,1,1.0,148,1217
+CSE-AIML,6,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Poor,Yes,No,Not Started,146,291,236,290,70.0,61.5,6.55,0,32,3,1,0,3.0,92,1540
+CSE-AIML,1,Male,Hostel,Night,Kinesthetic,Good,Low,Average,No,No,Not Started,324,184,230,105,76.2,86.4,8.64,0,41,1,0,0,1.0,56,890
+CSE-DS,4,Male,Hostel,Afternoon,Kinesthetic,Good,Low,Good,Yes,Yes,Not Started,216,173,115,530,90.5,77.6,7.92,1,33,5,2,0,1.0,252,1422
+CSE-AIML,7,Female,Hostel,Night,Visual,Average,Medium,Good,No,No,Placed,243,127,48,467,80.4,72.0,7.67,0,37,3,0,5,0.0,295,1237
+CSE,4,Male,Hostel,Night,Auditory,Average,Low,Good,No,No,Not Started,100,432,66,706,81.9,67.1,7.52,2,29,4,2,3,4.0,253,1228
+CSE-AIML,2,Male,Day Scholar,Night,Visual,Poor,Low,Good,No,Yes,Not Started,244,197,113,48,100.0,81.2,8.38,0,38,1,0,0,2.0,16,997
+CSE,5,Male,Hostel,Night,Auditory,Average,Low,Good,Yes,No,Not Started,109,82,228,332,84.0,66.7,6.78,0,35,2,5,0,1.0,117,1102
+CSE,4,Female,Hostel,,Visual,Average,High,Average,No,No,Not Started,118,243,0,645,93.3,74.7,7.43,0,33,7,1,0,,278,1231
+IT,3,Female,Day Scholar,Morning,Auditory,Good,Low,Good,No,Yes,Not Started,119,102,206,272,79.5,74.0,7.5,0,43,3,3,0,3.0,61,912
+CSE,4,Male,Day Scholar,Night,Auditory,Average,Medium,Poor,No,No,Not Started,178,120,16,237,68.7,56.6,5.5,5,26,3,1,1,0.0,97,902
+CSE,5,Male,Hostel,Night,Visual,Good,Low,Good,No,Yes,Not Started,266,224,0,366,65.5,71.3,6.47,2,33,6,1,1,0.0,197,1185
+CSE-DS,6,Male,Hostel,Night,Visual,Poor,High,Average,Yes,No,Not Started,96,125,182,406,85.1,68.3,8.05,0,30,8,5,3,3.0,182,1198
+CSE-DS,6,Male,Hostel,Night,Auditory,Poor,Medium,Average,Yes,Yes,Not Started,80,221,54,216,88.6,78.0,8.36,0,40,4,3,2,1.0,76,1191
+CSE-DS,7,Female,Hostel,Morning,Kinesthetic,Good,Low,Good,No,No,In Progress,314,272,222,144,77.4,66.8,5.86,0,32,5,3,0,2.0,141,1129
+CSE,7,Male,Hostel,Afternoon,Visual,Average,Low,Good,Yes,No,In Progress,294,227,60,677,58.9,63.3,5.76,4,32,5,3,0,4.0,472,1201
+CSE,1,Male,Hostel,Afternoon,Kinesthetic,Poor,High,Good,No,No,Not Started,196,223,31,592,78.5,67.9,6.92,0,32,1,0,0,0.0,0,779
+IT,5,Female,Day Scholar,Night,Auditory,Average,Medium,Good,Yes,Yes,Not Started,198,175,109,21,100.0,76.1,8.51,0,35,8,0,2,0.0,50,920
+CSE,7,Other,Hostel,Night,Visual,Good,Medium,Poor,No,No,In Progress,281,112,67,478,85.1,75.3,8.17,0,29,8,2,2,7.0,281,1204
+CSE-AIML,1,Female,Hostel,Night,Visual,Poor,Medium,Good,No,No,Not Started,172,299,213,0,72.2,69.4,7.04,0,30,3,0,0,0.0,0,876
+CSE,3,Male,Day Scholar,Night,Kinesthetic,Poor,Medium,Good,No,Yes,Not Started,187,157,0,194,80.1,78.9,7.69,0,41,0,0,2,1.0,42,924
+ECE,8,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,No,Placed,41,205,20,157,60.0,61.0,6.64,0,29,6,1,0,2.0,86,914
+CSE,7,Male,Day Scholar,Night,Auditory,Poor,High,Good,No,No,Placed,184,109,158,245,87.0,71.7,6.49,0,36,4,2,3,0.0,139,1226
+CSE-AIML,8,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,No,Placed,230,26,120,523,82.2,76.8,7.79,0,40,8,7,2,3.0,361,1285
+CSE-AIML,1,Male,Hostel,Morning,Auditory,Poor,Medium,Good,No,Yes,Not Started,89,271,120,408,77.9,69.2,5.99,1,36,0,0,0,1.0,49,1339
+CSE,2,Female,Day Scholar,Night,Visual,Average,High,Good,No,Yes,Not Started,159,168,48,434,82.8,66.4,6.91,0,35,3,1,0,0.0,41,1146
+CSE,7,Female,Day Scholar,Night,Auditory,Average,Medium,Average,No,Yes,Placed,252,274,143,288,70.5,62.2,5.91,2,33,7,3,1,3.0,249,1198
+CSE,7,Male,Hostel,Night,Auditory,Average,Medium,,No,Yes,In Progress,218,245,245,0,76.1,66.9,5.97,0,32,3,5,0,2.0,2,1059
+CSE-DS,8,Female,Hostel,Morning,Visual,Good,Low,Good,No,Yes,Placed,0,250,10,173,88.4,61.6,6.35,1,30,5,3,4,8.0,131,1390
+CSE,6,Female,Hostel,Night,Visual,Average,Medium,Average,No,No,Not Started,115,263,20,294,67.8,63.9,6.85,1,31,7,2,1,3.0,205,960
+CSE-DS,7,Female,Hostel,Afternoon,Visual,Average,Medium,Good,No,Yes,In Progress,256,285,0,233,60.1,76.9,7.51,0,33,4,1,0,5.0,196,937
+CSE-AIML,4,Male,Hostel,Night,Visual,Poor,High,Good,No,Yes,Not Started,146,539,13,241,97.2,80.9,8.58,0,42,2,2,0,2.0,156,895
+IT,3,Male,Hostel,Morning,Visual,Good,Low,Good,No,No,Not Started,148,282,70,18,75.2,65.0,5.56,3,35,0,3,2,1.0,3,874
+CSE-AIML,4,Male,Hostel,Morning,Visual,Good,Low,Average,No,No,Not Started,193,223,176,358,96.0,66.6,6.1,3,34,5,0,0,2.0,121,917
+IT,8,Female,Day Scholar,Night,Kinesthetic,Average,Medium,Average,Yes,Yes,In Progress,357,255,138,238,95.5,75.2,6.9,0,34,4,0,2,3.0,224,1033
+CSE-DS,6,Male,Hostel,Morning,Visual,Average,Medium,Good,No,No,Not Started,90,134,135,518,82.9,69.9,7.41,0,34,6,2,2,4.0,413,1181
+CSE,4,Female,Day Scholar,Morning,Kinesthetic,Poor,High,Average,No,No,Not Started,148,173,270,354,62.9,61.6,6.0,2,29,6,0,1,1.0,132,1017
+CSE-DS,2,Male,Day Scholar,Night,Kinesthetic,Poor,High,Average,No,Yes,Not Started,111,389,0,192,83.7,68.7,7.09,1,31,0,0,0,3.0,115,1046
+CSE,4,Female,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Average,No,Yes,Not Started,76,194,169,546,84.3,62.8,6.16,0,31,2,2,0,2.0,219,1368
+CSE-DS,1,Male,Hostel,Morning,Auditory,Average,Low,Poor,No,No,Not Started,167,460,184,334,96.7,69.8,7.4,0,39,1,0,0,0.0,0,1155
+CSE,4,Male,Hostel,Night,Auditory,Good,Medium,Good,Yes,No,Not Started,37,225,0,322,68.3,53.5,4.91,2,25,2,0,0,1.0,138,1207
+CSE,3,Female,Hostel,Night,Visual,Average,Low,Good,No,No,Not Started,195,329,18,105,75.8,70.4,6.48,0,36,7,1,0,4.0,25,1048
+CSE,5,Female,Hostel,Morning,Auditory,Good,Low,Average,No,Yes,Not Started,68,151,187,400,71.7,60.3,6.2,1,29,4,0,1,2.0,224,933
+CSE-DS,2,Male,Hostel,Afternoon,Visual,Good,Medium,Average,No,No,Not Started,155,90,0,267,62.9,64.4,6.66,1,33,4,0,0,1.0,33,964
+CSE-DS,2,Male,Day Scholar,Morning,Kinesthetic,Average,Medium,Average,No,No,Not Started,228,337,135,341,100.0,74.2,7.96,0,37,1,0,0,1.0,101,1155
+CSE-DS,2,Female,Hostel,Morning,Kinesthetic,Poor,High,Good,No,No,Not Started,239,181,19,177,84.0,65.9,5.9,4,34,0,1,0,0.0,113,1031
+CSE-DS,3,Female,Hostel,Afternoon,Kinesthetic,Good,Medium,Good,No,No,Not Started,265,80,0,305,72.0,66.3,7.52,1,38,3,1,0,1.0,114,994
+CSE,3,Female,Day Scholar,Night,Visual,Poor,Medium,Average,No,No,Not Started,181,57,42,600,100.0,73.2,6.19,5,39,0,1,0,3.0,141,861
+CSE,1,Male,Hostel,Night,Auditory,Average,Low,Good,No,No,Not Started,138,130,22,204,77.3,68.9,7.12,0,34,1,0,0,1.0,0,1210
+IT,5,Male,Day Scholar,Night,Visual,Good,Low,Good,No,No,Not Started,147,163,104,251,81.9,64.7,5.11,2,30,9,1,3,3.0,153,900
+CSE-DS,8,Male,Hostel,Night,Kinesthetic,Poor,Medium,Good,No,No,Placed,250,118,86,70,64.9,58.8,5.76,1,26,7,2,0,5.0,43,1128
+IT,7,Female,Day Scholar,Night,Auditory,Poor,Medium,Good,No,No,In Progress,126,342,50,414,80.8,71.0,7.23,0,38,5,3,2,1.0,420,1309
+CSE,7,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,No,Placed,63,303,161,470,87.3,66.0,6.35,4,33,2,1,1,5.0,318,1075
+CSE-AIML,8,Male,Day Scholar,Night,Visual,Average,Medium,Good,No,Yes,Placed,125,93,75,391,92.2,73.3,7.56,0,36,8,5,2,2.0,260,1337
+CSE-AIML,3,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,148,234,0,255,76.1,65.1,7.22,0,32,1,1,1,1.0,68,1368
+CSE-AIML,6,Female,Hostel,Night,Visual,Good,Low,Average,No,No,Not Started,165,293,180,170,92.8,70.9,7.42,0,31,1,6,1,4.0,151,895
+CSE,7,Male,Hostel,Morning,Visual,Poor,High,Poor,No,No,Placed,257,198,0,280,57.4,55.4,5.59,0,26,6,2,2,8.0,190,1353
+ECE,2,Female,Hostel,Night,Auditory,Average,Medium,Good,No,No,Not Started,178,315,169,345,90.1,81.8,7.6,0,43,2,1,0,2.0,79,1057
+CSE-AIML,6,Male,Hostel,Night,Auditory,Average,Medium,Average,No,Yes,Not Started,304,158,0,143,77.2,81.7,7.63,1,43,4,0,0,5.0,2,831
+CSE,3,Male,Hostel,Night,Kinesthetic,Average,Low,Good,No,No,Not Started,280,441,0,461,84.3,76.3,7.81,0,36,3,2,0,2.0,151,1099
+IT,6,Female,Hostel,Night,Auditory,Poor,Medium,Good,No,Yes,Not Started,181,122,46,0,77.8,69.3,7.57,0,30,4,3,1,2.0,58,1058
+IT,7,Male,Hostel,Night,Auditory,Poor,Medium,Poor,No,No,In Progress,202,308,119,390,77.0,72.3,7.42,0,33,10,2,3,3.0,241,1025
+ECE,1,Female,Hostel,Night,Auditory,Average,Medium,Good,Yes,No,Not Started,180,241,169,91,80.5,70.4,7.04,0,33,1,0,0,0.0,73,1032
+CSE-AIML,6,Male,Day Scholar,Night,Kinesthetic,Average,Low,Average,No,No,In Progress,171,445,66,420,83.6,66.8,6.2,1,31,5,2,0,1.0,271,1144
+CSE-AIML,5,Male,Hostel,Night,Auditory,Poor,High,Good,No,No,Not Started,160,254,159,425,84.5,67.7,7.09,0,37,2,0,0,0.0,228,987
+CSE,3,Female,Hostel,Afternoon,Visual,Average,Low,Good,No,No,Not Started,114,276,99,326,82.7,71.3,6.61,0,33,1,2,0,0.0,142,940
+CSE,4,Female,Hostel,Night,Visual,Average,Medium,Average,No,Yes,Not Started,104,241,65,149,73.7,67.9,7.28,0,35,3,1,2,3.0,29,887
+CSE,6,Male,Hostel,Night,Auditory,Average,Medium,Good,No,No,Not Started,180,370,0,527,98.7,79.6,8.08,0,39,4,2,0,3.0,366,1086
+CSE,7,Female,Day Scholar,Night,Auditory,Poor,High,Average,No,Yes,In Progress,65,354,100,327,87.6,71.6,6.83,0,41,6,3,1,3.0,279,946
+ECE,6,Female,Hostel,Night,Kinesthetic,Average,Low,Good,No,Yes,Not Started,212,329,115,239,89.8,70.4,7.26,0,38,6,2,1,2.0,60,1199
+CSE-DS,8,Male,Hostel,Night,Auditory,Average,Medium,Average,No,Yes,Placed,223,5,88,121,72.6,73.7,7.69,0,41,10,3,5,7.0,68,988
+CSE-AIML,8,Female,Hostel,Night,Auditory,Poor,High,Average,No,No,Placed,333,306,115,395,96.4,74.7,7.04,0,31,6,2,4,0.0,320,1363
+CSE-AIML,6,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,260,236,303,435,73.7,67.4,6.4,0,30,3,3,3,2.0,268,1247
+CSE,6,Male,Hostel,Night,Visual,Average,Medium,Good,Yes,Yes,Not Started,292,96,59,161,93.1,87.9,8.25,0,41,4,1,2,4.0,135,1278
+CSE,7,Female,Day Scholar,Night,Visual,Poor,High,Average,No,No,Placed,223,339,59,374,82.5,71.3,6.59,0,33,6,1,5,4.0,282,1306
+ECE,6,Male,Hostel,Afternoon,Visual,Poor,High,Good,No,Yes,Not Started,330,465,212,300,84.9,74.3,7.07,1,38,7,2,2,0.0,203,1171
+CSE-DS,4,Female,Day Scholar,Morning,Auditory,Good,Low,Good,No,No,Not Started,217,328,111,181,87.7,81.9,8.38,0,42,3,0,1,1.0,85,896
+CSE,1,Female,Day Scholar,Night,Kinesthetic,Good,Low,Good,No,No,Not Started,259,319,238,696,87.9,73.3,6.68,0,33,0,1,0,1.0,102,984
+CSE-AIML,5,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,39,361,229,425,86.1,67.5,6.71,1,33,8,0,2,6.0,186,1087
+CSE-AIML,1,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,Yes,Yes,Not Started,205,343,180,160,78.2,70.5,6.83,0,29,0,0,0,0.0,39,764
+CSE,6,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,Yes,No,Not Started,289,70,24,168,85.6,74.6,7.66,0,36,7,0,0,,25,1013
+CSE-DS,5,Male,Day Scholar,Night,Auditory,Average,Medium,Average,No,Yes,Not Started,46,386,0,64,67.3,58.1,5.78,2,33,6,3,1,5.0,81,1084
+CSE,5,Female,Hostel,Night,Visual,Average,Medium,Average,Yes,Yes,Not Started,271,264,193,755,98.5,84.2,8.85,0,45,3,4,1,1.0,330,1110
+CSE-DS,2,Male,Hostel,Night,Visual,Average,High,Good,No,Yes,Not Started,58,354,44,503,90.4,76.1,7.6,0,32,1,0,0,2.0,168,1195
+CSE-AIML,2,Female,Day Scholar,Night,Auditory,Average,Medium,Good,Yes,Yes,Not Started,230,247,142,365,86.0,69.3,7.33,1,38,2,0,0,1.0,10,1357
+CSE,1,Male,Day Scholar,Night,Auditory,Average,Medium,Poor,No,No,Not Started,237,405,202,221,93.6,71.4,7.52,0,34,1,1,0,0.0,46,904
+CSE,2,Female,Hostel,Morning,Visual,Average,Medium,Average,No,No,Not Started,105,0,75,531,98.5,76.7,7.06,0,35,2,0,0,0.0,45,514
+CSE,4,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,181,75,213,683,98.6,79.0,7.88,0,40,4,0,0,4.0,201,1140
+ECE,3,Female,Hostel,Night,Auditory,Average,Medium,Average,No,No,Not Started,242,198,129,340,85.7,75.2,8.07,0,35,0,0,0,1.0,87,1051
+CSE-AIML,3,Male,Hostel,Night,Auditory,Average,Medium,Good,No,Yes,Not Started,300,307,240,358,79.4,82.7,7.97,0,44,3,2,0,1.0,158,1598
+CSE,4,Female,Hostel,Night,Auditory,Good,Medium,Good,No,Yes,Not Started,51,360,65,205,67.0,60.6,6.6,0,34,2,1,0,1.0,47,1183
+IT,1,Female,Day Scholar,Morning,Kinesthetic,Average,Medium,Good,No,No,Not Started,186,382,485,466,91.0,84.4,7.86,1,43,1,0,0,0.0,131,1190
+CSE,7,Male,Hostel,Night,Visual,Poor,Medium,Average,No,No,In Progress,197,362,287,270,52.9,63.2,6.58,0,31,2,4,2,3.0,103,1318
+IT,5,Male,Day Scholar,Night,Auditory,Average,Medium,Average,No,No,Not Started,182,91,8,396,92.1,82.0,8.25,0,46,5,0,0,1.0,251,1358
+CSE,5,Female,Day Scholar,Afternoon,Kinesthetic,Poor,High,Good,No,No,Not Started,211,8,123,233,100.0,81.9,7.45,0,43,5,3,0,,46,1189
+CSE-DS,4,Male,Hostel,Afternoon,Visual,Good,Low,Average,No,No,Not Started,226,91,113,518,85.4,82.3,8.68,0,43,4,2,1,5.0,252,1095
+IT,7,Male,Hostel,Night,Visual,Good,Medium,Good,No,No,Placed,63,39,306,0,92.2,60.4,5.38,4,29,4,5,1,,85,1260
+CSE,8,Male,Hostel,Morning,Kinesthetic,Good,Low,Average,Yes,No,In Progress,72,231,20,163,86.0,70.9,6.94,1,32,6,1,2,2.0,171,1110
+CSE-AIML,6,Female,Hostel,Night,Visual,Average,Low,Good,Yes,No,In Progress,73,359,158,249,78.8,65.2,6.44,0,32,4,2,0,4.0,107,1205
+CSE-AIML,1,Female,Hostel,Night,Visual,Average,High,Average,No,Yes,Not Started,200,145,120,356,77.1,72.2,7.27,0,42,1,0,0,1.0,107,1329
+ECE,8,Female,Hostel,Night,Auditory,Poor,High,Average,No,No,Placed,202,196,292,183,90.5,67.8,7.48,0,34,4,0,3,3.0,170,1108
+ECE,5,Female,Hostel,Afternoon,Auditory,Average,Medium,Good,Yes,No,Not Started,128,273,215,197,71.7,62.9,5.9,2,30,5,0,0,2.0,70,1057
+IT,7,Male,Hostel,Night,Visual,Poor,High,Poor,No,Yes,In Progress,117,288,27,629,89.4,81.3,8.14,0,42,5,3,0,5.0,503,1511
+ECE,6,Male,Day Scholar,Night,Auditory,Poor,High,Average,No,No,In Progress,231,242,24,284,75.3,70.1,8.13,0,37,2,3,1,,215,1261
+CSE,1,Female,Hostel,Afternoon,Auditory,Poor,Medium,Good,No,Yes,Not Started,92,257,52,429,82.0,73.0,7.54,0,38,1,0,0,0.0,113,1024
+ECE,2,Male,Hostel,Night,Visual,Average,Medium,Poor,Yes,No,Not Started,123,71,0,456,82.0,66.6,5.0,2,34,5,0,0,,12,1043
+IT,8,Male,Hostel,Afternoon,Kinesthetic,Good,Low,Good,No,No,Placed,69,513,49,73,100.0,76.9,6.8,1,39,9,2,2,1.0,143,1111
+IT,3,Female,Day Scholar,Night,Auditory,Average,Medium,Good,No,No,Not Started,323,361,61,544,91.4,81.2,8.01,0,42,3,2,0,,200,1154
+CSE-AIML,5,Female,Day Scholar,Night,Visual,Average,Medium,Good,No,Yes,Not Started,77,318,92,134,76.2,70.0,6.46,2,34,2,1,3,5.0,146,908
+CSE-AIML,7,Male,Hostel,Afternoon,Auditory,Poor,High,Good,Yes,No,In Progress,237,0,47,68,78.1,68.9,7.42,0,38,10,1,3,1.0,138,1084
+ECE,2,Female,Hostel,Afternoon,Auditory,Average,Medium,Good,Yes,No,Not Started,216,238,221,501,83.4,76.1,7.4,0,35,2,1,0,0.0,32,995
+CSE,1,Female,Hostel,Morning,Auditory,Average,Low,Average,No,No,Not Started,329,225,75,86,100.0,79.1,7.76,0,43,0,0,0,0.0,95,1250
+CSE,2,Male,Hostel,Morning,Visual,Average,Low,Average,Yes,Yes,Not Started,130,155,115,376,96.7,71.0,6.91,0,36,2,0,0,1.0,98,1214
+CSE-AIML,1,Female,Day Scholar,Night,Visual,Poor,High,Good,No,Yes,Not Started,135,90,163,226,74.9,67.9,7.47,1,32,1,0,0,0.0,7,768
+CSE-AIML,1,Male,Hostel,Night,Kinesthetic,Average,Medium,Average,No,No,Not Started,157,309,216,197,90.5,80.0,7.68,0,41,1,0,0,0.0,57,963
+IT,4,Female,Hostel,Morning,Auditory,Good,Low,Average,No,No,Not Started,267,460,117,0,57.0,75.2,7.97,0,38,4,4,0,5.0,0,1180
+IT,3,Female,Day Scholar,Afternoon,Visual,Average,Low,Good,No,Yes,Not Started,266,320,147,283,86.6,71.6,7.19,0,32,1,3,0,0.0,0,910
+CSE,2,Female,Hostel,Morning,Auditory,Average,Low,Good,No,Yes,Not Started,319,444,67,36,65.4,72.2,7.56,0,36,1,0,0,2.0,13,819
+CSE,2,Female,Day Scholar,Night,Visual,Poor,Low,Average,No,No,Not Started,147,147,160,92,89.8,74.6,7.56,0,33,0,0,0,0.0,74,942
+CSE,4,Female,Hostel,Night,Kinesthetic,Poor,Medium,Good,No,No,Not Started,292,221,89,211,79.4,77.9,7.85,1,39,7,0,0,2.0,124,889
+CSE,2,Male,Hostel,Morning,Visual,Poor,Medium,Average,Yes,Yes,Not Started,142,156,73,0,81.3,63.9,6.32,0,34,1,0,0,1.0,50,813
+CSE-DS,2,Female,Day Scholar,Night,Visual,Average,Medium,Poor,No,Yes,Not Started,162,291,0,8,71.6,64.8,6.9,2,29,2,0,0,0.0,0,698
+CSE,5,Female,Hostel,Morning,Kinesthetic,Good,Low,Good,No,No,Not Started,190,235,256,636,77.5,70.8,7.22,0,33,5,2,0,2.0,295,885
+CSE-DS,4,Female,Hostel,Night,Kinesthetic,Poor,High,Good,No,No,Not Started,149,272,221,468,81.4,73.8,7.43,1,43,0,5,0,,281,1046
+CSE-AIML,1,Female,Hostel,Afternoon,Visual,Poor,Medium,Good,No,No,Not Started,206,238,183,454,86.8,74.4,8.13,0,39,2,0,0,0.0,0,944
+CSE,4,Male,Hostel,Night,Auditory,Poor,Low,Good,No,No,Not Started,61,250,261,368,85.9,65.3,5.74,1,32,3,1,0,3.0,122,1009
+CSE-AIML,3,Other,Day Scholar,Night,Auditory,Good,High,Average,No,No,Not Started,229,62,332,348,80.9,72.8,7.43,1,36,0,2,0,0.0,79,1072
+IT,2,Male,Day Scholar,Night,Kinesthetic,Good,Medium,,No,Yes,Not Started,149,152,9,0,68.6,63.9,6.64,0,30,1,0,0,0.0,13,1136
+CSE,4,Male,Hostel,Night,Auditory,Average,Low,Poor,Yes,No,Not Started,0,232,83,71,100.0,70.4,6.68,0,36,4,2,0,1.0,0,1233
+CSE-AIML,4,Other,Day Scholar,Night,Kinesthetic,Average,Medium,Average,No,Yes,Not Started,262,234,71,538,73.6,65.9,6.47,3,31,2,3,0,0.0,128,958
+CSE,3,Female,Hostel,Morning,Auditory,Average,Medium,Good,No,No,Not Started,224,158,141,394,80.5,68.6,6.79,0,36,1,3,0,2.0,210,1183
+CSE,6,Female,Day Scholar,Night,Visual,Average,Medium,Good,No,No,In Progress,75,271,168,137,68.1,66.4,6.9,0,39,2,2,0,2.0,94,720
+IT,5,Male,Day Scholar,Morning,Kinesthetic,Poor,High,Average,No,No,Not Started,55,100,164,757,82.3,70.5,7.32,1,36,3,3,0,3.0,369,1384
+CSE-AIML,2,Female,Day Scholar,Night,Auditory,Good,Low,Good,No,No,Not Started,222,337,97,294,68.0,70.4,6.85,0,34,1,2,0,1.0,75,1478
+IT,2,Male,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,153,299,114,250,58.6,69.0,6.54,0,37,1,2,0,0.0,111,885
+CSE,2,Female,Day Scholar,Morning,Kinesthetic,Average,Medium,Average,No,No,Not Started,124,152,248,621,69.2,75.1,7.95,1,37,1,0,0,1.0,58,661
+IT,4,Male,Day Scholar,Morning,Auditory,Good,Medium,Poor,No,Yes,Not Started,141,380,155,140,88.6,74.5,6.5,3,37,5,1,0,3.0,92,1180
+CSE,7,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Average,Yes,No,In Progress,195,230,16,537,79.0,68.7,7.62,0,35,7,4,0,3.0,383,1306
+IT,3,Male,Hostel,Night,Visual,Good,Low,Good,No,Yes,Not Started,168,296,47,120,79.1,67.4,6.7,0,33,0,1,0,,83,932
+CSE,1,Female,Day Scholar,Night,Auditory,Average,High,Poor,No,Yes,Not Started,269,191,233,146,87.9,72.9,7.33,0,37,0,0,0,0.0,17,953
+IT,1,Female,Hostel,Afternoon,Visual,Average,High,Poor,No,No,Not Started,257,524,153,220,89.9,69.0,6.99,1,32,0,0,0,2.0,0,1013
+CSE-AIML,2,Male,Hostel,Night,Kinesthetic,Good,Medium,Good,No,No,Not Started,143,502,142,0,84.9,66.0,6.54,0,32,0,1,0,0.0,22,914
+ECE,8,Male,Hostel,Afternoon,Kinesthetic,Average,Low,Average,No,Yes,In Progress,419,67,0,460,94.6,85.3,8.39,0,46,10,4,5,9.0,351,1346
+IT,1,Female,Day Scholar,Night,Visual,Good,Low,Poor,No,No,Not Started,253,274,167,150,70.4,63.9,6.0,1,27,2,0,0,1.0,0,1046
+CSE,3,Male,Hostel,Morning,Auditory,Good,Low,Average,No,No,Not Started,117,248,0,567,59.2,61.7,6.06,3,31,1,0,0,1.0,113,1198
+IT,1,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,189,0,313,227,92.9,78.9,7.42,0,39,0,1,0,1.0,0,1127
+CSE,6,Female,Hostel,Morning,Kinesthetic,Good,Low,Good,No,Yes,Not Started,409,387,233,37,74.9,70.3,7.82,0,33,5,0,2,1.0,0,1107
+CSE-DS,2,Male,Day Scholar,Afternoon,Auditory,Average,High,Poor,No,No,Not Started,222,222,183,357,95.1,74.4,8.03,0,34,0,0,0,0.0,136,1137
+CSE-DS,1,Male,Hostel,,Kinesthetic,Poor,High,Good,Yes,Yes,Not Started,305,329,134,176,100.0,83.4,8.9,0,42,0,0,0,0.0,3,945
+CSE,5,Male,Hostel,Night,Auditory,Good,Low,Good,No,Yes,Not Started,162,229,242,189,67.1,69.8,7.04,0,30,3,0,0,3.0,43,1246
+CSE,5,Female,Hostel,Morning,Kinesthetic,Good,Medium,Good,No,Yes,Not Started,118,22,65,163,68.9,64.4,5.82,1,37,5,1,1,2.0,38,1122
+ECE,6,Male,Hostel,Night,Visual,Poor,High,Average,No,No,Not Started,67,406,155,203,52.7,58.6,5.62,1,32,1,2,2,4.0,91,1150
+IT,5,Female,Hostel,Morning,Kinesthetic,Average,Medium,Average,Yes,No,Not Started,61,439,122,0,64.2,61.1,5.92,5,33,5,0,1,1.0,0,1098
+CSE,6,Female,Day Scholar,Night,Auditory,Poor,Medium,Average,No,Yes,Not Started,223,20,0,207,86.4,65.8,6.66,0,35,3,0,2,2.0,126,918
+CSE,8,Male,Hostel,Night,Kinesthetic,Good,Medium,Average,No,No,Placed,224,328,305,11,84.2,82.3,8.02,0,40,6,7,1,3.0,70,1092
+CSE,6,Male,Hostel,Morning,Kinesthetic,Poor,Medium,Good,No,Yes,In Progress,62,428,7,294,98.1,68.7,7.27,0,32,7,0,0,1.0,148,1136
+CSE-AIML,4,Male,Day Scholar,Morning,Visual,Poor,High,Good,No,No,Not Started,30,0,266,468,100.0,67.4,6.69,0,35,3,1,1,0.0,219,990
+CSE-AIML,2,Male,Hostel,Morning,Visual,Average,Low,Average,No,No,Not Started,231,197,50,347,79.0,73.3,7.39,0,30,1,0,0,1.0,98,1143
+CSE,6,Male,Hostel,Afternoon,Auditory,Average,Low,Good,No,Yes,Not Started,212,389,366,313,61.0,66.0,6.55,0,32,7,1,0,4.0,216,1208
+CSE-AIML,5,Female,Hostel,Night,Kinesthetic,Average,Medium,Average,No,Yes,Not Started,14,153,54,607,86.2,62.9,6.31,0,32,4,1,1,5.0,316,1281
+CSE,1,Male,Hostel,Afternoon,Visual,Poor,High,Good,No,No,Not Started,319,265,0,161,91.3,76.9,6.98,0,39,2,1,0,0.0,100,954
+CSE,4,Female,Hostel,Morning,Kinesthetic,Average,High,Average,No,No,Not Started,272,131,176,237,69.1,70.8,7.17,0,35,1,1,1,2.0,54,1089
+CSE,1,Male,Day Scholar,Night,Visual,Poor,High,Good,No,No,Not Started,219,238,75,500,67.8,66.4,6.14,1,40,1,1,0,1.0,38,1124
+CSE,8,Male,Hostel,Night,Visual,Good,Medium,Good,No,No,Placed,141,407,0,215,81.9,72.0,5.99,0,41,7,1,2,3.0,239,1166
+CSE-AIML,6,Male,Day Scholar,Morning,Visual,Average,Medium,Average,No,No,Not Started,158,162,0,331,72.3,61.2,6.26,2,27,7,2,2,5.0,246,1370
+IT,6,Female,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,320,400,177,173,63.6,72.4,7.24,0,29,9,3,1,1.0,177,959
+IT,5,Female,Hostel,Night,Kinesthetic,Good,Low,Poor,No,No,Not Started,123,432,210,243,71.9,63.8,6.05,0,36,1,1,1,1.0,65,1152
+CSE,4,Female,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,No,Not Started,84,344,0,58,90.8,67.1,7.01,0,37,0,1,1,1.0,0,989
+IT,1,Male,Day Scholar,,Auditory,Good,Low,Good,No,No,Not Started,162,357,23,196,70.1,59.6,5.46,3,25,0,1,0,1.0,6,795
+CSE,1,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,231,48,179,298,98.1,76.8,7.13,0,37,0,0,0,1.0,0,1061
+CSE,3,Male,Hostel,Afternoon,Auditory,Good,Low,Average,No,Yes,Not Started,203,280,363,718,66.8,77.4,6.73,0,39,5,2,0,1.0,169,1051
+CSE,4,Female,Hostel,Night,Auditory,Good,Medium,Poor,No,Yes,Not Started,230,462,94,150,100.0,76.1,7.13,0,40,4,0,1,1.0,0,989
+CSE,7,Male,Day Scholar,Night,Visual,Average,Medium,Good,Yes,Yes,In Progress,162,277,11,426,79.5,67.6,6.89,1,40,4,1,1,3.0,307,1068
+ECE,1,Male,Hostel,Morning,Visual,Average,Medium,Good,Yes,No,Not Started,267,344,165,62,75.3,70.1,6.81,0,35,0,0,0,0.0,58,1169
+CSE,7,Male,Hostel,Morning,Visual,Average,High,Poor,No,No,In Progress,186,129,28,176,75.3,70.8,6.89,1,34,3,0,2,3.0,213,942
+IT,3,Male,Day Scholar,Afternoon,Auditory,Good,Low,Good,No,Yes,Not Started,208,144,177,264,82.4,78.8,7.75,0,35,2,1,0,2.0,103,1058
+ECE,7,Male,Day Scholar,Night,Kinesthetic,Good,Medium,Average,Yes,No,In Progress,285,329,145,442,63.5,69.6,7.03,0,40,6,5,3,2.0,324,1264
+CSE,1,Female,Hostel,Morning,Kinesthetic,Poor,Medium,Good,No,Yes,Not Started,198,36,39,426,68.5,66.5,6.82,0,32,0,0,0,1.0,2,857
+CSE,5,Male,Hostel,Night,Auditory,Average,Low,Average,No,No,Not Started,130,303,25,382,80.0,71.8,7.13,1,32,6,3,1,2.0,239,1102
+CSE-AIML,5,Female,Day Scholar,Night,Visual,Poor,High,Average,No,No,Not Started,151,223,14,198,76.0,64.4,5.39,0,28,2,1,1,2.0,41,1111
+IT,3,Female,Day Scholar,Night,Auditory,Average,Medium,Average,No,No,Not Started,309,98,177,207,66.5,62.4,5.79,4,32,2,4,1,1.0,63,1066
+IT,6,Female,Day Scholar,Night,Visual,Good,Low,Average,No,No,Not Started,166,89,210,364,84.1,75.5,7.89,0,35,5,2,2,1.0,131,896
+CSE,4,Male,Hostel,Afternoon,Visual,Good,Medium,Good,No,Yes,Not Started,235,237,242,307,100.0,79.3,6.47,3,38,3,0,0,3.0,119,1092
+IT,5,Female,Hostel,Morning,Visual,Good,Medium,Good,No,No,Not Started,6,260,293,388,64.5,64.6,6.96,0,33,4,3,0,3.0,202,1256
+CSE-AIML,6,Male,Hostel,Night,Visual,Poor,High,Good,No,No,In Progress,299,89,134,6,88.2,72.0,7.42,0,35,3,3,1,3.0,6,1005
+CSE-DS,6,Female,Day Scholar,Afternoon,Auditory,Average,Medium,Good,No,No,Not Started,135,134,39,217,84.5,71.9,7.4,0,37,4,2,2,5.0,214,1021
+CSE-AIML,7,Female,Hostel,Night,Auditory,Average,Medium,Good,No,No,In Progress,150,322,0,758,76.0,66.9,6.07,0,32,8,2,2,2.0,625,1384
+CSE,8,Female,Hostel,Night,Visual,Good,Low,Average,No,No,In Progress,189,363,106,62,77.2,70.6,6.68,0,37,2,2,1,3.0,74,1037
+CSE,7,Female,Hostel,Night,Visual,Good,Low,Average,No,No,Placed,129,158,130,722,78.2,70.3,6.89,0,32,3,2,0,4.0,564,1296
+CSE,7,Female,Day Scholar,Afternoon,Visual,Poor,Medium,Good,No,No,Placed,301,271,16,54,77.8,79.5,8.44,0,41,7,3,1,2.0,57,1069
+CSE-DS,4,Female,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,323,86,172,209,71.4,75.8,8.2,0,37,3,0,0,1.0,40,1156
+CSE,1,Male,Day Scholar,Afternoon,Kinesthetic,Good,Low,Average,No,No,Not Started,154,137,115,238,88.9,77.7,7.7,0,36,1,0,0,0.0,0,1044
+IT,5,Other,Hostel,Morning,Kinesthetic,Poor,Medium,Poor,No,No,Not Started,168,0,170,423,70.1,67.2,6.68,1,32,3,2,1,3.0,157,1512
+IT,6,Female,Hostel,Night,Auditory,Average,Medium,Good,No,No,In Progress,167,129,73,0,83.0,73.1,6.89,2,38,6,1,3,1.0,0,1059
+ECE,6,Male,Day Scholar,Night,Kinesthetic,Poor,High,Good,No,No,Not Started,54,176,0,86,93.0,76.9,6.73,0,36,4,1,1,5.0,40,908
+ECE,7,Female,Day Scholar,Afternoon,Kinesthetic,Poor,Medium,Poor,No,No,Placed,146,80,272,378,77.6,72.0,6.47,0,30,1,2,0,0.0,261,1060
+CSE,5,Male,Day Scholar,Night,Auditory,Average,Medium,Good,Yes,No,Not Started,197,161,43,259,73.1,64.0,6.48,2,30,3,1,0,0.0,221,981
+CSE,1,Female,Hostel,Night,Auditory,Average,Low,Average,No,No,Not Started,273,106,0,240,58.5,71.0,7.46,0,38,0,3,0,1.0,16,1261
+CSE-AIML,1,Male,Hostel,Night,Auditory,Poor,High,Good,No,Yes,Not Started,138,135,129,289,86.7,85.2,8.41,0,43,0,0,0,1.0,64,1301
+CSE,1,Male,Hostel,Morning,Kinesthetic,Average,Medium,,No,Yes,Not Started,138,162,35,527,83.6,71.7,7.17,0,34,0,0,0,1.0,120,1080
+CSE-DS,1,Male,Hostel,Night,Kinesthetic,Good,Low,Average,No,Yes,Not Started,90,187,198,409,79.5,65.1,6.74,0,30,1,1,0,0.0,39,793
+CSE-DS,1,Female,Hostel,Night,Visual,Good,Medium,Poor,No,Yes,Not Started,137,122,251,329,100.0,71.0,6.49,5,29,0,1,0,1.0,0,1218
+CSE-AIML,1,Male,Day Scholar,Night,Visual,Average,Medium,Good,Yes,Yes,Not Started,88,293,144,203,83.1,60.6,6.18,0,30,0,1,0,1.0,0,771
+CSE-DS,7,Male,Day Scholar,Afternoon,Visual,Good,Low,Good,No,Yes,In Progress,210,330,0,438,83.2,62.9,5.87,4,28,11,3,4,3.0,247,1150
+CSE-AIML,1,Female,Hostel,Afternoon,Visual,Good,Medium,Average,No,No,Not Started,146,177,0,413,96.1,74.8,7.52,1,38,0,0,0,0.0,71,951
+IT,1,Female,Day Scholar,Night,Auditory,Poor,Medium,Good,No,Yes,Not Started,92,348,17,420,76.6,64.3,6.05,2,27,1,0,0,1.0,39,1098
+CSE,1,Male,Hostel,Night,Auditory,Average,Medium,Good,Yes,No,Not Started,87,313,134,154,77.2,61.1,7.05,1,33,1,0,0,1.0,0,970
+CSE-DS,2,Male,Day Scholar,Night,Kinesthetic,Good,Low,Good,No,Yes,Not Started,254,200,111,422,91.2,81.6,8.08,0,39,2,0,0,0.0,60,1021
+CSE,8,Female,Day Scholar,Morning,Auditory,Good,Low,Good,No,Yes,Placed,203,271,171,184,47.7,57.8,5.05,2,25,8,1,2,7.0,122,1051
+CSE-DS,5,Male,Hostel,Night,Auditory,Good,Low,Good,No,Yes,Not Started,58,243,263,0,77.2,60.2,5.92,0,28,2,0,2,4.0,7,1272
+CSE,4,Female,Hostel,Afternoon,Visual,Average,Medium,Good,No,Yes,Not Started,166,245,219,256,54.1,62.8,5.41,2,30,3,3,3,3.0,105,925
+CSE,2,Female,Hostel,,Auditory,Poor,High,Good,No,Yes,Not Started,185,237,61,171,56.0,71.0,7.04,0,38,1,1,0,2.0,61,950
+CSE-DS,8,Male,Day Scholar,Night,Visual,Average,Medium,Average,No,Yes,Placed,53,110,115,268,96.4,61.1,6.78,0,29,7,2,2,2.0,263,1102
+ECE,3,Female,Day Scholar,Night,Kinesthetic,Average,High,Average,No,No,Not Started,211,303,163,441,94.0,71.3,6.12,0,33,3,3,2,2.0,74,969
+IT,2,Male,Day Scholar,Night,Kinesthetic,Average,Low,Good,No,No,Not Started,252,216,33,154,73.7,68.6,6.47,2,33,1,1,0,1.0,0,1046
+IT,8,Other,Hostel,,Auditory,Poor,Medium,Good,No,Yes,Placed,113,187,259,279,61.7,66.9,5.93,0,29,3,3,1,10.0,135,1144
+ECE,6,Male,Day Scholar,Night,Visual,Average,Low,Average,No,No,Not Started,301,125,0,392,77.3,76.5,7.79,0,35,8,0,2,2.0,177,1375
+CSE,1,Female,Hostel,Afternoon,Kinesthetic,Good,High,Good,No,Yes,Not Started,200,211,16,227,70.5,79.4,8.52,0,38,0,1,0,2.0,14,1368
+ECE,2,Female,Day Scholar,Afternoon,Visual,Average,Medium,Good,No,No,Not Started,113,316,120,405,75.7,68.9,6.67,0,37,1,0,0,0.0,98,951
+CSE,1,Female,Day Scholar,Night,Visual,Poor,Medium,Average,No,No,Not Started,159,323,0,365,68.4,63.0,6.26,2,33,0,0,0,0.0,20,1082
+CSE,2,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,120,296,111,286,91.1,73.4,6.26,0,36,3,1,0,0.0,0,844
+CSE,3,Female,Hostel,Night,Visual,Average,Medium,Poor,No,No,Not Started,130,170,121,320,89.4,73.9,7.11,1,34,4,2,0,1.0,59,1104
+ECE,8,Male,Hostel,Night,Visual,Average,Medium,Average,No,No,In Progress,136,603,99,140,72.8,64.9,6.76,0,28,11,2,2,4.0,67,1007
+CSE,7,Male,Hostel,Afternoon,Auditory,Poor,Medium,Average,No,No,In Progress,124,0,116,0,86.9,58.4,6.74,0,28,6,1,1,2.0,37,1040
+CSE,3,Female,Day Scholar,Afternoon,Kinesthetic,Average,Low,Average,Yes,Yes,Not Started,290,295,57,360,89.9,77.4,7.65,0,36,2,2,1,2.0,111,1093
+CSE,8,Male,Day Scholar,Morning,Auditory,Poor,High,Good,No,No,Placed,104,277,190,42,86.9,77.6,7.99,0,38,4,2,1,10.0,48,1118
+CSE-AIML,8,Female,Day Scholar,Morning,Visual,Poor,High,Good,No,No,In Progress,90,118,144,589,81.4,68.9,7.03,0,34,5,4,1,1.0,503,1163
+CSE,3,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,Yes,Yes,Not Started,313,288,183,0,77.1,84.1,7.71,0,40,2,2,0,4.0,32,948
+CSE,8,Female,Hostel,Afternoon,Visual,Good,Low,Average,No,No,Placed,171,198,22,73,78.5,74.8,7.47,1,37,12,2,3,7.0,0,929
+CSE,5,Female,Hostel,Night,Auditory,Average,Low,Good,No,No,Not Started,64,353,86,343,97.7,69.6,6.52,0,36,5,1,1,1.0,212,1034
+CSE,5,Male,Hostel,Night,Visual,Average,High,Good,No,No,Not Started,120,143,245,279,83.4,64.6,6.55,1,35,5,1,0,1.0,142,1159
+CSE-AIML,4,Female,Hostel,,Kinesthetic,Poor,Medium,Good,No,No,Not Started,211,208,81,431,84.6,68.8,7.29,0,29,2,4,0,1.0,116,954
+CSE,4,Male,Hostel,,Visual,Average,Medium,Good,No,Yes,Not Started,301,275,34,262,100.0,82.5,8.37,0,42,6,2,0,2.0,175,1069
+CSE-AIML,8,Other,Day Scholar,Night,Visual,Average,Medium,Good,Yes,No,Placed,26,256,31,268,97.4,67.2,7.27,1,33,1,2,1,7.0,231,1033
+ECE,6,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,No,Not Started,171,167,115,372,65.3,61.4,5.8,3,33,6,2,1,3.0,199,1008
+CSE-AIML,1,Female,Day Scholar,Night,Auditory,Poor,High,Good,No,No,Not Started,242,325,151,528,96.8,76.6,7.21,0,39,0,0,0,0.0,50,966
+CSE-AIML,1,Male,Hostel,Night,Auditory,Poor,Medium,Good,No,No,Not Started,114,79,0,114,90.9,66.9,6.57,0,32,0,0,0,1.0,17,1023
+CSE-DS,5,Male,Hostel,Morning,Auditory,Average,Medium,Poor,Yes,No,Not Started,185,283,113,236,77.9,67.9,7.39,0,29,3,1,2,3.0,142,1216
+CSE-DS,2,Male,Hostel,Morning,Visual,Poor,High,Good,No,No,Not Started,79,160,111,579,84.8,74.6,7.32,0,39,5,0,0,1.0,70,1071
+CSE,1,Female,Hostel,Night,Auditory,Good,Medium,Average,No,Yes,Not Started,217,248,228,386,80.9,76.5,6.85,0,40,1,1,0,0.0,70,991
+ECE,2,Male,Hostel,Night,Auditory,Good,Medium,Good,No,No,Not Started,262,197,25,269,80.9,79.3,7.86,0,35,1,0,0,2.0,47,939
+ECE,8,Female,Day Scholar,Afternoon,Kinesthetic,Good,Low,Good,No,Yes,In Progress,152,243,198,76,81.6,73.2,6.58,0,32,8,3,1,3.0,0,853
+CSE,2,Male,Hostel,Night,Auditory,Good,Medium,Average,No,Yes,Not Started,244,188,3,0,74.3,62.9,6.36,1,29,5,1,0,,0,1349
+CSE-DS,7,Female,Day Scholar,Morning,Auditory,Poor,High,Average,Yes,Yes,Placed,16,127,131,325,85.9,60.6,5.59,0,30,5,1,1,2.0,267,1199
+CSE,1,Other,Hostel,Morning,Kinesthetic,Good,Low,Good,Yes,No,Not Started,173,404,0,25,97.4,75.3,6.97,1,34,0,2,0,0.0,0,716
+CSE-AIML,2,Female,Hostel,Night,Visual,Average,High,Poor,No,Yes,Not Started,23,112,0,154,81.0,61.1,6.01,3,29,3,0,0,2.0,42,1092
+CSE,2,Male,Day Scholar,Night,Kinesthetic,Good,High,Good,No,No,Not Started,152,480,65,315,90.9,85.3,8.38,0,40,2,2,0,1.0,0,816
+IT,6,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,45,373,24,366,78.7,60.7,6.5,1,31,4,1,2,4.0,210,1081
+CSE-DS,4,Female,Day Scholar,Night,Kinesthetic,Poor,Medium,Poor,No,No,Not Started,216,200,47,482,71.1,65.3,6.57,1,31,1,0,0,0.0,188,1223
+CSE,5,Female,Day Scholar,Night,Visual,Good,Low,Good,No,Yes,Not Started,279,69,279,0,86.5,75.4,7.46,0,36,3,0,0,1.0,0,1053
+CSE,8,Male,Hostel,Morning,Auditory,Average,Medium,Good,No,No,Placed,299,254,167,446,83.2,84.7,7.42,0,36,6,3,1,5.0,297,1375
+IT,4,Male,Day Scholar,Afternoon,Auditory,Average,Medium,Average,No,Yes,Not Started,191,346,190,54,69.4,69.2,7.73,2,34,1,0,0,4.0,0,828
+CSE,8,Male,Day Scholar,Morning,Visual,Poor,Medium,Good,No,No,Placed,113,105,125,317,77.4,60.9,6.18,0,31,7,3,1,2.0,249,1177
+CSE,8,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,Yes,No,Placed,80,212,38,267,85.1,68.5,6.68,0,30,6,3,3,3.0,241,1158
+CSE-AIML,2,Female,Hostel,Morning,Visual,Average,High,Good,Yes,Yes,Not Started,243,193,113,307,62.9,69.6,7.51,2,33,4,0,0,1.0,105,909
+CSE-AIML,5,Other,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,317,216,196,218,74.1,76.8,8.08,0,35,4,1,1,3.0,35,794
+CSE,2,Female,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,184,275,350,476,82.9,66.8,6.58,0,34,3,0,0,1.0,136,1025
+ECE,5,Male,Hostel,Morning,Auditory,Poor,Low,Good,No,Yes,Not Started,243,288,0,72,82.3,72.9,7.89,0,37,4,0,1,2.0,24,1055
+CSE,3,Female,Day Scholar,Night,Kinesthetic,Average,Low,Average,Yes,No,Not Started,169,331,221,430,93.0,75.1,7.47,0,34,1,2,0,1.0,89,951
+CSE-AIML,8,Female,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Good,No,No,Placed,97,251,133,53,91.6,69.5,7.45,0,33,3,1,1,8.0,106,704
+CSE-DS,1,Male,Hostel,Afternoon,Kinesthetic,Good,Medium,Good,Yes,Yes,Not Started,338,285,0,257,83.2,80.0,8.05,0,38,0,0,0,0.0,35,995
+CSE,1,Male,Day Scholar,Afternoon,Kinesthetic,Poor,High,Average,No,No,Not Started,209,127,237,350,51.2,62.7,5.82,0,38,0,0,0,0.0,0,965
+CSE,7,Male,Hostel,Night,Kinesthetic,Poor,Medium,Poor,No,Yes,In Progress,225,96,145,493,77.3,65.9,6.26,0,26,3,2,0,0.0,392,1201
+CSE-DS,8,Female,Day Scholar,Afternoon,Kinesthetic,Good,Low,Average,No,Yes,In Progress,331,416,221,386,75.4,81.9,8.08,0,40,8,2,0,10.0,349,1210
+ECE,7,Male,Hostel,Morning,Auditory,Good,Low,Poor,No,No,In Progress,182,467,51,346,80.5,75.1,7.69,0,32,10,2,2,2.0,243,1214
+CSE,2,Male,Hostel,Morning,Visual,Average,Medium,Poor,No,No,Not Started,28,165,14,471,85.2,62.2,6.13,1,35,1,0,0,0.0,8,768
+IT,3,Male,Hostel,Morning,Kinesthetic,Poor,Medium,Average,No,Yes,Not Started,125,233,296,195,84.4,78.0,7.5,0,41,2,0,1,2.0,5,1085
+CSE,3,Female,Day Scholar,Night,Visual,Good,Low,,No,No,Not Started,135,17,147,205,100.0,76.7,7.35,0,36,2,2,2,2.0,105,837
+IT,6,Female,Day Scholar,Night,Kinesthetic,Average,Medium,Average,No,No,Not Started,216,294,0,84,100.0,73.4,8.49,0,33,4,1,0,,95,977
+IT,5,Male,Day Scholar,Afternoon,Visual,Good,Low,Poor,No,No,Not Started,298,350,314,336,86.5,79.2,8.21,0,37,5,2,1,1.0,195,1116
+CSE,6,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,Yes,No,Not Started,257,122,104,226,72.8,65.2,7.22,0,37,5,4,0,6.0,199,1174
+CSE,3,Female,Hostel,Night,Visual,Good,Low,Good,No,Yes,Not Started,45,360,101,528,62.0,68.4,7.85,1,37,3,1,2,0.0,182,1165
+CSE-AIML,6,Female,Day Scholar,Night,Kinesthetic,Good,Low,Good,No,No,Not Started,139,264,0,191,77.2,61.4,6.32,4,32,5,4,0,4.0,150,1160
+CSE-AIML,4,Male,Day Scholar,Morning,Kinesthetic,Poor,Medium,Average,No,No,Not Started,254,195,238,278,85.7,64.3,5.28,1,30,4,1,0,0.0,102,884
+CSE,3,Male,Day Scholar,Morning,Auditory,Average,Medium,Good,No,No,Not Started,171,449,168,205,98.3,73.3,7.16,0,34,0,1,0,2.0,60,950
+CSE,6,Male,Hostel,Night,Kinesthetic,Average,High,Good,Yes,Yes,Not Started,103,194,176,215,79.8,62.4,6.09,1,30,3,0,0,4.0,163,1112
+CSE,2,Male,Hostel,Morning,Kinesthetic,Poor,Medium,Average,No,Yes,Not Started,160,97,69,0,100.0,76.7,7.16,0,44,1,0,0,1.0,0,1187
+ECE,8,Male,Day Scholar,Morning,Kinesthetic,Good,Medium,Good,No,No,In Progress,220,134,143,270,74.4,70.9,7.8,0,37,12,1,3,6.0,189,1087
+CSE,8,Male,Hostel,Afternoon,Visual,Good,Low,Poor,No,Yes,Placed,227,242,87,451,92.7,71.4,7.54,0,34,10,2,1,5.0,307,1151
+CSE,8,Female,Hostel,Night,Visual,Average,Low,Good,No,No,Placed,166,312,221,199,65.9,69.5,7.09,2,35,4,0,2,0.0,161,998
+IT,4,Male,Hostel,Morning,Visual,Poor,High,Average,No,Yes,Not Started,262,414,80,597,88.9,68.8,6.62,0,31,3,2,0,1.0,229,1002
+CSE,8,Male,Day Scholar,Afternoon,Kinesthetic,Average,Medium,Good,No,Yes,Placed,329,222,161,295,89.1,88.0,8.55,0,45,6,3,5,4.0,296,876
+IT,5,Female,Day Scholar,Afternoon,Auditory,Average,Low,Average,No,No,Not Started,298,116,190,600,100.0,76.4,8.03,0,37,2,2,4,1.0,288,981
+CSE-DS,7,Male,Hostel,Night,Visual,Average,Medium,Good,No,Yes,Placed,308,297,49,143,63.9,69.9,7.51,0,35,5,1,3,4.0,115,1153
+CSE,4,Female,Day Scholar,Night,Kinesthetic,Average,Medium,Average,No,No,Not Started,99,294,258,100,84.7,67.5,7.18,0,30,3,1,4,4.0,14,1149
+CSE,3,Male,Hostel,Night,Auditory,Poor,High,Average,No,Yes,Not Started,140,133,76,176,77.6,61.6,6.69,0,29,2,1,0,2.0,113,1248
+CSE-DS,8,Male,Hostel,Afternoon,Kinesthetic,Average,Low,Poor,No,Yes,Placed,112,287,159,457,84.5,63.3,6.8,0,36,7,2,0,2.0,362,1069
+CSE,1,Male,Hostel,Night,Auditory,Good,Medium,Poor,Yes,Yes,Not Started,180,280,145,424,100.0,71.4,7.69,0,39,0,0,0,1.0,0,1234
+ECE,7,Female,Hostel,Morning,Auditory,Average,Medium,Good,No,No,In Progress,24,307,256,328,99.1,71.1,7.03,0,37,5,2,4,5.0,284,1040
+CSE,8,Female,Day Scholar,Afternoon,Auditory,Poor,High,Good,Yes,No,Placed,326,350,125,10,87.3,81.8,7.29,0,44,5,2,1,1.0,0,876
+IT,8,Male,Hostel,Morning,Kinesthetic,Average,Medium,Average,No,No,Placed,218,0,0,170,63.6,70.6,6.75,0,36,7,3,3,2.0,155,957
+ECE,3,Female,Day Scholar,Morning,Visual,Poor,Low,Good,No,No,Not Started,260,377,82,246,67.7,69.5,7.12,2,35,4,0,2,3.0,54,980
+CSE,4,Female,Day Scholar,Morning,Visual,Good,Medium,Average,Yes,Yes,Not Started,163,0,0,433,75.0,60.3,5.84,2,30,5,2,1,4.0,203,1155
+IT,5,Male,Day Scholar,Night,Kinesthetic,Good,Low,Good,Yes,Yes,Not Started,137,138,88,189,79.4,59.3,5.53,0,29,7,3,2,2.0,133,1242
+CSE,1,Female,Hostel,Afternoon,Auditory,Poor,Low,Average,No,No,Not Started,125,467,11,290,90.9,75.2,7.9,0,40,2,0,0,0.0,110,965
+CSE,7,Male,Day Scholar,Afternoon,Kinesthetic,Average,High,Average,No,Yes,In Progress,218,167,0,145,83.1,74.3,7.17,0,36,6,2,0,2.0,0,1064
+IT,2,Male,Day Scholar,Night,Auditory,Good,Medium,Average,Yes,Yes,Not Started,246,323,179,278,59.2,71.3,7.31,0,33,1,0,0,1.0,57,1157
+CSE,5,Female,Day Scholar,Night,Kinesthetic,Poor,High,Good,No,Yes,Not Started,262,286,171,111,90.5,74.8,7.35,0,37,5,1,0,2.0,7,1178
+CSE-DS,4,Female,Hostel,Afternoon,Kinesthetic,Poor,High,Poor,No,Yes,Not Started,227,212,35,224,84.7,77.2,8.03,0,40,3,1,1,1.0,91,945
+CSE,5,Female,Day Scholar,Afternoon,Kinesthetic,Poor,Low,Average,No,No,Not Started,137,131,198,59,85.4,68.3,6.86,0,31,9,1,1,2.0,139,1422
+IT,4,Male,Hostel,Night,Auditory,Average,Medium,Good,No,Yes,Not Started,209,179,151,456,65.7,70.0,7.94,0,32,3,0,1,2.0,189,1052
+CSE-AIML,8,Male,Day Scholar,Night,Kinesthetic,Poor,High,Good,No,Yes,In Progress,388,512,176,752,76.4,76.7,7.19,0,39,3,3,0,4.0,683,1333
+CSE,7,Male,Hostel,Morning,Auditory,Good,Low,Good,No,Yes,Placed,233,106,49,466,84.9,74.8,7.98,0,43,7,3,2,1.0,270,1106
+CSE,1,Male,Hostel,Night,Kinesthetic,Poor,High,Good,No,No,Not Started,189,214,112,201,82.9,71.4,6.68,0,33,0,0,0,0.0,3,913
+CSE-AIML,1,Female,Hostel,Afternoon,Kinesthetic,Good,Medium,Good,No,No,Not Started,162,367,101,316,88.2,69.0,7.4,0,29,2,1,0,0.0,45,1251
+CSE-DS,6,Male,Day Scholar,Night,Auditory,Poor,Medium,Good,No,No,Not Started,312,216,144,394,100.0,82.9,8.27,0,45,2,0,2,5.0,259,1102
+CSE,2,Female,Day Scholar,Morning,Kinesthetic,Good,Low,Poor,No,No,Not Started,69,209,265,422,90.3,66.1,6.99,0,34,3,1,0,0.0,143,993
+CSE-AIML,5,Female,Hostel,Morning,Auditory,Poor,High,Average,No,No,Not Started,54,246,159,180,93.9,66.2,6.65,0,30,2,4,1,0.0,52,1104
+ECE,8,Female,Hostel,Morning,Kinesthetic,Poor,High,Good,No,Yes,In Progress,287,215,94,551,95.3,87.8,8.94,0,40,8,3,1,6.0,468,1157
+CSE,6,Female,Hostel,Night,Visual,Average,Medium,Good,No,No,In Progress,448,233,155,480,72.1,89.0,9.3,0,47,4,2,1,3.0,243,1223
+CSE,3,Male,Hostel,Night,Kinesthetic,Average,Medium,Poor,No,No,Not Started,91,15,230,135,58.5,63.7,5.8,1,36,1,1,0,2.0,106,1151
+CSE-AIML,2,Female,Hostel,Morning,Auditory,Average,Medium,,No,Yes,Not Started,129,129,74,185,84.3,63.2,6.1,0,28,0,2,0,1.0,78,1032
+CSE-AIML,3,Male,Hostel,Morning,Auditory,Poor,High,Good,No,Yes,Not Started,301,354,77,250,80.5,80.1,8.59,0,39,4,2,0,2.0,93,1134
+CSE,7,Female,Hostel,Night,Auditory,Average,Medium,Good,No,No,Placed,219,124,33,179,89.1,84.6,8.44,0,41,3,1,1,2.0,144,930
+CSE,2,Male,Hostel,Morning,Auditory,Poor,High,Good,No,No,Not Started,97,255,79,406,70.9,62.7,6.55,1,35,2,3,0,1.0,52,1046
+CSE-AIML,1,Male,Day Scholar,Night,Visual,Good,Low,Average,No,No,Not Started,96,312,289,273,69.9,65.2,6.63,0,31,1,1,0,0.0,57,1027
+CSE-DS,6,Male,Hostel,Night,Visual,Good,High,Poor,No,No,In Progress,185,331,31,542,81.7,72.2,6.71,0,34,3,1,0,3.0,249,1034
+CSE-AIML,5,Male,Hostel,Night,Visual,Poor,Medium,Average,No,Yes,Not Started,315,275,258,354,77.4,74.6,6.4,2,36,4,2,1,2.0,176,1223
+CSE-AIML,8,Male,Hostel,Morning,Visual,Average,Medium,Average,No,No,Placed,230,118,127,308,89.3,71.5,6.83,0,41,4,3,1,2.0,317,1101
+CSE,6,Male,Hostel,Night,Kinesthetic,Average,Low,Good,No,No,In Progress,155,419,159,431,100.0,70.4,6.66,0,44,3,2,0,3.0,257,860
+CSE,3,Female,Hostel,Afternoon,Visual,Good,Low,Good,No,Yes,Not Started,167,276,271,532,89.2,72.5,6.37,2,41,2,0,0,1.0,159,1129
+IT,4,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,No,Not Started,71,179,121,180,88.4,69.4,7.13,0,33,8,1,0,4.0,37,923
+IT,6,Female,Hostel,Night,Auditory,Average,Medium,Good,No,No,In Progress,205,54,57,695,80.9,73.9,8.05,0,35,4,3,2,3.0,383,1154
+IT,5,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,184,322,0,75,81.0,66.5,6.4,3,35,6,3,1,4.0,0,1003
+ECE,4,Male,Day Scholar,Morning,Visual,Average,Low,Average,No,Yes,Not Started,161,157,182,495,87.2,77.4,8.09,0,37,5,3,0,0.0,215,1163
+CSE,8,Male,Day Scholar,Afternoon,Auditory,Good,Medium,Good,No,No,Placed,59,89,165,253,100.0,76.9,7.2,0,35,5,1,1,6.0,205,1057
+CSE-DS,7,Male,Hostel,Night,Kinesthetic,Average,High,Good,No,No,In Progress,122,223,35,320,76.8,67.6,6.94,0,32,6,2,0,9.0,299,1206
+CSE,7,Female,Hostel,Night,Auditory,Average,Medium,Good,No,No,Placed,30,406,149,337,66.6,59.5,6.26,1,29,6,1,2,2.0,270,1040
+CSE,2,Male,Day Scholar,Morning,Kinesthetic,Poor,Medium,Good,No,Yes,Not Started,312,102,118,209,77.6,72.2,7.6,2,31,2,0,0,0.0,103,1021
+CSE,2,Female,Hostel,Night,Visual,Poor,High,Average,No,No,Not Started,307,538,158,471,91.9,76.2,7.5,0,33,0,1,0,0.0,62,963
+CSE-AIML,7,Male,Day Scholar,Night,Auditory,Poor,Medium,Average,No,No,In Progress,139,305,141,197,94.2,72.7,7.74,0,39,3,1,2,1.0,143,1199
+CSE-AIML,5,Female,Hostel,Night,Visual,Good,Medium,Good,No,Yes,Not Started,249,218,304,363,88.5,74.5,8.64,0,38,6,2,1,0.0,157,1122
+CSE-AIML,2,Male,Hostel,Afternoon,Kinesthetic,Poor,High,Good,No,No,Not Started,161,0,88,67,81.1,74.3,7.21,1,37,4,1,0,0.0,20,804
+CSE-AIML,7,Male,Hostel,Night,Auditory,Average,Low,Average,No,No,Placed,123,281,120,0,83.5,69.1,7.33,0,34,3,1,0,5.0,11,1153
+IT,8,Male,Hostel,Night,Visual,Average,Medium,Average,No,Yes,Placed,156,104,0,532,69.1,65.0,6.62,0,37,9,1,4,3.0,452,1152
+CSE,6,Male,Hostel,Morning,Kinesthetic,Average,Low,Good,No,Yes,Not Started,143,257,0,342,100.0,75.5,6.83,0,38,3,3,1,1.0,203,1200
+CSE,7,Female,Day Scholar,Morning,Auditory,Good,Low,Good,No,No,In Progress,162,167,118,170,96.4,74.8,7.09,0,42,6,3,4,3.0,139,979
+CSE-DS,1,Female,Day Scholar,,Auditory,Average,Medium,Good,No,Yes,Not Started,198,247,0,227,77.2,66.9,7.22,0,34,2,0,0,0.0,0,1114
+CSE,5,Female,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,94,316,33,571,93.1,76.5,7.13,0,37,2,2,2,0.0,309,1297
+IT,6,Male,Hostel,Afternoon,Visual,Poor,Low,Average,No,Yes,Not Started,170,341,271,575,69.5,69.6,6.39,1,31,6,3,0,3.0,232,1312
+CSE,8,Male,Hostel,Night,Kinesthetic,Average,Medium,Good,No,No,In Progress,78,272,78,432,100.0,76.1,7.03,0,36,7,5,4,5.0,463,1202
+CSE,3,Male,Hostel,Afternoon,Auditory,Average,Medium,Average,Yes,No,Not Started,229,166,168,234,74.6,65.2,6.8,2,27,1,0,1,0.0,51,929
+IT,4,Female,Hostel,Night,Auditory,Average,Medium,Poor,Yes,No,Not Started,56,349,114,161,94.3,65.6,6.4,5,32,3,2,1,3.0,82,1107
+CSE,6,Male,Hostel,Night,Visual,Average,Medium,Average,No,Yes,Not Started,163,336,315,428,79.1,74.3,7.04,0,33,2,3,1,2.0,252,1072
+CSE-AIML,7,Male,Hostel,Afternoon,Kinesthetic,Good,Low,Average,No,Yes,Placed,296,0,130,217,100.0,72.0,7.29,1,35,6,1,1,2.0,183,1099
+CSE,7,Male,Day Scholar,Afternoon,Visual,Average,High,Good,No,No,In Progress,266,227,0,387,89.9,63.9,6.12,2,33,5,1,2,2.0,247,1199
+IT,4,Other,Hostel,Morning,Auditory,Average,High,Average,No,No,Not Started,83,129,170,518,98.1,66.6,7.46,0,31,0,2,0,0.0,212,1082
+CSE-DS,8,Male,Hostel,Night,Auditory,Average,Low,Good,No,No,Placed,180,160,172,62,87.2,79.3,8.48,0,41,8,1,2,3.0,0,766
+CSE-DS,5,Male,Day Scholar,Night,Auditory,Average,Medium,Good,No,No,Not Started,209,262,104,542,84.0,69.2,6.7,0,31,1,2,1,2.0,298,1010
+CSE,4,Male,Day Scholar,Night,Visual,Average,Medium,Good,No,Yes,Not Started,224,192,224,298,87.2,69.3,7.42,0,30,1,0,0,2.0,39,1016
+CSE-AIML,3,Male,Hostel,Afternoon,Auditory,Good,Medium,Good,No,No,Not Started,235,213,171,15,63.4,62.9,6.73,2,28,2,1,1,0.0,99,936
+CSE-AIML,8,Male,Hostel,Night,Kinesthetic,Poor,Low,Good,No,No,Placed,295,354,0,464,88.8,72.1,7.28,0,35,4,1,1,,351,1421
+IT,4,Male,Hostel,Morning,Visual,Average,Medium,Average,No,Yes,Not Started,307,0,0,193,45.5,58.0,5.78,2,25,3,1,0,2.0,118,972
+CSE,2,Male,Hostel,Morning,Visual,Poor,Medium,Good,No,No,Not Started,208,330,0,428,77.6,65.7,6.1,0,34,1,1,0,3.0,75,866
+CSE,8,Female,Hostel,Night,Kinesthetic,Average,High,Good,No,No,Placed,207,320,168,291,68.4,62.3,6.94,0,26,8,1,0,2.0,178,1248
+CSE,4,Female,Day Scholar,Night,Auditory,Average,Medium,Average,No,No,Not Started,0,384,412,14,100.0,73.8,6.44,5,36,3,3,1,,60,1034
+CSE-AIML,5,Male,Day Scholar,Night,Kinesthetic,Average,Medium,Good,No,Yes,Not Started,247,322,80,341,96.9,85.9,8.75,0,31,4,3,1,0.0,152,1101
+CSE-DS,7,Male,Hostel,Afternoon,Kinesthetic,Poor,High,Good,No,No,Placed,175,36,71,241,76.0,63.3,6.54,0,35,6,4,0,4.0,224,1096
+CSE-DS,8,Female,Hostel,Afternoon,Kinesthetic,Good,Low,Good,Yes,Yes,Placed,279,232,116,483,70.5,66.8,7.65,0,35,7,3,3,2.0,426,1018
+CSE,7,Male,Hostel,Night,Auditory,Average,High,Good,No,No,In Progress,84,274,98,567,87.1,69.5,6.42,0,35,7,1,2,3.0,326,1034
+ECE,1,Female,Hostel,Afternoon,Kinesthetic,Poor,Medium,Good,Yes,No,Not Started,37,442,73,217,80.6,62.3,6.2,3,35,0,1,0,1.0,0,983
+CSE,1,Male,Hostel,Morning,Visual,Good,Low,Good,No,No,Not Started,98,324,141,395,80.3,72.3,7.73,0,36,1,0,0,0.0,89,1187
+CSE,4,Male,Hostel,Afternoon,Auditory,Average,Medium,Average,No,No,Not Started,124,122,169,503,77.9,62.8,6.55,0,37,0,2,1,2.0,188,903
+CSE,8,Male,Hostel,Morning,Auditory,Poor,High,Good,Yes,No,Placed,119,159,310,326,63.6,63.1,6.94,0,32,6,1,0,10.0,239,1115
+CSE-DS,5,Female,Day Scholar,Morning,Visual,Average,Medium,Good,No,Yes,Not Started,184,248,129,78,80.7,59.9,5.51,1,30,3,1,1,3.0,0,1206
+ECE,7,Female,Hostel,Morning,Auditory,Average,Medium,Average,No,No,Placed,150,372,104,150,89.8,64.7,6.74,0,29,6,4,0,1.0,128,1074
+CSE,8,Female,Day Scholar,Morning,Auditory,Good,Medium,Average,Yes,No,Placed,194,332,167,447,84.3,70.5,6.59,1,32,7,3,1,3.0,309,1268
+ECE,4,Female,Hostel,Morning,Visual,Good,Low,Good,No,No,Not Started,240,145,0,202,68.9,77.6,7.94,0,41,0,0,1,5.0,121,1263
+CSE,8,Male,Hostel,Afternoon,Kinesthetic,Average,Medium,Average,No,Yes,Placed,274,316,89,539,94.3,72.6,7.41,0,36,6,1,2,4.0,460,1061
+CSE,2,Female,Hostel,Afternoon,Auditory,Good,Medium,Good,Yes,Yes,Not Started,232,50,57,301,78.2,65.0,6.08,3,30,0,1,0,0.0,16,1075
+CSE-AIML,4,Male,Hostel,Morning,Auditory,Average,High,Good,No,Yes,Not Started,172,228,219,0,88.7,62.7,6.22,1,31,5,2,0,2.0,41,1359
+CSE-DS,7,Female,Hostel,Morning,Auditory,Poor,High,Good,No,No,Placed,62,29,179,159,71.5,67.4,4.88,1,37,2,0,2,4.0,89,1093
+CSE-AIML,5,Female,Day Scholar,Night,Kinesthetic,Average,High,Average,No,No,Not Started,118,384,366,0,69.0,69.9,6.86,1,35,9,1,2,5.0,116,1025
+CSE,4,Female,Hostel,Night,Kinesthetic,Average,Medium,Good,No,No,Not Started,190,54,140,497,80.4,67.4,6.2,1,30,4,3,0,2.0,177,991
+CSE,7,Female,Hostel,Night,Visual,Poor,Medium,Average,No,No,In Progress,248,403,155,92,76.4,62.9,5.47,3,30,5,4,2,4.0,0,1183
+IT,1,Female,Hostel,Night,Visual,Poor,Medium,Average,No,Yes,Not Started,180,360,67,311,53.7,60.3,5.59,3,32,2,0,0,0.0,31,1064
+ECE,6,Female,Hostel,Night,Kinesthetic,Average,Medium,Average,No,Yes,In Progress,232,121,120,247,95.3,70.4,6.9,0,34,1,6,1,6.0,161,1243
+IT,1,Male,Day Scholar,Morning,Kinesthetic,Good,Medium,Average,No,Yes,Not Started,241,272,266,466,95.8,72.4,5.79,1,39,1,0,0,1.0,108,1061
+CSE-AIML,7,Male,Hostel,Afternoon,Visual,Average,High,Average,No,No,In Progress,1,433,198,152,76.1,58.3,6.28,1,31,5,1,2,0.0,119,1263
+CSE,3,Female,Day Scholar,Morning,Auditory,Average,High,Average,No,No,Not Started,266,276,90,359,89.3,71.2,7.39,0,40,3,1,0,3.0,39,1276
+CSE-DS,1,Male,Hostel,Night,Kinesthetic,Good,Medium,Good,No,No,Not Started,252,210,0,388,92.6,82.3,7.43,1,42,1,0,0,0.0,23,1014
+CSE,8,Male,Hostel,Night,Auditory,Average,Medium,Average,No,Yes,Placed,133,9,7,508,72.3,59.8,5.43,3,30,6,1,3,6.0,433,1329
+IT,2,Female,Day Scholar,Morning,Visual,Good,Medium,Good,No,Yes,Not Started,0,338,263,474,99.1,62.3,6.28,3,34,0,0,0,3.0,107,1178
+CSE-AIML,4,Male,Day Scholar,Night,Visual,Poor,Medium,Poor,No,No,Not Started,164,119,32,0,83.1,68.4,7.11,0,33,4,0,1,3.0,78,1133
+IT,8,Male,Day Scholar,Night,Auditory,Poor,Low,Average,Yes,No,Placed,200,200,0,529,91.0,68.8,6.78,1,33,8,4,5,5.0,444,1304
+ECE,8,Male,Day Scholar,Night,Visual,Poor,High,Good,No,No,Placed,203,395,211,383,71.0,73.5,6.65,0,40,8,2,1,4.0,253,963
+IT,2,Female,Day Scholar,,Kinesthetic,Poor,High,Good,No,No,Not Started,179,254,82,0,82.3,73.7,7.54,1,39,1,3,0,0.0,4,954
+CSE-DS,5,Male,Day Scholar,Night,Auditory,Good,Low,Average,No,Yes,Not Started,227,98,7,0,97.2,79.3,8.28,0,38,3,0,1,5.0,0,769
+CSE,1,Female,Hostel,Morning,Auditory,Average,High,Good,No,Yes,Not Started,303,91,255,155,95.6,79.1,7.76,0,42,0,0,0,2.0,0,844
+CSE,3,Male,Hostel,Night,Visual,Average,Medium,Good,No,No,Not Started,115,27,127,660,62.5,51.7,4.98,1,27,3,1,0,3.0,151,1175
+CSE,8,Female,Hostel,Night,Visual,Average,Medium,Good,No,Yes,Placed,216,236,198,0,72.0,68.3,7.06,0,27,6,1,3,4.0,46,1301
+IT,5,Female,Hostel,Night,Visual,Poor,High,Good,No,Yes,Not Started,291,301,147,616,74.8,69.5,7.61,0,30,5,0,0,0.0,337,1122
+CSE,3,Female,Hostel,Afternoon,Visual,Poor,Medium,Average,No,Yes,Not Started,339,333,118,146,94.7,81.7,9.03,0,34,4,1,0,2.0,70,1050
+CSE,6,Female,Hostel,Afternoon,Kinesthetic,Poor,High,Good,No,No,In Progress,89,165,238,298,89.5,77.7,7.93,0,38,6,3,0,1.0,144,809
+CSE,8,Female,Day Scholar,Night,Auditory,Average,Medium,Poor,No,No,Placed,107,307,204,370,88.5,70.8,6.33,3,35,5,0,2,2.0,240,1189
+IT,8,Male,Hostel,Morning,Kinesthetic,Average,Medium,Good,No,No,Placed,0,68,20,96,79.7,67.7,6.42,1,36,7,2,3,2.0,100,960
+CSE,2,Female,Day Scholar,Morning,Visual,Poor,High,Average,No,Yes,Not Started,270,361,109,261,97.0,77.6,7.26,0,29,2,0,0,0.0,0,1071
+CSE-DS,8,Female,Day Scholar,Night,Visual,Average,Medium,Average,No,Yes,Placed,121,277,267,157,77.9,63.6,6.33,4,36,4,1,2,5.0,66,1071
+IT,4,Male,Hostel,Night,Auditory,Average,Low,Good,Yes,Yes,Not Started,242,129,166,799,80.4,74.4,7.9,1,35,8,0,1,2.0,425,763
+CSE-DS,2,Male,Day Scholar,Night,Auditory,Average,Medium,Good,No,Yes,Not Started,270,263,169,260,63.8,66.3,7.53,0,31,1,2,0,1.0,0,988
+IT,3,Female,Hostel,Afternoon,Visual,Average,Low,Good,No,No,Not Started,126,113,117,56,93.3,67.3,6.92,0,29,1,1,0,1.0,0,966
+CSE,4,Female,Day Scholar,Afternoon,Kinesthetic,Good,Low,Average,No,No,Not Started,44,205,39,119,74.7,69.3,7.6,0,32,4,1,1,2.0,0,1165
+CSE,7,Male,Hostel,Morning,Visual,Average,Medium,,No,No,In Progress,98,222,175,499,84.5,65.6,6.34,0,27,12,2,1,4.0,327,1329
+CSE-DS,6,Female,Hostel,Morning,Auditory,Average,Medium,Average,No,No,Not Started,0,302,190,40,76.9,71.4,6.48,0,38,6,1,3,0.0,0,970
+ECE,2,Male,Hostel,Afternoon,Auditory,Good,Low,Average,No,No,Not Started,152,130,0,0,97.3,77.0,8.44,0,31,0,0,0,2.0,47,1098
+CSE-AIML,7,Male,Hostel,Morning,Auditory,Average,Medium,Good,No,No,In Progress,119,2,0,393,76.7,67.7,7.66,1,29,9,7,2,2.0,312,962
