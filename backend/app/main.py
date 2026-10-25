@@ -9,8 +9,6 @@ from app.api.routers import auth, students, predict, mentors
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize DB tables (managed via Alembic)
-
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
@@ -24,6 +22,24 @@ app = FastAPI(
     docs_url="/docs",
     redoc_url="/redoc",
 )
+
+@app.on_event("startup")
+def on_startup():
+    try:
+        Base.metadata.create_all(bind=engine)
+        logger.info("Database tables verified/created successfully.")
+    except Exception as e:
+        logger.warning(f"Database table verification skipped: {e}")
+
+@app.get("/", tags=["System"])
+def root():
+    return {
+        "message": "EduMetrics ML Backend API is live and operational!",
+        "status": "online",
+        "documentation": "/docs",
+        "health": "/health",
+        "version": settings.VERSION,
+    }
 
 app.add_middleware(
     CORSMiddleware,
