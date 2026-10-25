@@ -6,13 +6,15 @@ class Settings(BaseSettings):
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api/v1"
     
-    # Use Supabase PostgreSQL connection string (Transaction pooler)
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://postgres.wufpncjbaldqujlfihsk:your_password@aws-0-eu-central-1.pooler.supabase.com:6543/postgres")
+    # InsForge PostgreSQL connection string
+    DATABASE_URL: str = os.getenv(
+        "DATABASE_URL", 
+        "postgresql://postgres:2d93c8a04e23b7e965deb811e8da4f5c@844m3mz5.us-east.database.insforge.app:5432/insforge?sslmode=require"
+    )
     
-    # Supabase Configuration
-    SUPABASE_URL: str = os.getenv("SUPABASE_URL", "https://wufpncjbaldqujlfihsk.supabase.co")
-    SUPABASE_KEY: str = os.getenv("SUPABASE_KEY", "your_anon_key")
-    SUPABASE_JWT_SECRET: str = os.getenv("SUPABASE_JWT_SECRET", "your_supabase_jwt_secret_key")
+    # InsForge Platform Configuration
+    INSFORGE_URL: str = os.getenv("INSFORGE_URL", "https://844m3mz5.us-east.insforge.app")
+    INSFORGE_API_KEY: str = os.getenv("INSFORGE_API_KEY", "ik_861ca9233b1c9f32be0ff9f2c5e5b613")
 
     class Config:
         env_file = ".env"

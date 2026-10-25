@@ -106,8 +106,30 @@ export default function StudentForm() {
 
     setLoading(true);
     try {
+      // 1. Save profile
       await api.put('/students/me', formData);
-      navigate('/result'); // To be implemented in next phase
+      
+      // 2. Generate and save prediction
+      const features = {
+        ...formData.profile,
+        ...formData.academics,
+        ...formData.activities,
+        study_minutes_per_day: formData.activities.study_time_daily.hours * 60 + formData.activities.study_time_daily.minutes,
+        material_prep_minutes_per_week: formData.activities.material_prep_weekly.hours * 60 + formData.activities.material_prep_weekly.minutes,
+        extracurricular_minutes_per_week: formData.activities.extracurricular_weekly.hours * 60 + formData.activities.extracurricular_weekly.minutes,
+        skill_dev_minutes_per_week: formData.activities.skill_dev_weekly.hours * 60 + formData.activities.skill_dev_weekly.minutes
+      };
+      
+      // Remove the nested objects to match the ML expected input exactly
+      delete features.study_time_daily;
+      delete features.material_prep_weekly;
+      delete features.extracurricular_weekly;
+      delete features.skill_dev_weekly;
+      
+      await api.post('/predict/single', { features });
+      
+      // 3. Navigate to result
+      navigate('/student/result');
     } catch (err) {
       setError(err.response?.data?.detail || "Failed to save profile.");
     } finally {

@@ -13,10 +13,18 @@ def get_student_profile(db: Session = Depends(get_db), current_user: User = Depe
     if not student:
         raise HTTPException(status_code=404, detail="Student profile not found. Please create one.")
         
+    academics = {}
+    if student.academic_record:
+        academics = {c.name: getattr(student.academic_record, c.name) for c in student.academic_record.__table__.columns if c.name not in ["id", "student_id", "updated_at"]}
+    
+    activities = {}
+    if student.study_log:
+        activities = {c.name: getattr(student.study_log, c.name) for c in student.study_log.__table__.columns if c.name not in ["id", "student_id", "logged_at"]}
+        
     return {
         "profile": {c.name: getattr(student, c.name) for c in student.__table__.columns if c.name not in ["id", "user_id"]},
-        "academics": {c.name: getattr(student.academic_record, c.name) for c in student.academic_record.__table__.columns if c.name not in ["id", "student_id", "updated_at"]},
-        "activities": {c.name: getattr(student.study_log, c.name) for c in student.study_log.__table__.columns if c.name not in ["id", "student_id", "logged_at"]}
+        "academics": academics,
+        "activities": activities
     }
 
 @router.put("/me")
@@ -50,13 +58,25 @@ def update_student_profile(
         db.add(academics)
         db.add(activities)
     else:
-        # Update
+        # Update profile fields
         for k, v in prof_data.items():
             setattr(student, k, v)
-        for k, v in acad_data.items():
-            setattr(student.academic_record, k, v)
-        for k, v in activities_data.items():
-            setattr(student.study_log, k, v)
+            
+        # Update or create academic record
+        if not student.academic_record:
+            student.academic_record = AcademicRecord(student_id=student.id, **acad_data)
+            db.add(student.academic_record)
+        else:
+            for k, v in acad_data.items():
+                setattr(student.academic_record, k, v)
+                
+        # Update or create study log
+        if not student.study_log:
+            student.study_log = StudyLog(student_id=student.id, **activities_data)
+            db.add(student.study_log)
+        else:
+            for k, v in activities_data.items():
+                setattr(student.study_log, k, v)
             
     db.commit()
     return {"message": "Student profile updated successfully."}
@@ -107,10 +127,18 @@ def get_mentee_details(student_id: int, db: Session = Depends(get_db), current_u
     if not student:
         raise HTTPException(status_code=404, detail="Student not found or not assigned to you")
         
+    academics = {}
+    if student.academic_record:
+        academics = {c.name: getattr(student.academic_record, c.name) for c in student.academic_record.__table__.columns if c.name not in ["id", "student_id", "updated_at"]}
+    
+    activities = {}
+    if student.study_log:
+        activities = {c.name: getattr(student.study_log, c.name) for c in student.study_log.__table__.columns if c.name not in ["id", "student_id", "logged_at"]}
+        
     return {
         "profile": {c.name: getattr(student, c.name) for c in student.__table__.columns if c.name not in ["id", "user_id", "mentor_id"]},
-        "academics": {c.name: getattr(student.academic_record, c.name) for c in student.academic_record.__table__.columns if c.name not in ["id", "student_id", "updated_at"]},
-        "activities": {c.name: getattr(student.study_log, c.name) for c in student.study_log.__table__.columns if c.name not in ["id", "student_id", "logged_at"]}
+        "academics": academics,
+        "activities": activities
     }
 
 @router.get('/mentees/{student_id}/predictions')

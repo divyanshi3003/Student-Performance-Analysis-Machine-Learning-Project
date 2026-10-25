@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import Simulator from './pages/Simulator';
 import TeacherDashboard from './pages/TeacherDashboard';
 import Messages from './pages/Messages';
+import VerifyEmail from './pages/VerifyEmail';
 
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -24,6 +25,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path="/verify-email" element={<VerifyEmail />} />
           <Route path="/student/predict" element={
             <PrivateRoute>
               <StudentForm />

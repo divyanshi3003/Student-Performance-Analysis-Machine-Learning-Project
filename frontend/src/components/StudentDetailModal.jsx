@@ -179,15 +179,15 @@ export default function StudentDetailModal({ studentId, onClose }) {
                         </div>
                         <div className="flex justify-between border-b pb-2">
                           <span className="text-text-muted">Attendance</span>
-                          <span className="font-medium">{data.profile.academics.attendance_rate}%</span>
+                          <span className="font-medium">{data.profile.academics.attendance_percentage}%</span>
                         </div>
                         <div className="flex justify-between border-b pb-2">
-                          <span className="text-text-muted">Sleep Hours</span>
-                          <span className="font-medium">{data.profile.activities.sleep_hours_per_night} hrs</span>
+                          <span className="text-text-muted">Sleep Quality</span>
+                          <span className="font-medium capitalize">{data.profile.profile.sleep_quality}</span>
                         </div>
                         <div className="flex justify-between">
                           <span className="text-text-muted">Stress Level</span>
-                          <span className="font-medium capitalize">{data.profile.activities.stress_level}</span>
+                          <span className="font-medium capitalize">{data.profile.profile.stress_level}</span>
                         </div>
                       </div>
                     </CardContent>

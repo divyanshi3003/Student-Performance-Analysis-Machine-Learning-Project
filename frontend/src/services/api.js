@@ -1,8 +1,8 @@
-﻿import axios from 'axios';
-import { supabase } from './supabase';
+import axios from 'axios';
+import { insforge } from './insforge';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1',
+  baseURL: import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api/v1',
   headers: {
     'Content-Type': 'application/json',
   },
@@ -13,7 +13,7 @@ api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
     if (token) {
-      config.headers.Authorization = \Bearer \\;
+      config.headers.Authorization = `Bearer ${token}`;
     }
     return config;
   },
@@ -25,10 +25,16 @@ api.interceptors.response.use(
   (response) => response,
   async (error) => {
     if (error.response && error.response.status === 401) {
-      // Auto logout if unauthorized
-      await supabase.auth.signOut();
+      try {
+        await insforge.auth.signOut();
+      } catch (e) {
+        // Ignore signout error during 401
+      }
       localStorage.removeItem('token');
-      window.location.href = '/login';
+      localStorage.removeItem('user_role');
+      if (window.location.pathname !== '/login') {
+        window.location.href = '/login';
+      }
     }
     return Promise.reject(error);
   }

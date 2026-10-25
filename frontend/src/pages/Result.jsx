@@ -12,26 +12,22 @@ export default function Result() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // 1. Fetch the student's latest profile
-    api.get('/students/me')
+    // Fetch the latest prediction summary from DB
+    api.get('/predict/summary')
       .then(res => {
-        const studentData = res.data;
-        // Flatten the data for the ML payload
-        const features = {
-          ...studentData.profile,
-          ...studentData.academics,
-          ...studentData.activities
-        };
-        
-        // 2. Call the prediction API
-        return api.post('/predict/single', { features });
-      })
-      .then(res => {
-        setResult(res.data);
+        if (res.data.latest_score === null) {
+          throw new Error("No prediction found for this student.");
+        }
+        setResult({
+          predicted_score: res.data.latest_score,
+          predicted_category: res.data.latest_category,
+          confidence: res.data.confidence,
+          feature_drivers: res.data.latest_feature_drivers
+        });
         setLoading(false);
       })
       .catch(err => {
-        setError(err.response?.data?.detail || "Failed to generate prediction. Did you fill out the form?");
+        setError(err.response?.data?.detail || err.message || "Failed to load prediction. Did you fill out the form?");
         setLoading(false);
       });
   }, []);

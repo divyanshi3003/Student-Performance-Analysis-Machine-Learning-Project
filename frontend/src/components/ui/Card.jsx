@@ -23,3 +23,5 @@ export const CardContent = ({ children, className = '' }) => (
     {children}
   </div>
 );
+
+export default Card;

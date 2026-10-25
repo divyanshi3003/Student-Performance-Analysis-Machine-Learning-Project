@@ -17,3 +17,5 @@ export const Button = ({ children, variant = 'primary', className = '', ...props
     </button>
   );
 };
+
+export default Button;

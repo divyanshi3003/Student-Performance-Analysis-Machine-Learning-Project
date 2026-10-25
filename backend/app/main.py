@@ -39,12 +39,20 @@ app.include_router(predict.router, prefix=f"{settings.API_V1_STR}/predict", tags
 app.include_router(mentors.router, prefix=f"{settings.API_V1_STR}/mentors", tags=["mentors"])
 
 # Global Error Middleware
+from starlette.exceptions import HTTPException as StarletteHTTPException
+
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
+    if isinstance(exc, StarletteHTTPException):
+        return JSONResponse(
+            status_code=exc.status_code,
+            content={"detail": exc.detail},
+            headers=getattr(exc, "headers", None) or {},
+        )
     logger.error(f"Global Error: {exc}")
     return JSONResponse(
         status_code=500,
-        content={"message": "An unexpected error occurred. Please try again later."},
+        content={"message": "An unexpected error occurred. Please try again later.", "detail": str(exc)},
     )
 
 @app.get("/health", tags=["System"])

@@ -1,6 +1,10 @@
-import { createClient } from '@supabase/supabase-js';
+// Re-export insforge client for backwards compatibility
+import { insforge } from './insforge';
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+export const supabase = {
+  auth: insforge.auth,
+  from: (table) => insforge.database.from(table),
+  storage: insforge.storage,
+};
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export default insforge;

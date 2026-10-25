@@ -114,10 +114,12 @@ def get_summary(db: Session = Depends(get_db), current_user: User = Depends(get_
     # We re-run inference on the latest input features to get the feature drivers
     # since we don't store the drivers in the DB, only the features.
     drivers = []
+    confidence = 0.0
     if latest_pred.input_features:
         try:
             result = ml_service.predict_single(latest_pred.input_features)
             drivers = result.get("feature_drivers", [])
+            confidence = result.get("confidence", 0.0)
         except Exception:
             pass # degrade gracefully
             
@@ -126,5 +128,7 @@ def get_summary(db: Session = Depends(get_db), current_user: User = Depends(get_
         "average_score": sum(scores) / len(scores),
         "highest_score": max(scores),
         "latest_score": latest_pred.predicted_score,
+        "latest_category": latest_pred.predicted_category,
+        "confidence": confidence,
         "latest_feature_drivers": drivers
     }

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { supabase } from '../services/supabase';
+import { insforge } from '../services/insforge';
 import api from '../services/api';
 import Layout from '../components/Layout';
 import Card, { CardContent } from '../components/ui/Card';
@@ -52,41 +52,35 @@ export default function Messages() {
       return;
     }
 
+    let isMounted = true;
+
     const fetchMessages = async () => {
-      setLoading(true);
-      const { data, error } = await supabase
-        .from('messages')
-        .select('*')
-        .or(`and(sender_id.eq.${user.id},receiver_id.eq.${selectedContact.user_id}),and(sender_id.eq.${selectedContact.user_id},receiver_id.eq.${user.id})`)
-        .order('sent_at', { ascending: true });
-        
-      if (!error && data) {
-        setMessages(data);
+      try {
+        const { data, error } = await insforge.database
+          .from('messages')
+          .select('*')
+          .or(`and(sender_id.eq.${user.id},receiver_id.eq.${selectedContact.user_id}),and(sender_id.eq.${selectedContact.user_id},receiver_id.eq.${user.id})`)
+          .order('sent_at', { ascending: true });
+          
+        if (!error && data && isMounted) {
+          setMessages(data);
+        }
+      } catch (err) {
+        console.error("Error fetching messages:", err);
+      } finally {
+        if (isMounted) setLoading(false);
       }
-      setLoading(false);
       scrollToBottom();
     };
 
     fetchMessages();
 
-    // Subscribe to new messages
-    const channel = supabase.channel('messages-channel')
-      .on('postgres_changes', {
-        event: 'INSERT',
-        schema: 'public',
-        table: 'messages',
-        filter: `receiver_id=eq.${user.id}`
-      }, (payload) => {
-        // If the message is from the currently selected contact
-        if (payload.new.sender_id === selectedContact.user_id) {
-          setMessages(prev => [...prev, payload.new]);
-          scrollToBottom();
-        }
-      })
-      .subscribe();
+    // Poll for new messages every 5 seconds
+    const interval = setInterval(fetchMessages, 5000);
 
     return () => {
-      supabase.removeChannel(channel);
+      isMounted = false;
+      clearInterval(interval);
     };
   }, [user, selectedContact]);
 
@@ -111,7 +105,7 @@ export default function Messages() {
     setNewMessage('');
     scrollToBottom();
 
-    const { error } = await supabase.from('messages').insert([msgData]);
+    const { error } = await insforge.database.from('messages').insert([msgData]);
     if (error) {
       console.error("Error sending message:", error);
     }

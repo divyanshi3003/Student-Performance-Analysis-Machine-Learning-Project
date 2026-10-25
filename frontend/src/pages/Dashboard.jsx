@@ -29,14 +29,28 @@ export default function Dashboard() {
         setHistory(sortedData);
         setSummary(sumRes.data);
       })
-      .catch(err => console.error(err))
+      .catch(err => {
+        console.error(err);
+        if (err.response?.status === 404) {
+          navigate('/student/predict');
+        }
+      })
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading || !summary) {
+  if (loading) {
     return (
       <div className="flex items-center justify-center min-h-[50vh]">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+      </div>
+    );
+  }
+
+  if (!summary) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[50vh] text-center space-y-4">
+        <p className="text-text-muted">Failed to load dashboard data.</p>
+        <Button onClick={() => navigate('/student/predict')}>Go to Profile Assessment</Button>
       </div>
     );
   }
